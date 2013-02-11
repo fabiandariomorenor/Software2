@@ -1,0 +1,94 @@
+﻿body 
+{
+    font-family:Segoe UI;
+    background-color:#fff;
+    margin:0px;
+    padding:0px;
+}
+.page
+{
+    box-shadow: 0 0 100px #CCCCCC;
+    margin: 0 auto;
+    width: 1000px;
+}
+input[type=text]
+{
+    background-color: #FFFFFF;
+    border: 1px solid #777;
+    height: 24px;
+    opacity: 0.8;
+    width: 175px;
+    padding-left:5px;
+    padding-right:20px;
+    font-size:13px;
+    font-family:Segoe UI;
+    color:#212121;
+}
+h1
+{
+    color: #129296;
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    margin-top: 5px;
+}
+.developer
+{
+    margin-top:5px;
+}
+.developer .left,.developer .right
+{
+    display:inline-block;
+    vertical-align:top;
+}
+.developer .left 
+{
+    width:50px;
+    position:relative;
+}
+.developer .right
+{
+    width:200px;
+} 
+.developer .right a
+{
+    width:100%;
+    display:inline-block;
+    color:#129296;
+    font-size:16px;
+}
+.developer .right span
+{
+    font-size:12px;
+}
+.developer .right h6
+{
+    font-size:12px;
+    margin:0px;
+    padding:0px;
+    font-weight:normal;
+    color:#777;
+}
+h2
+{
+    font-size:16px;
+}
+.month
+{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 8px;
+    width: 50px;
+}
+.day
+{
+    color: #000000;
+    font-size: 24px;
+    left: 11px;
+    position: absolute;
+    top: 21px;
+}

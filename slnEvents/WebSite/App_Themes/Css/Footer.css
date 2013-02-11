@@ -1,0 +1,67 @@
+﻿/*Footer*/
+.footer
+{
+    height:30px;
+    background-color: #109294;
+    margin: 0 auto;
+    padding: 2% 0px;
+    width: 100%;
+    position:relative;
+}
+.footer h2, .footer h1
+{
+    color:#C1CD23;
+    font-size:24px;
+    font-weight:normal;
+    padding:0px;
+    margin:0px 0px 10px 0px;
+    float:left;
+    margin-right:12px;
+}
+.footer h1
+{
+    color:#fff;
+}
+.footer .container
+{
+    display:inline-block;
+    width:28%;
+    vertical-align:top;
+    margin-right:5%;
+}
+.footer input[type=text]
+{
+    margin-bottom:5px;
+    width:241px;
+}
+.footer a
+{
+    text-decoration:underline;
+    color:#fff;
+    width:100%;
+    float:left;
+    margin-bottom:10px;
+}
+.footer .button
+{
+    background-color:#C1CD23;
+    color:#129197;
+    padding:4px 15px;
+    float:left;
+    text-decoration:none;
+    width:auto;
+    font-size:18px;
+    height:25px;
+}
+.footer .social_network a
+{
+    width:auto;
+    margin-right:5px;
+}
+.footer .water_mark
+{
+    position: absolute;
+    right: -140px;
+    top: -50px;
+}
+/*Fin Footer*/
