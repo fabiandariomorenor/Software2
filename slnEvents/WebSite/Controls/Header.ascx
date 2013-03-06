@@ -5,7 +5,7 @@
     <%--Crear--%>
     
     <div class="create">
-        <a class="logo">Proyecto de Ingeniería de Software 2</a>
+        <a href="/index.aspx" class="logo">Proyecto de Ingeniería de Software 2</a>
     </div>
 
     <div class="create" style="float:right">

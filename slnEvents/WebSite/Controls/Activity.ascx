@@ -1,5 +1,30 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Activity.ascx.cs" Inherits="WebSite.Controls.Activity" %>
 
+
+<div class="developer">
+    <div class="left">
+        <img width="50px" src="../App_Themes/Images/calendar.png" />
+        <a class="month">Febrero</a>
+        <a class="day">13</a>
+    </div>
+    <div class="right">
+        <a>Documentos</a>
+        <span>Actualización del sitio con los diagramas de análisis</span>
+    </div>
+</div>
+
+<div class="developer">
+    <div class="left">
+        <img width="50px" src="../App_Themes/Images/calendar.png" />
+        <a class="month">Febrero</a>
+        <a class="day">11</a>
+    </div>
+    <div class="right">
+        <a>Análisis</a>
+        <span>Diseño de los casos de uso y diagramas de secuencia del sistema</span>
+    </div>
+</div>
+
 <div class="developer">
     <div class="left">
         <img width="50px" src="../App_Themes/Images/calendar.png" />

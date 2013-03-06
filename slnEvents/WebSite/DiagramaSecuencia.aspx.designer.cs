@@ -10,6 +10,6 @@
 namespace WebSite {
     
     
-    public partial class Index {
+    public partial class DiagramaSecuencia {
     }
 }

@@ -48,18 +48,28 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Analisis.aspx" />
     <Content Include="App_Themes\Css\Footer.css" />
     <Content Include="App_Themes\Css\General.css" />
     <Content Include="App_Themes\Css\Header.css" />
     <Content Include="App_Themes\Css\Index.css" />
+    <Content Include="App_Themes\Images\Analysis\Clases.png" />
+    <Content Include="App_Themes\Images\Analysis\Secuencia.png" />
     <Content Include="App_Themes\Images\calendar.png" />
     <Content Include="App_Themes\Images\Developers\fabian.jpg" />
+    <Content Include="App_Themes\Images\Developers\Giovanny.jpg" />
+    <Content Include="App_Themes\Images\Developers\Julian.jpg" />
+    <Content Include="App_Themes\Images\Documents\jpg.png" />
+    <Content Include="App_Themes\Images\Documents\pdf.png" />
     <Content Include="App_Themes\Images\Logo.png" />
     <Content Include="App_Themes\Images\Principal.jpg" />
     <Content Include="Controls\Activity.ascx" />
     <Content Include="Controls\Developers.ascx" />
+    <Content Include="Controls\Documents.ascx" />
     <Content Include="Controls\Footer.ascx" />
     <Content Include="Controls\Header.ascx" />
+    <Content Include="DiagramaClases.aspx" />
+    <Content Include="DiagramaSecuencia.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
@@ -71,8 +81,16 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analisis.aspx.cs">
+      <DependentUpon>Analisis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analisis.aspx.designer.cs">
+      <DependentUpon>Analisis.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Activity.ascx.cs">
       <DependentUpon>Activity.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -86,6 +104,13 @@
     </Compile>
     <Compile Include="Controls\Developers.ascx.designer.cs">
       <DependentUpon>Developers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Documents.ascx.cs">
+      <DependentUpon>Documents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Documents.ascx.designer.cs">
+      <DependentUpon>Documents.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
@@ -101,6 +126,20 @@
     <Compile Include="Controls\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
     </Compile>
+    <Compile Include="DiagramaClases.aspx.cs">
+      <DependentUpon>DiagramaClases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiagramaClases.aspx.designer.cs">
+      <DependentUpon>DiagramaClases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DiagramaSecuencia.aspx.cs">
+      <DependentUpon>DiagramaSecuencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiagramaSecuencia.aspx.designer.cs">
+      <DependentUpon>DiagramaSecuencia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,11 +147,29 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="App_Themes\Js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Documents\CasosDeUso.pdf" />
+    <Content Include="Main.Master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -33,8 +33,13 @@
 }
 .header .logo
 {
+    color:#fff;
     display: inline-block;
     margin: 6px;
+}
+.header .logo:visited,.header .logo:link
+{
+    color:#fff;
 }
 .header .config
 {
@@ -43,3 +48,4 @@
 }
 
 /*Fin Header*/
+ 
