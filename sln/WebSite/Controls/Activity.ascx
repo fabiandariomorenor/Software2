@@ -4,6 +4,17 @@
 <div class="developer">
     <div class="left">
         <img width="50px" src="../App_Themes/Images/calendar.png" />
+        <a class="month">Marzo</a>
+        <a class="day">01</a>
+    </div>
+    <div class="right">
+        <a>Desarrollo</a>
+        <span>Inicia el desarrollo del login</span>
+    </div>
+</div>
+<div class="developer">
+    <div class="left">
+        <img width="50px" src="../App_Themes/Images/calendar.png" />
         <a class="month">Febrero</a>
         <a class="day">13</a>
     </div>

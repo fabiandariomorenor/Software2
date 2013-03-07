@@ -7,9 +7,9 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace WebSite.Controls {
+namespace WebSite {
     
     
-    public partial class Header {
+    public partial class Index1 {
     }
 }
