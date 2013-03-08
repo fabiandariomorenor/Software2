@@ -1,0 +1,3 @@
+﻿AjaxModel = Backbone.Model.extend({
+
+});

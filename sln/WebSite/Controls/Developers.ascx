@@ -13,7 +13,7 @@
 
 <div class="developer">
     <div class="left">
-        
+        <img width="50px" src="../App_Themes/Images/Developers/nicolas.jpg" />
     </div>
     <div class="right">
         <a>Juan Nicolás Camelo</a>

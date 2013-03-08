@@ -12,6 +12,19 @@
         <span>Inicia el desarrollo del login</span>
     </div>
 </div>
+
+<div class="developer">
+    <div class="left">
+        <img width="50px" src="../App_Themes/Images/calendar.png" />
+        <a class="month">Febrero</a>
+        <a class="day">20</a>
+    </div>
+    <div class="right">
+        <a>Analisis</a>
+        <span>Publicación del diagrama de base de datos</span>
+    </div>
+</div>
+
 <div class="developer">
     <div class="left">
         <img width="50px" src="../App_Themes/Images/calendar.png" />

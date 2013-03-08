@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Main.Master"  CodeBehind="DiagramaClases.aspx.cs" Inherits="WebSite.DiagramaClases" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"  MasterPageFile="~/Main.Master" CodeBehind="DiagramaBaseDatos.aspx.cs" Inherits="WebSite.DiagramaBaseDatos" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -12,7 +12,7 @@
     <%--Galeria--%>
     <div class="gallery">
         <div class="principal_image">
-            <a href="/App_Themes/Images/Analysis/UML_Clases.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/UML_Clases.png" width="665px" /></a>
+            <a href="/App_Themes/Images/Analysis/Diagrama de Base de Datos.jpg" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/Diagrama de Base de Datos.jpg" width="665px" /></a>
         </div>
     </div>
     <p>Por favor de click sobre la imagen para descargar</p>

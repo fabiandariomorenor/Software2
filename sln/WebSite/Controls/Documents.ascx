@@ -21,9 +21,18 @@
 
 <div class="developer">
     <div class="left">
-        <img src="../App_Themes/Images/Documents/pdf.png" />
+        <img src="../App_Themes/Images/Documents/jpg.png" />
     </div>
     <div class="right">
-        <a href="/Documents/CasosDeUso.pdf">Diagrama de Casos de Uso</a>
+        <a href="/DiagramaCasosUso.aspx">Diagrama de Casos de Uso</a>
+    </div>
+</div>
+
+<div class="developer">
+    <div class="left">
+        <img src="../App_Themes/Images/Documents/jpg.png" />
+    </div>
+    <div class="right">
+        <a href="/DiagramaBaseDatos.aspx">Diagrama de Base de Datos</a>
     </div>
 </div>
