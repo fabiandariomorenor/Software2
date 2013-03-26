@@ -71,12 +71,15 @@
     <Content Include="App_Themes\Images\Logo.png" />
     <Content Include="App_Themes\Images\Principal.jpg" />
     <Content Include="App_Themes\Images\Principal.png" />
+    <Content Include="App_Themes\Js\Controller\RegistryController.js" />
     <Content Include="App_Themes\Js\Controller\UsuarioControler.js" />
-    <Content Include="App_Themes\Js\Library\backbone.js" />
-    <Content Include="App_Themes\Js\Library\jQuery.js" />
-    <Content Include="App_Themes\Js\Library\underscore.js" />
+    <Content Include="App_Themes\Js\Librery\backbone.js" />
+    <Content Include="App_Themes\Js\Librery\jQuery.js" />
+    <Content Include="App_Themes\Js\Librery\underscore.js" />
     <Content Include="App_Themes\Js\Model\AjaxModel.js" />
     <Content Include="App_Themes\Js\Model\UsuarioModel.js" />
+    <Content Include="App_Themes\Js\Util\Util.js" />
+    <Content Include="App_Themes\Js\View\RegistryView.js" />
     <Content Include="App_Themes\Js\View\UsuarioView.js" />
     <Content Include="Controls\Activity.ascx" />
     <Content Include="Controls\Developers.ascx" />
@@ -232,7 +235,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="App_Themes\Js\Util\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Documents\CasosDeUso.pdf" />
@@ -256,7 +258,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>4206</DevelopmentServerPort>
+          <DevelopmentServerPort>1456</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

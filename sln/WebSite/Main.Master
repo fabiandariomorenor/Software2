@@ -16,12 +16,14 @@
     <link href="/App_Themes/css/Footer.css" rel="stylesheet" type="text/css" />
     <link href="/App_Themes/css/Index.css" rel="stylesheet" type="text/css" />
     
-    <script src="/App_Themes/Js/Library/jQuery.js" type="text/javascript"></script>
-    <script src="/App_Themes/Js/Library/underscore.js" type="text/javascript"></script>
-    <script src="/App_Themes/Js/Library/backbone.js" type="text/javascript"></script>
+    <script src="/App_Themes/Js/Librery/jQuery.js" type="text/javascript"></script>
+    <script src="/App_Themes/Js/Librery/underscore.js" type="text/javascript"></script>
+    <script src="/App_Themes/Js/Librery/backbone.js" type="text/javascript"></script>
     <script src="/App_Themes/Js/Model/AjaxModel.js" type="text/javascript"></script>
     
-    
+    <script type="text/javascript">
+        var siteUrl = "http://localhost:4206";
+    </script>
      <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>

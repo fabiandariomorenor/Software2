@@ -112,10 +112,14 @@ a:visited:
 }
 .not_buttom
 {
-    padding:5px 10px;
-    background-color:#0A8C8E;
-    color:#fff; 
-    float:left;
-    margin-top:5px;
-    cursor:pointer;
+    color: #0A8C8E;
+    cursor: pointer;
+    float: left;
+    margin-top: 5px;
+    padding: 5px 10px;
+    text-decoration: underline;
+}
+.hide
+{
+    display:none;
 }
