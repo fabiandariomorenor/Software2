@@ -3,7 +3,7 @@
     model: null,
 
     initialize: function () {
-        this.model = new UsuarioModel();
+        this.model = new UserModel();
         this.view = new RegistryView();
         this.view.onSaveHandler = jQuery.proxy(this.save, this);
     },
@@ -18,7 +18,7 @@
 });
 
 
-var usuarioController;
+var registryController;
 $(document).ready(function () {
-    usuarioController = new UsuarioController();
+    registryController = new RegistryController();
 });

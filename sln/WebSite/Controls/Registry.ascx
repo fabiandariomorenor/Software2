@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Registry.ascx.cs" Inherits="WebSite.Controls.Registry" %>
 
 <link href="../App_Themes/Css/Registry.css" rel="stylesheet" type="text/css" />
-<script src="/App_Themes/Js/Model/UsuarioModel.js" type="text/javascript"></script>
+<script src="/App_Themes/Js/Model/UserModel.js" type="text/javascript"></script>
 <script src="/App_Themes/Js/View/RegistryView.js" type="text/javascript"></script>
 <script src="/App_Themes/Js/Controller/RegistryController.js" type="text/javascript" ></script>
 

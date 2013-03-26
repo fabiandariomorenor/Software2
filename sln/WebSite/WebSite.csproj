@@ -48,9 +48,11 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Agent.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\Registry.aspx" />
     <Content Include="Analisis.aspx" />
+    <Content Include="App_Themes\Css\Agent.css" />
     <Content Include="App_Themes\Css\Footer.css" />
     <Content Include="App_Themes\Css\General.css" />
     <Content Include="App_Themes\Css\Header.css" />
@@ -69,20 +71,29 @@
     <Content Include="App_Themes\Images\Developers\nicolas.jpg" />
     <Content Include="App_Themes\Images\Documents\jpg.png" />
     <Content Include="App_Themes\Images\Documents\pdf.png" />
+    <Content Include="App_Themes\Images\Icon\delete.png" />
+    <Content Include="App_Themes\Images\Icon\edit.png" />
     <Content Include="App_Themes\Images\Logo.png" />
     <Content Include="App_Themes\Images\Principal.jpg" />
     <Content Include="App_Themes\Images\Principal.png" />
+    <Content Include="App_Themes\Js\Controller\AgentController.js" />
     <Content Include="App_Themes\Js\Controller\RegistryController.js" />
-    <Content Include="App_Themes\Js\Controller\UsuarioControler.js" />
+    <Content Include="App_Themes\Js\Controller\UserControler.js" />
     <Content Include="App_Themes\Js\Librery\backbone.js" />
     <Content Include="App_Themes\Js\Librery\jQuery.js" />
     <Content Include="App_Themes\Js\Librery\underscore.js" />
+    <Content Include="App_Themes\Js\Model\AgentModel.js" />
     <Content Include="App_Themes\Js\Model\AjaxModel.js" />
-    <Content Include="App_Themes\Js\Model\UsuarioModel.js" />
+    <Content Include="App_Themes\Js\Model\UserModel.js" />
+    <Content Include="App_Themes\Js\Util\jQuery.extend.js" />
+    <Content Include="App_Themes\Js\Util\Parse.js" />
+    <Content Include="App_Themes\Js\Util\Template.js" />
     <Content Include="App_Themes\Js\Util\Util.js" />
+    <Content Include="App_Themes\Js\View\AgentView.js" />
     <Content Include="App_Themes\Js\View\RegistryView.js" />
-    <Content Include="App_Themes\Js\View\UsuarioView.js" />
+    <Content Include="App_Themes\Js\View\UserView.js" />
     <Content Include="Controls\Activity.ascx" />
+    <Content Include="Controls\Agent\AgentList.ascx" />
     <Content Include="Controls\Developers.ascx" />
     <Content Include="Controls\Documents.ascx" />
     <Content Include="Controls\Footer.ascx" />
@@ -118,6 +129,13 @@
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Agent.aspx.cs">
+      <DependentUpon>Agent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Agent.aspx.designer.cs">
+      <DependentUpon>Agent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -145,6 +163,13 @@
     </Compile>
     <Compile Include="Controls\Activity.ascx.designer.cs">
       <DependentUpon>Activity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Agent\AgentList.ascx.cs">
+      <DependentUpon>AgentList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Agent\AgentList.ascx.designer.cs">
+      <DependentUpon>AgentList.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Developers.ascx.cs">
       <DependentUpon>Developers.ascx</DependentUpon>
@@ -266,6 +291,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\Images\Tecnicos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin.Master" />

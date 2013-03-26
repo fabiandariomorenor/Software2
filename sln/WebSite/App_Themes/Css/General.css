@@ -37,6 +37,19 @@ h1
     letter-spacing: -1px;
     margin-top: 5px;
 }
+h2
+{
+    background-color: #F2F2F2;
+    color: #129296;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: normal;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 100%;
+    text-align:left;
+}
 .developer
 {
     margin-top:5px;
@@ -109,6 +122,7 @@ a:visited:
     float:left;
     margin-top:5px;
     cursor:pointer;
+    font-size:13px;
 }
 .not_buttom
 {
@@ -122,4 +136,31 @@ a:visited:
 .hide
 {
     display:none;
+}
+.box
+{
+    border: 1px solid #CCCCCC;
+    color: #AAAAAA;
+    display: inline-block;
+    font-size: 13px;
+    height: 115px;
+    padding: 10px;
+    width: 300px;
+    position:relative;
+    text-align:left;
+}
+.box .edit, .box .delete
+{
+    position:absolute;
+    top:0px;
+    display:none;
+    cursor:pointer;
+}
+.box .edit
+{
+    right:24px;
+}
+.box .delete
+{
+    right:0px;
 }

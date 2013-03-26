@@ -1,4 +1,4 @@
-﻿UsuarioView = Backbone.View.extend({
+﻿UserView = Backbone.View.extend({
     isVisible: false,
     onLoginHandler: null,
 
@@ -10,7 +10,7 @@
         $("#lnkLogin").click(jQuery.proxy(this.open, this));
         $("#btnLogin").click(jQuery.proxy(this.onLoginClick, this));
     },
-
+        
     onLoginClick: function () {
         var user = $("#txtDocumento").val();
         var pass = $("#txtPassword").val();

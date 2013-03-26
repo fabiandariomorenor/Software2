@@ -1,4 +1,4 @@
-﻿RegistroView = Backbone.View.extend({
+﻿RegistryView = Backbone.View.extend({
 
     onSaveHandler: null,
 

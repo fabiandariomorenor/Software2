@@ -1,8 +1,8 @@
-﻿UsuarioModel = AjaxModel.extend({
-    service: "User.asmx",
+﻿UserModel = AjaxModel.extend({
+    service: "UserService.asmx",
 
     login: function (document, pass, callback) {
-        this.method = "Login";
+        this.method = "Validate";
         Util.AjaxSetup(this, callback);
         $.ajax({
             data: '{"document":' + document + ',"password":"'+pass+'"}'
