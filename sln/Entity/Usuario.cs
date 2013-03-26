@@ -9,6 +9,6 @@ namespace Entity
     {
         public int Documento { get; set; }
         public String Nombre { get; set; }
-        private String Password { get; set; }
+        public String Password { get; set; }
     }
 }

@@ -8,6 +8,6 @@ namespace Entity
     public class Agente : Usuario
     {
         public String Especializacion { get; set; }
-        private int ID_Coordinador { get; set; }
+        public int ID_Coordinador { get; set; }
     }
 }

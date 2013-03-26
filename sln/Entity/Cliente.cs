@@ -8,6 +8,6 @@ namespace Entity
     public class Cliente : Usuario
     {
         public String Direccion { get; set; }
-        private String FechaExpDocumento { get; set; }
+        public String FechaExpDocumento { get; set; }
     }
 }
