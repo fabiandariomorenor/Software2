@@ -12,7 +12,7 @@
     width: 1000px;
     position:relative;
 }
-input[type=text], input[type=password]
+input[type=text], input[type=password], select
 {
     background-color: #FFFFFF;
     border: 1px solid #777;
@@ -24,6 +24,10 @@ input[type=text], input[type=password]
     font-size:13px;
     font-family:Segoe UI;
     color:#212121;
+}
+select
+{
+    padding-right:0px;
 }
 h1
 {
@@ -98,6 +102,15 @@ a:visited:
     
 }
 .buttom
+{
+    padding:5px 10px;
+    background-color:#0A8C8E;
+    color:#fff; 
+    float:left;
+    margin-top:5px;
+    cursor:pointer;
+}
+.not_buttom
 {
     padding:5px 10px;
     background-color:#0A8C8E;

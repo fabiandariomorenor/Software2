@@ -48,12 +48,14 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Registry.aspx" />
     <Content Include="Analisis.aspx" />
     <Content Include="App_Themes\Css\Footer.css" />
     <Content Include="App_Themes\Css\General.css" />
     <Content Include="App_Themes\Css\Header.css" />
     <Content Include="App_Themes\Css\Index.css" />
     <Content Include="App_Themes\Css\Login.css" />
+    <Content Include="App_Themes\Css\Registry.css" />
     <Content Include="App_Themes\Images\Analysis\Casos de Uso.png" />
     <Content Include="App_Themes\Images\Analysis\Clases.png" />
     <Content Include="App_Themes\Images\Analysis\Diagrama de Base de Datos.jpg" />
@@ -82,6 +84,7 @@
     <Content Include="Controls\Footer.ascx" />
     <Content Include="Controls\Header.ascx" />
     <Content Include="Controls\Login.ascx" />
+    <Content Include="Controls\Registry.ascx" />
     <Content Include="DiagramaBaseDatos.aspx" />
     <Content Include="DiagramaCasosUso.aspx" />
     <Content Include="DiagramaClases.aspx" />
@@ -102,6 +105,13 @@
     <Content Include="Ws\Usuario.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Registry.aspx.cs">
+      <DependentUpon>Registry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Registry.aspx.designer.cs">
+      <DependentUpon>Registry.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Analisis.aspx.cs">
       <DependentUpon>Analisis.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -150,6 +160,13 @@
     </Compile>
     <Compile Include="Controls\Login.ascx.designer.cs">
       <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Registry.ascx.cs">
+      <DependentUpon>Registry.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Registry.ascx.designer.cs">
+      <DependentUpon>Registry.ascx</DependentUpon>
     </Compile>
     <Compile Include="DiagramaBaseDatos.aspx.cs">
       <DependentUpon>DiagramaBaseDatos.aspx</DependentUpon>
@@ -239,7 +256,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>4609</DevelopmentServerPort>
+          <DevelopmentServerPort>4206</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
