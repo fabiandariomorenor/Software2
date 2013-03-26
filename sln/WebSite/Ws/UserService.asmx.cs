@@ -21,6 +21,7 @@ namespace WebSite.Ws
     {
         RolBO rolBo = new RolBO();
         UserBO userBo = new UserBO();
+        User user = new User();
 
         [WebMethod]
         public List<Rol> RolList()
@@ -33,5 +34,20 @@ namespace WebSite.Ws
         {
             return userBo.Validate(document, password);
         }
+
+        //[WebMethod]
+        /*public Entity.User insert(int id, int rol, int document, string name, int phone, string password, string address, DateTime date, string specialized)
+        {
+            //Create user
+            if(id == 0)
+            {
+                user.ID_Rol= rol;
+                user.Documento = document;
+                user.Nombre = name;
+                user.Password = password;
+            }
+            
+        }*/
+        
     }
 }

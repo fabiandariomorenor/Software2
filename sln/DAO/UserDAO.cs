@@ -16,5 +16,6 @@ namespace DAO
             user.Password = password;
             return Get<User>("UserValidate", user);
         }
+
     }
 }
