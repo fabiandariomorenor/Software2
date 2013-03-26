@@ -21,7 +21,6 @@ namespace WebSite.Ws
     {
         RolBO rolBo = new RolBO();
         UserBO userBo = new UserBO();
-        User user = new User();
 
         [WebMethod]
         public List<Rol> RolList()
@@ -35,19 +34,48 @@ namespace WebSite.Ws
             return userBo.Validate(document, password);
         }
 
-        //[WebMethod]
-        /*public Entity.User insert(int id, int rol, int document, string name, int phone, string password, string address, DateTime date, string specialized)
+        [WebMethod]
+        public int Save(int rol, int document, int location, string name, int phone, string password, string address, DateTime date, int idCoordinator, string specialized)
         {
-            //Create user
-            if(id == 0)
+            switch(rol)
             {
-                user.ID_Rol= rol;
-                user.Documento = document;
-                user.Nombre = name;
-                user.Password = password;
+                case 1:
+                    Client userC = new Client();
+                    ClientBO clientBO = new ClientBO();
+                    userC.ID_Rol = rol;
+                    userC.ID_Localizacion = location;
+                    userC.Documento = document;
+                    userC.Nombre = name;
+                    userC.Password = password;
+                    userC.FechaExpDocumento = date;
+                    return clientBO.Save(userC);
+                    break;
+ 
+                case 2:
+                    Agent userA = new Agent();
+                    AgentBO agentBo = new AgentBO();
+                    userA.ID_Rol = rol;
+                    userA.ID_Localizacion = location;
+                    userA.Documento = document;
+                    userA.Nombre = name;
+                    userA.Password = password;
+                    userA.Especializacion = specialized;
+                    userA.ID_Coordinador = idCoordinator;
+                    return agentBo.Save(userA);
+                    break;
+
+                case 3:
+                    //Por implementar
+                    return 0;
+                    break;
+
+                default:
+                    //Por implementar
+                    return 0;
+                    break;
             }
-            
-        }*/
+            //return userBo.Save(user);
+        }
         
     }
 }

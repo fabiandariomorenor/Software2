@@ -7,7 +7,7 @@ namespace Entity
 {
     public class Agent : User
     {
-        public String Especializacion { get; set; }
+        public string Especializacion { get; set; }
         public int ID_Coordinador { get; set; }
     }
 }

@@ -8,6 +8,6 @@ namespace Entity
     public class State
     {
         public int ID { get; set; }
-        public String Nombre { get; set; }
+        public string Nombre { get; set; }
     }
 }

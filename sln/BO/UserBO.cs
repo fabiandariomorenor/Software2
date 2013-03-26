@@ -22,5 +22,25 @@ namespace BO
                 return true;
             }
         }
+
+        public User Get(int document)
+        {
+            return userDao.Get(document);
+        }
+
+        public int Save(User user)
+        {
+            if (Get(user.Documento) == null)
+            {
+                //Create user
+                return userDao.CreateUser(user);
+
+            }
+            else
+            {
+                //Update user
+                return userDao.UpdateUser(user);
+            }
+        }
     }
 }

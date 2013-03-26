@@ -12,13 +12,13 @@ namespace Entity
         public int ID_Agente { get; set; }
         public int ID_Estado { get; set; }
         public int ID_Localizacion { get; set; }
-        public String Descripcion { get; set; }
-        public String Direccion { get; set; }
+        public string Descripcion { get; set; }
+        public string Direccion { get; set; }
         public DateTime FechaInicio { get; set; }
         public DateTime FechaFinalizacion { get; set; }
         public DateTime FechaEsperadaInit { get; set; }
         public DateTime FechaEsperadaFin { get; set; }
         public DateTime FechaRadicacion { get; set; }
-        public String Comentario { get; set; }
+        public string Comentario { get; set; }
     }
 }
