@@ -5,10 +5,9 @@ using System.Text;
 
 namespace Entity
 {
-    public class Usuario
+    public class Location
     {
-        public int Documento { get; set; }
+        public int ID { get; set; }
         public String Nombre { get; set; }
-        public String Password { get; set; }
     }
 }

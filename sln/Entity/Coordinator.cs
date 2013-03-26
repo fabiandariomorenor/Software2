@@ -5,9 +5,8 @@ using System.Text;
 
 namespace Entity
 {
-    public class Estado
+    public class Coordinator : User
     {
-        public int ID { get; set; }
-        public String Nombre { get; set; }
+
     }
 }

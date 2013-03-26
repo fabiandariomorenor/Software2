@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Entity
 {
-    public class Cliente : Usuario
+    public class Client : User
     {
         public String Direccion { get; set; }
         public String FechaExpDocumento { get; set; }

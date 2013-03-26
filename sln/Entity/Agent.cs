@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Entity
 {
-    public class Agente : Usuario
+    public class Agent : User
     {
         public String Especializacion { get; set; }
         public int ID_Coordinador { get; set; }

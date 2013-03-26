@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Entity
 {
-    public class Tarea
+    public class Task
     {
         public int ID { get; set; }
         public int ID_Cliente { get; set; }
