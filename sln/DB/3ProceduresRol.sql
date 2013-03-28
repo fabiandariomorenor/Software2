@@ -44,6 +44,7 @@ AS
 BEGIN
 	DELETE FROM [dbo].[AGENT]
       WHERE Document=@Document
+
 	  Select count(*)
 	  from [AGENT]
 	  WHERE Document=@Document
@@ -56,8 +57,34 @@ AS
 BEGIN
 	DELETE FROM [dbo].[USER]
       WHERE Document=@Document
+	  
 	  Select count(*)
 	  from [USER]
+	  WHERE Document=@Document
+END
+GO
+
+CREATE PROCEDURE [dbo].[ClientList] 
+@Name varchar(50)
+AS
+BEGIN
+	select * 
+	from CLIENT
+	join [user] 
+	on [USER].document=AGENT.Document
+	where (Name + convert(varchar,CLIENT.Document)) like '%'+@Name +'%'
+END
+go
+
+CREATE PROCEDURE [dbo].[ClientDelete] 
+@Document int
+AS
+BEGIN
+	DELETE FROM [dbo].[CLIENT]
+      WHERE Document=@Document
+	  
+	  Select count(*)
+	  from [CLIENT]
 	  WHERE Document=@Document
 END
 GO
