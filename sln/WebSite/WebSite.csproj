@@ -48,12 +48,14 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="Admin\Agent.aspx" />
     <Content Include="Admin\Client.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\Registry.aspx" />
     <Content Include="Analisis.aspx" />
     <Content Include="App_Themes\Css\Agent.css" />
+    <Content Include="App_Themes\Css\Client.css" />
     <Content Include="App_Themes\Css\Footer.css" />
     <Content Include="App_Themes\Css\General.css" />
     <Content Include="App_Themes\Css\Header.css" />
@@ -121,9 +123,7 @@
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Test.aspx" />
     <Content Include="Test2.aspx" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -136,6 +136,13 @@
     <Content Include="Ws\UserService.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
