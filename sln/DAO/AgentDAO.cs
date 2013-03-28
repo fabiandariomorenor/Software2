@@ -13,19 +13,24 @@ namespace DAO
         public Agent Get(int document)
         {
             Agent agent = new Agent();
-            agent.Documento = document;
+            agent.Document = document;
             return Get<Agent>("AgentGet", agent);
         }
 
 
-        public int CreateAgent(User user)
+        public int Create(User user)
         {
             return ExecuteScalar("CreateAgent", user);
         }
 
-        public int UpdateAgent(User user)
+        public int Update(User user)
         {
             return ExecuteScalar("UpdateAgent", user);
+        }
+
+        public List<Agent> List(Agent agent)
+        {
+            return Execute<Agent>("AgentList", agent);
         }
     }
 }

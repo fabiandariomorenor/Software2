@@ -16,17 +16,22 @@ namespace BO
             return agentDao.Get(document);
         }
 
+        public List<Agent> List(Agent agent)
+        {
+            return agentDao.List(agent);
+        }
+
         public int Save(User user)
         {
-            if (Get(user.Documento) == null)
+            if (Get(user.Document) == null)
             {
                 //Create user
-                return agentDao.CreateAgent(user);
+                return agentDao.Create(user);
             }
             else
             {
                 //Update user
-                return agentDao.UpdateAgent(user);
+                return agentDao.Update(user);
             }
         }
     }

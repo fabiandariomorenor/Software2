@@ -18,7 +18,7 @@ namespace BO
 
         public int Save(User user)
         {
-            if (Get(user.Documento) == null)
+            if (Get(user.Document) == null)
             {
                 //Create user
                 return clientDao.CreateClient(user);

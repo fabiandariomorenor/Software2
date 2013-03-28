@@ -12,7 +12,7 @@ namespace DAO
         public Client Get(int document)
         {
             Client client = new Client();
-            client.Documento = document;
+            client.Document = document;
             return Get<Client>("ClientGet", client);
         }
 

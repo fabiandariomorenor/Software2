@@ -43,9 +43,9 @@ namespace WebSite.Ws
                     Client userC = new Client();
                     ClientBO clientBO = new ClientBO();
                     userC.ID_Rol = rol;
-                    userC.ID_Localizacion = location;
-                    userC.Documento = document;
-                    userC.Nombre = name;
+                    userC.ID_Localization = location;
+                    userC.Document = document;
+                    userC.Name = name;
                     userC.Password = password;
                     userC.FechaExpDocumento = date;
                     return clientBO.Save(userC);
@@ -55,9 +55,9 @@ namespace WebSite.Ws
                     Agent userA = new Agent();
                     AgentBO agentBo = new AgentBO();
                     userA.ID_Rol = rol;
-                    userA.ID_Localizacion = location;
-                    userA.Documento = document;
-                    userA.Nombre = name;
+                    userA.ID_Localization = location;
+                    userA.Document = document;
+                    userA.Name = name;
                     userA.Password = password;
                     userA.Especializacion = specialized;
                     userA.ID_Coordinador = idCoordinator;

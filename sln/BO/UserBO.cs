@@ -30,16 +30,16 @@ namespace BO
 
         public int Save(User user)
         {
-            if (Get(user.Documento) == null)
+            if (Get(user.Document) == null)
             {
                 //Create user
-                return userDao.CreateUser(user);
+                return userDao.Create(user);
 
             }
             else
             {
                 //Update user
-                return userDao.UpdateUser(user);
+                return userDao.Update(user);
             }
         }
     }

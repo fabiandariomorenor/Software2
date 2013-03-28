@@ -12,7 +12,7 @@ namespace DAO
         public User Get(int document, string password)
         {
             User user = new User();
-            user.Documento = document;
+            user.Document = document;
             user.Password = password;
             return Get<User>("UserValidate", user);
         }
@@ -20,16 +20,16 @@ namespace DAO
         public User Get(int document)
         {
             User user = new User();
-            user.Documento = document;
+            user.Document = document;
             return Get<User>("UserGet", user);
         }
 
-        public int CreateUser(User user)
+        public int Create(User user)
         {
             return ExecuteScalar("CreateUser", user);
         }
 
-        public int UpdateUser(User user)
+        public int Update(User user)
         {
             return ExecuteScalar("UpdateUser", user);
         }
