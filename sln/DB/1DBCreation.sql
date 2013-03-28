@@ -2,9 +2,9 @@
 GO
 /****** Object:  Database [SistemaTecnicos]    Script Date: 03/25/2013 20:19:01 ******/
 CREATE DATABASE [SistemaTecnicos] ON  PRIMARY 
-( NAME = N'SistemaTecnicos', FILENAME = N'D:\SistemaTecnicos.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+( NAME = N'SistemaTecnicos', FILENAME = N'C:\SistemaTecnicos.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
  LOG ON 
-( NAME = N'SistemaTecnicos_log', FILENAME = N'D:\SistemaTecnicos_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+( NAME = N'SistemaTecnicos_log', FILENAME = N'C:\SistemaTecnicos_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
 GO
 ALTER DATABASE [SistemaTecnicos] SET COMPATIBILITY_LEVEL = 100
 GO
