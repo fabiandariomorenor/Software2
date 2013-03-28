@@ -27,7 +27,12 @@ namespace BO
         {
             return userDao.Get(document);
         }
-
+        public int Delete(int document)
+        {
+            User user = new User();
+            user.Document = document;
+            return userDao.Delete(user);
+        }
         public int Save(User user)
         {
             if (Get(user.Document) == null)

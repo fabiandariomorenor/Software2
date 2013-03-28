@@ -32,5 +32,10 @@ namespace DAO
         {
             return Execute<Agent>("AgentList", agent);
         }
+
+        public void Delete(Agent agent)
+        {
+            Execute<Agent>("AgentDelete", agent);
+        }
     }
 }

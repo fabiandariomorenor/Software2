@@ -30,9 +30,12 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public bool Delete(int document)
+        public int Delete(int document)
         {
-            return true;
+            Agent agent = new Agent();
+            agent.Document = document;
+            return agentBO.Delete(agent);
+             
         }
     }
 }

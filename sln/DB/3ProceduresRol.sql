@@ -44,7 +44,20 @@ AS
 BEGIN
 	DELETE FROM [dbo].[AGENT]
       WHERE Document=@Document
+	  Select count(*)
+	  from [AGENT]
+	  WHERE Document=@Document
 END
 GO
 
-
+CREATE PROCEDURE [dbo].[UserDelete] 
+@Document int
+AS
+BEGIN
+	DELETE FROM [dbo].[USER]
+      WHERE Document=@Document
+	  Select count(*)
+	  from [USER]
+	  WHERE Document=@Document
+END
+GO
