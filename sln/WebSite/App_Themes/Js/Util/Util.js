@@ -15,6 +15,24 @@
         return text;
     }
 
+    this.FormatDate = function (date) {
+        if (date.indexOf("new Date(") == 0) {
+            var d = eval(date);
+            var day = Util.FormatDigits(d.getDate());
+            var month = Util.FormatDigits(d.getMonth() + 1);
+            var year = Util.FormatDigits(d.getFullYear());
+
+            if (year > 1900) {
+                date = month + "/" + day + "/" + year;
+            }
+            else {
+                date = "";
+            }
+        }
+
+        return date;
+    }
+
     this.Format = function (template, obj, nullable, prefix, what, dateFormat) {
         if (template != null && obj != undefined && obj != null) {
             if (prefix != undefined)

@@ -28,12 +28,12 @@
 .title_box
 {
     background-color: transparent;
-    border-bottom: 1px solid #129296;
+    border-bottom: 1px solid #73B411;
     font-size: 24px;
     margin: 5px;
     padding: 5px;
     width: 965px;   
-    color:#0A8C8E;
+    color:#73B411;
     text-align:left;
 }
 .title_box .buttom
@@ -69,7 +69,7 @@
 .box .title
 {
     font-size:18px;
-    color:#0A8C8E;
+    color:#73B411;
     width:200px;
     font-weight:normal;
 }
@@ -80,7 +80,6 @@
 }
 .content
 {
-    text-align:center;
     color:#555;
 }
 .toolbar
@@ -89,4 +88,17 @@
     margin-bottom:10px;
     padding:5px;
     text-align:right;
+}
+.center
+{
+    width:100%;
+    text-align:center;
+}
+#rptAgent
+{
+    min-height:400px
+}
+.buttom
+{
+    background-color:#73B411;
 }

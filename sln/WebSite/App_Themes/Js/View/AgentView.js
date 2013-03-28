@@ -11,6 +11,12 @@
     addEvents: function () {
         $(".menu .agent").addClass("select");
 
+        $("#txtFind").keyup(jQuery.proxy(this.onFind, this));
+
+        $("#btnAddAgent").click(jQuery.proxy(this.onAdd, this));
+    },
+
+    addItemEvents: function () {
         $(".box").mouseenter(function () {
             $(this).find(".edit,.delete").stop().fadeIn();
         });
@@ -19,14 +25,6 @@
             $(this).find(".edit,.delete").stop().hide();
         })
 
-        $("#txtFind").keyup(jQuery.proxy(this.onFind, this));
-
-        $("#btnAddAgent").click(jQuery.proxy(this.onAdd, this));
-
-        this.addItemEvents();
-    },
-
-    addItemEvents: function (e) {
         $(".box").find(".edit").click(jQuery.proxy(this.onEdit, this));
         $(".box").find(".delete").click(jQuery.proxy(this.onDelete, this));
     },
@@ -58,5 +56,11 @@
 
     render: function (data, ref) {
 
+        for (var i = 0; i < data.length; i++) {
+            data[i].Image = data[i].Document % 10;
+        }
+        template.dataBind("rptAgent", data);
+
+        this.addItemEvents();
     }
 });

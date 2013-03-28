@@ -82,13 +82,23 @@
     <Content Include="App_Themes\Images\Logo.png" />
     <Content Include="App_Themes\Images\Principal.jpg" />
     <Content Include="App_Themes\Images\Principal.png" />
+    <Content Include="App_Themes\Images\People\1.png" />
+    <Content Include="App_Themes\Images\People\2.png" />
+    <Content Include="App_Themes\Images\People\3.png" />
+    <Content Include="App_Themes\Images\People\0.png" />
+    <Content Include="App_Themes\Images\People\4.png" />
+    <Content Include="App_Themes\Images\People\5.png" />
+    <Content Include="App_Themes\Images\People\6.png" />
+    <Content Include="App_Themes\Images\People\7.png" />
+    <Content Include="App_Themes\Images\People\8.png" />
+    <Content Include="App_Themes\Images\People\9.png" />
     <Content Include="App_Themes\Js\Controller\AgentController.js" />
     <Content Include="App_Themes\Js\Controller\ClientController.js" />
     <Content Include="App_Themes\Js\Controller\RegistryController.js" />
     <Content Include="App_Themes\Js\Controller\UserControler.js" />
-    <Content Include="App_Themes\Js\Librery\backbone.js" />
-    <Content Include="App_Themes\Js\Librery\jQuery.js" />
-    <Content Include="App_Themes\Js\Librery\underscore.js" />
+    <Content Include="App_Themes\Js\Library\backbone.js" />
+    <Content Include="App_Themes\Js\Library\jQuery.js" />
+    <Content Include="App_Themes\Js\Library\underscore.js" />
     <Content Include="App_Themes\Js\Model\AgentModel.js" />
     <Content Include="App_Themes\Js\Model\AjaxModel.js" />
     <Content Include="App_Themes\Js\Model\ClientModel.js" />
@@ -118,9 +128,6 @@
     <Content Include="DiagramaSecuencia.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Index2.aspx" />
-    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.4.1.js" />
-    <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Test.aspx" />
     <Content Include="Test2.aspx" />
     <Content Include="Web.config" />
@@ -341,7 +348,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="App_Themes\Images\Tecnicos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin.Master" />

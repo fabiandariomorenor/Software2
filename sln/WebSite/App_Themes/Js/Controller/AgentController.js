@@ -14,6 +14,8 @@
         this.view.onEditHandler = jQuery.proxy(this.edit, this);
         this.view.onDeleteHandler = jQuery.proxy(this.delete, this);
         this.view.onAddHandler = jQuery.proxy(this.add, this);
+
+        this.list();
     },
 
     add: function(){
@@ -33,11 +35,10 @@
         if (name == undefined)
             name = "";
 
-        this.model.list(name, this.listCallback, name);
+        this.model.list(name,jQuery.proxy(this.listCallback, this), name);
     },
 
-    listCallback: function (res, ref) {
-        var data = res.ToObject();
+    listCallback: function (data, ref) {
         this.view.render(data, ref);
     }
 });
