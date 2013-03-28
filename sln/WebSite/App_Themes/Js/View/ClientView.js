@@ -1,4 +1,4 @@
-﻿AgentView = Backbone.View.extend({
+﻿ClientView = Backbone.View.extend({
     onFindHandler: null,
     onDeleteHandler: null,
     onEditHandler: null,
@@ -9,7 +9,7 @@
     },
 
     addEvents: function () {
-        $(".menu .agent").addClass("select");
+        $(".menu .client").addClass("select");
 
         $(".box").mouseenter(function () {
             $(this).find(".edit,.delete").stop().fadeIn();
@@ -21,7 +21,7 @@
 
         $("#txtFind").keyup(jQuery.proxy(this.onFind, this));
 
-        $("#btnAddAgent").click(jQuery.proxy(this.onAdd, this));
+        $("#btnAdd").click(jQuery.proxy(this.onAdd, this));
 
         this.addItemEvents();
     },

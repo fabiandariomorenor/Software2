@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="AgentList.ascx.cs" Inherits="WebSite.Controls.Agent.AgentList" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ClientList.ascx.cs" Inherits="WebSite.Controls.Client.ClientList" %>
 <%@ Register TagPrefix="uc" TagName="Registry" Src="~/Controls/Registry.ascx" %>
 
 <div class="back_modal"></div>
@@ -8,11 +8,11 @@
 </div>
 
 
-<script src="../../App_Themes/Js/Model/AgentModel.js" type="text/javascript"></script>
-<script src="../../App_Themes/Js/View/AgentView.js" type="text/javascript"></script>
-<script src="../../App_Themes/Js/Controller/AgentController.js" type="text/javascript"></script>
+<script src="../App_Themes/Js/Model/ClientModel.js" type="text/javascript"></script>
+<script src="../App_Themes/Js/View/ClientView.js" type="text/javascript"></script>
+<script src="../App_Themes/Js/Controller/ClientController.js" type="text/javascript"></script>
 
-<div class="title_box">Agentes
+<div class="title_box">Clientes
 
 <a id="btnAdd" class="buttom">+ Nuevo</a>
 </div>

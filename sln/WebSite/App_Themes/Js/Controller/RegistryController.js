@@ -17,7 +17,10 @@
     },
 
     get: function (id) {
-    console.log(1)
+        this.view.show();
+    },
+
+    add: function () {
         this.view.show();
     }
 });

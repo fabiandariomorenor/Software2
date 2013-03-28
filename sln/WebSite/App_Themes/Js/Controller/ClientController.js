@@ -1,11 +1,11 @@
-﻿AgentController = Backbone.Router.extend({
+﻿ClientController = Backbone.Router.extend({
     view: null,
     model: null,
     registry: null,
 
     initialize: function () {
-        this.model = new AgentModel();
-        this.view = new AgentView();
+        this.model = new ClientModel();
+        this.view = new ClientView();
 
         if (typeof (registryController)!="undefined")
             this.registry = registryController;
@@ -43,7 +43,7 @@
 });
 
 
-var agentController;
+var clientController;
 $(document).ready(function () {
-    agentController = new AgentController();
+    clientController = new ClientController();
 });

@@ -1,5 +1,5 @@
-﻿AgentModel = AjaxModel.extend({
-    service: "AgentService.asmx",
+﻿ClientModel = AjaxModel.extend({
+    service: "ClientService.asmx",
 
     list: function (name, callback, ref) {
         this.method = "List";

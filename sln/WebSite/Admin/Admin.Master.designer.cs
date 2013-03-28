@@ -46,7 +46,7 @@ namespace WebSite.Admin {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::WebSite.Controls.Header Header1;
+        protected global::WebSite.Controls.PrivateHeader Header1;
         
         /// <summary>
         /// Control ContentPlaceHolder1.

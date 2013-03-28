@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Agent.aspx" />
+    <Content Include="Admin\Client.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\Registry.aspx" />
     <Content Include="Analisis.aspx" />
@@ -71,12 +72,16 @@
     <Content Include="App_Themes\Images\Developers\nicolas.jpg" />
     <Content Include="App_Themes\Images\Documents\jpg.png" />
     <Content Include="App_Themes\Images\Documents\pdf.png" />
+    <Content Include="App_Themes\Images\Icon\agent.png" />
+    <Content Include="App_Themes\Images\Icon\client.png" />
     <Content Include="App_Themes\Images\Icon\delete.png" />
     <Content Include="App_Themes\Images\Icon\edit.png" />
+    <Content Include="App_Themes\Images\Icon\home.png" />
     <Content Include="App_Themes\Images\Logo.png" />
     <Content Include="App_Themes\Images\Principal.jpg" />
     <Content Include="App_Themes\Images\Principal.png" />
     <Content Include="App_Themes\Js\Controller\AgentController.js" />
+    <Content Include="App_Themes\Js\Controller\ClientController.js" />
     <Content Include="App_Themes\Js\Controller\RegistryController.js" />
     <Content Include="App_Themes\Js\Controller\UserControler.js" />
     <Content Include="App_Themes\Js\Librery\backbone.js" />
@@ -84,21 +89,26 @@
     <Content Include="App_Themes\Js\Librery\underscore.js" />
     <Content Include="App_Themes\Js\Model\AgentModel.js" />
     <Content Include="App_Themes\Js\Model\AjaxModel.js" />
+    <Content Include="App_Themes\Js\Model\ClientModel.js" />
     <Content Include="App_Themes\Js\Model\UserModel.js" />
     <Content Include="App_Themes\Js\Util\jQuery.extend.js" />
+    <Content Include="App_Themes\Js\Util\Menu.js" />
     <Content Include="App_Themes\Js\Util\Parse.js" />
     <Content Include="App_Themes\Js\Util\Template.js" />
     <Content Include="App_Themes\Js\Util\Util.js" />
     <Content Include="App_Themes\Js\View\AgentView.js" />
+    <Content Include="App_Themes\Js\View\ClientView.js" />
     <Content Include="App_Themes\Js\View\RegistryView.js" />
     <Content Include="App_Themes\Js\View\UserView.js" />
     <Content Include="Controls\Activity.ascx" />
     <Content Include="Controls\Agent\AgentList.ascx" />
+    <Content Include="Controls\Client\ClientList.ascx" />
     <Content Include="Controls\Developers.ascx" />
     <Content Include="Controls\Documents.ascx" />
     <Content Include="Controls\Footer.ascx" />
     <Content Include="Controls\Header.ascx" />
     <Content Include="Controls\Login.ascx" />
+    <Content Include="Controls\PrivateHeader.ascx" />
     <Content Include="Controls\Registry.ascx" />
     <Content Include="DiagramaBaseDatos.aspx" />
     <Content Include="DiagramaCasosUso.aspx" />
@@ -121,6 +131,8 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="WebForm1.aspx" />
+    <Content Include="Ws\AgentService.asmx" />
+    <Content Include="Ws\ClientService.asmx" />
     <Content Include="Ws\UserService.asmx" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +149,13 @@
     </Compile>
     <Compile Include="Admin\Agent.aspx.designer.cs">
       <DependentUpon>Agent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Client.aspx.cs">
+      <DependentUpon>Client.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Client.aspx.designer.cs">
+      <DependentUpon>Client.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -173,6 +192,13 @@
     <Compile Include="Controls\Agent\AgentList.ascx.designer.cs">
       <DependentUpon>AgentList.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Client\ClientList.ascx.cs">
+      <DependentUpon>ClientList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Client\ClientList.ascx.designer.cs">
+      <DependentUpon>ClientList.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Developers.ascx.cs">
       <DependentUpon>Developers.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -207,6 +233,13 @@
     </Compile>
     <Compile Include="Controls\Login.ascx.designer.cs">
       <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PrivateHeader.ascx.cs">
+      <DependentUpon>PrivateHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PrivateHeader.ascx.designer.cs">
+      <DependentUpon>PrivateHeader.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Registry.ascx.cs">
       <DependentUpon>Registry.ascx</DependentUpon>
@@ -285,6 +318,14 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ws\AgentService.asmx.cs">
+      <DependentUpon>AgentService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\ClientService.asmx.cs">
+      <DependentUpon>ClientService.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Ws\UserService.asmx.cs">
       <DependentUpon>UserService.asmx</DependentUpon>
