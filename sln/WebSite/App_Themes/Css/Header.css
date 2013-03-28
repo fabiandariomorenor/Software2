@@ -25,6 +25,7 @@
     text-align: center;
     cursor:pointer;
 }
+
 .header .create a
 {
     float:right;
@@ -107,6 +108,12 @@
 {
     opacity:1 !important;
     box-shadow:0 0 10px #fff;
+}
+.header a.name
+{
+    float:right;
+    margin-right:10px;
+    padding-top:3px;
 }
 /*Fin Header*/
  

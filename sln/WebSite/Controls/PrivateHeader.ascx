@@ -10,6 +10,7 @@
     
     <div class="project create">
         <a href="/index.aspx" class="logo">Proyecto de Ingeniería de Software 2</a>
+        <a class="name"><asp:Literal ID="ltName" Visible="false" runat="server"></asp:Literal></a>
     </div>
 
     <div class="menu">
@@ -23,9 +24,11 @@
     
     </div>
 
-    <div class="create" style="float:right">
-        <a id="lnkLogin" class="logo">Login</a>
-    </div>
+    <asp:Panel ID="pnlLogin" Visible="false" runat="server">
+        <div class="create" style="float:right">
+            <a id="lnkLogin" class="logo">Login</a>
+        </div>
+    </asp:Panel>
     
 </div>
 

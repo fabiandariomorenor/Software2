@@ -21,6 +21,7 @@ namespace WebSite.Ws
     {
         RolBO rolBo = new RolBO();
         UserBO userBo = new UserBO();
+        string sessionName = "Document";
 
         [WebMethod]
         public List<Rol> RolList()
@@ -28,10 +29,18 @@ namespace WebSite.Ws
             return rolBo.List();
         }
 
-        [WebMethod]
+        [WebMethod(EnableSession=true)]
         public bool Validate(int document, string password)
         {
-            return userBo.Validate(document, password);
+            if(userBo.Validate(document, password))
+            {
+                Session[sessionName] = document;
+                return true;
+            }
+            else{
+                Session[sessionName] = null;
+                return false;
+            }
         }
 
         [WebMethod]
