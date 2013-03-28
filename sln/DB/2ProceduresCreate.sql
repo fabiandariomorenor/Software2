@@ -10,7 +10,7 @@ CREATE PROCEDURE [dbo].[UserGet]
 	@Document int
 AS
 BEGIN
-	SELECT * FROM [USER] 
+	SELECT * FROM [USER]
 	WHERE Document = @Document
 END
 
@@ -24,7 +24,7 @@ CREATE PROCEDURE [dbo].[UserCreate]
 	@ID_Localization int
 AS
 BEGIN
-	INSERT INTO [dbo].[[USER]]
+	INSERT INTO [dbo].[USER]
            ([Document]
            ,[Name]
            ,[Password]
@@ -49,7 +49,7 @@ CREATE PROCEDURE [dbo].[UserUpdate]
 	@ID_Localization int
 AS
 BEGIN
-	UPDATE [dbo].[[USER]]
+	UPDATE [dbo].[USER]
    SET [Name] = @Name
       ,[Password] = @Password
       ,[ID_Rol] = @ID_Rol

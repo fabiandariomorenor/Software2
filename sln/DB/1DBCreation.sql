@@ -146,21 +146,7 @@ CREATE TABLE [dbo].[USER](
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-SET ANSI_PADDING OFF
-GO
-/****** Object:  StoredProcedure [dbo].[UserGet]    Script Date: 03/25/2013 20:19:03 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE PROCEDURE [dbo].[UserGet] 
-	@Document int
-AS
-BEGIN
-	SELECT * FROM USER 
-	WHERE Document = @Document
-END
-GO
+
 /****** Object:  Table [dbo].[MANAGER]    Script Date: 03/25/2013 20:19:03 ******/
 SET ANSI_NULLS ON
 GO
