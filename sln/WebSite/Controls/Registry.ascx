@@ -46,10 +46,10 @@
                 <span>Especialización:</span><input id="txtSpecialized" type="text"/>
             </div>
         </div>
-        <div class="data">
-            <div class="row buttoms">
-                <a id="lnkCancel" class="not_buttom">Cancelar</a>
-                <a id="lnkSave" class="buttom">Guardar</a>
-            </div>
+    </div>
+    <div class="data">
+        <div class="row buttoms">
+            <a id="lnkCancel" class="not_buttom">Cancelar</a>
+            <a id="lnkSave" class="buttom">Guardar</a>
         </div>
     </div>

@@ -14,6 +14,11 @@
 
     saveCallback: function (res) {
         console.log(res);
+    },
+
+    get: function (id) {
+    console.log(1)
+        this.view.show();
     }
 });
 

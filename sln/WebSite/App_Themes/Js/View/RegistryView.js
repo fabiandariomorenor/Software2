@@ -14,6 +14,7 @@
 
     onClean: function () {
         $("input").val("");
+        $(".modal_content,.back_modal").fadeOut();
     },
 
     onSave: function () {
@@ -35,5 +36,9 @@
 
             this.onSaveHandler(id, rol, document, name, phone, password, address, date, specialized);
         }
+    },
+
+    show: function () {
+        $(".modal_content,.back_modal").fadeIn();
     }
 });

@@ -17,24 +17,26 @@
         })
 
         $("#txtFind").keyup(jQuery.proxy(this.onFind, this));
+
+        this.addItemEvents();
     },
 
     addItemEvents: function (e) {
-        $(e.currentTarget).find(".edit").click(jQuery.proxy(this.onEdit, this));
-        $(e.currentTarget).find(".delete").click(jQuery.proxy(this.onDelete, this));
+        $(".box").find(".edit").click(jQuery.proxy(this.onEdit, this));
+        $(".box").find(".delete").click(jQuery.proxy(this.onDelete, this));
     },
 
     onEdit: function () {
         console.log("a")
         if (this.onEditHandler != null) {
-            
+            this.onEditHandler(1);
         }
     },
 
     onDelete: function () {
         console.log("b")
         if (this.onDeleteHandler != null) {
-            
+            this.onDeleteHandler(1);
         }
     },
 

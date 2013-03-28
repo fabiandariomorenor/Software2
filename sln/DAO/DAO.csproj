@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAOBase.dll" />
-    <Content Include="DAOBase.pdb" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entity\Entity.csproj">

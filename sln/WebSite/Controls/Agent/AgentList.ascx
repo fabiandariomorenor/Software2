@@ -1,6 +1,13 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="AgentList.ascx.cs" Inherits="WebSite.Controls.Agent.AgentList" %>
 <%@ Register TagPrefix="uc" TagName="Registry" Src="~/Controls/Registry.ascx" %>
 
+<div class="back_modal"></div>
+<div class="modal_content">
+    <h1>Agente</h1>
+    <uc:Registry ID="Registry1" runat=server />
+</div>
+
+
 <script src="../../App_Themes/Js/Model/AgentModel.js" type="text/javascript"></script>
 <script src="../../App_Themes/Js/View/AgentView.js" type="text/javascript"></script>
 <script src="../../App_Themes/Js/Controller/AgentController.js" type="text/javascript"></script>
@@ -352,4 +359,3 @@
     Nose enc
 </script>
 
-<uc:Registry runat=server />

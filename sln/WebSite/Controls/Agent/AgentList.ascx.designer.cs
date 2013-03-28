@@ -11,5 +11,14 @@ namespace WebSite.Controls.Agent {
     
     
     public partial class AgentList {
+        
+        /// <summary>
+        /// Control Registry1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::WebSite.Controls.Registry Registry1;
     }
 }

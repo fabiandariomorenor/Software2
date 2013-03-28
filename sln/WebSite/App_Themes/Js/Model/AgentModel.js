@@ -7,5 +7,13 @@
         $.ajax({
             data: '{"name":' + name + '}'
         });
+    },
+    
+    delete: function(document, callback){
+        this.method = "Delete";
+        Util.AjaxSetup(this, callback);
+        $.ajax({
+            data: '{"document":' + document + '}'
+        });
     }
 });

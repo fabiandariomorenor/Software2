@@ -15,7 +15,7 @@
 
     loginCallback: function (res) {
         if (res) {
-            window.location = "/Admin/Index.aspx";
+            window.location = "/Admin/Agent.aspx";
         }
         else {
             alert("El usuario o la contraseña no son validos");

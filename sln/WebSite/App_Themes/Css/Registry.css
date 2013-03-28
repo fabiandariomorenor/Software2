@@ -12,6 +12,7 @@
 {
     width:100%;
     height:33px;
+    text-align:left;
 }
 .data .large
 {
@@ -39,5 +40,5 @@
 }
 .row.buttoms
 {
-    padding-left:332px;
+    padding-left:350px;
 }
