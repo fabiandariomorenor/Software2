@@ -37,3 +37,14 @@ BEGIN
 	where (Name + convert(varchar,AGENT.Document)) like '%'+@Name +'%'
 END
 go
+
+CREATE PROCEDURE [dbo].[AgentDelete] 
+@Document int
+AS
+BEGIN
+	DELETE FROM [dbo].[AGENT]
+      WHERE Document=@Document
+END
+GO
+
+

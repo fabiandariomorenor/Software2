@@ -72,17 +72,17 @@ GO
 
 CREATE PROCEDURE [dbo].[AgentCreate] 
 	@Document int,
-	@Especializacion varchar(50),
+	@Specialization varchar(50),
 	@ID_Manager int
 AS
 BEGIN
 	INSERT INTO [SistemaTecnicos].[dbo].[AGENT]
            ([Document]
-           ,[Especializacion]
+           ,[Specialization]
            ,[ID_Manager])
      VALUES
            (@Document
-           ,@Especializacion
+           ,@Specialization
            ,@ID_Manager)
     SELECT Document FROM AGENT WHERE Document = @Document
 END
@@ -90,12 +90,12 @@ GO
 
 CREATE PROCEDURE [dbo].[AgentUpdate] 
 	@Document int,
-	@Especializacion varchar(50),
+	@Specialization varchar(50),
 	@ID_Manager int
 AS
 BEGIN
 	UPDATE [dbo].[AGENT]
-   SET [Especializacion] = Especializacion
+   SET [Specialization] = Specialization
       ,[ID_Manager] = ID_Manager
  WHERE Document = @Document
 END

@@ -59,8 +59,8 @@ namespace WebSite.Ws
                     userA.Document = document;
                     userA.Name = name;
                     userA.Password = password;
-                    userA.Especializacion = specialized;
-                    userA.ID_Coordinador = idCoordinator;
+                    userA.Specialization = specialized;
+                    userA.ID_Manager = idCoordinator;
                     return agentBo.Save(userA);
                     break;
 

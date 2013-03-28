@@ -188,7 +188,7 @@ SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[AGENT](
 	[Document] [int] NOT NULL,
-	[Especializacion] [varchar](50) NOT NULL,
+	[Specialization] [varchar](50) NOT NULL,
 	[ID_Manager] [int] NOT NULL,
  CONSTRAINT [PK_AGENT] PRIMARY KEY CLUSTERED 
 (

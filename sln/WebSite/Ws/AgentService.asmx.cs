@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using BO;
+using Entity;
+using System.Web.Script.Serialization;
 
 namespace WebSite.Ws
 {
@@ -16,11 +19,14 @@ namespace WebSite.Ws
     [System.Web.Script.Services.ScriptService]
     public class AgentService : System.Web.Services.WebService
     {
+        AgentBO agentBO = new AgentBO();
 
         [WebMethod]
-        public string List(string name)
+        public List<Agent> List(string name)
         {
-            return "Hello World";
+            Agent agent = new Agent();
+            agent.Name=name;
+            return agentBO.List(agent);
         }
 
         [WebMethod]
