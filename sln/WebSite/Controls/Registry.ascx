@@ -25,16 +25,16 @@
             </select>
         </div>-->
         <div class="row">
-            <span>Documento:</span><input id="txtDocument" type="text"/>
+            <span>Documento:</span><input id="txtDocument" Integer="true" maxlength="10" type="text"/>
         </div>
         <div class="row">
-            <span>Nombre:</span><input id="txtName" type="text"/>
+            <span>Nombre:</span><input id="txtName" maxlength="50" type="text"/>
         </div>
         <div class="row">
-            <span>Teléfono:</span><input id="txtPhone" type="text"/>
+            <span>Teléfono:</span><input id="txtPhone" Integer="true" maxlength="10" type="text"/>
         </div>
         <div class="row">
-            <span>Contraseña:</span><input id="txtPassword" type="password"/>
+            <span>Contraseña:</span><input id="txtPassword" maxlength="20" type="password"/>
         </div>
     </div>
 

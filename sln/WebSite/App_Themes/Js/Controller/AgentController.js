@@ -8,7 +8,10 @@
         this.view = new AgentView();
 
         if (typeof (registryController)!="undefined")
+        {
             this.registry = registryController;
+            this.registry.onChangeHandler = jQuery.proxy(this.list, this);
+        }
 
         this.view.onFindHandler = jQuery.proxy(this.list, this);
         this.view.onEditHandler = jQuery.proxy(this.edit, this);

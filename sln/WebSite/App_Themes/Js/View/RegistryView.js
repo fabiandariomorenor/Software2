@@ -60,5 +60,10 @@
 
     show: function () {
         $(".modal_content,.back_modal").fadeIn();
+    },
+
+    hide: function () {
+        $(".modal_content,.back_modal").fadeOut();
+        $(".modal_content input").val("");
     }
 });
