@@ -71,7 +71,7 @@ BEGIN
 	select * 
 	from CLIENT
 	join [user] 
-	on [USER].document=AGENT.Document
+	on [USER].document=Client.Document
 	where (Name + convert(varchar,CLIENT.Document)) like '%'+@Name +'%'
 END
 go

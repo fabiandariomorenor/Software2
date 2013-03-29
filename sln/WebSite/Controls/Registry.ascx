@@ -1,18 +1,29 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Registry.ascx.cs" Inherits="WebSite.Controls.Registry" %>
 
 <link href="../App_Themes/Css/Registry.css" rel="stylesheet" type="text/css" />
+
+<script>
+    var rolId = <%=Rol %>;
+</script>
+
 <script src="/App_Themes/Js/Model/UserModel.js" type="text/javascript"></script>
 <script src="/App_Themes/Js/View/RegistryView.js" type="text/javascript"></script>
 <script src="/App_Themes/Js/Controller/RegistryController.js" type="text/javascript" ></script>
 
 
 
-<h2>Datos Basicos</h2>
+
     <div class="data">
-        <div class="row">
+          <!--<div class="row">
             <span>Rol:</span>
-            <select></select>
-        </div>
+          <select>
+                <asp:Repeater ID="rptRol" runat="server">
+                    <ItemTemplate>
+                        <option value="<%#DataBinder.Eval(Container.DataItem, "Id")%>"><%#DataBinder.Eval(Container.DataItem, "Name")%></option>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </select>
+        </div>-->
         <div class="row">
             <span>Documento:</span><input id="txtDocument" type="text"/>
         </div>
@@ -27,8 +38,8 @@
         </div>
     </div>
 
-    <div class="hide">
-        <h2 rel="client" >Datos del Cliente</h2>
+    
+        
         <div rel="client" class="data hide">
             <div class="row">
                 <span>Dirección:</span><input id="txtAddress" type="text"/>
@@ -37,16 +48,16 @@
                 <span>Fecha de expedición del documento:</span><input id="txtDate" type="text"/>
             </div>
         </div>
-    </div>
+    
 
-    <div class="hide">
-        <h2 rel="agent">Datos del Agente</h2>
+    
+        
         <div rel="agent" class="data">
             <div class="row">
                 <span>Especialización:</span><input id="txtSpecialized" type="text"/>
             </div>
         </div>
-    </div>
+    
     <div class="data">
         <div class="row buttoms">
             <a id="lnkCancel" class="not_buttom">Cancelar</a>

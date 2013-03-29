@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using Entity;
 
 namespace WebSite.Ws
 {
@@ -27,6 +28,12 @@ namespace WebSite.Ws
         public bool Delete(int document)
         {
             return true;
+        }
+
+        [WebMethod]
+        public Client Get(int document)
+        {
+            return new Client();
         }
     }
 }

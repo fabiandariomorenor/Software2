@@ -3,8 +3,8 @@
 
 <div class="back_modal"></div>
 <div class="modal_content">
-    <h1>Agente</h1>
-    <uc:Registry ID="Registry1" runat=server />
+    <h1>Informacion del Agente</h1>
+    <uc:Registry ID="Registry1" Rol="2" runat=server />
 </div>
 
 
@@ -33,10 +33,10 @@
             <span>Tareas Pendientes:<a>2</a></span>
             
         
-            <a class="delete" title="Eliminar">
+            <a class="delete" title="Eliminar" value="{Document}">
                 <img alt="Eliminar" src="../../App_Themes/Images/Icon/delete.png" />
             </a>
-            <a class="edit" title="Editar">
+            <a class="edit" title="Editar" value="{Document}">
                 <img src="../../App_Themes/Images/Icon/edit.png" />
             </a>
         </div>

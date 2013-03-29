@@ -16,8 +16,13 @@
         console.log(res);
     },
 
-    get: function (id) {
+    setData: function (obj) {
         this.view.show();
+        this.view.setData(obj);
+    },
+
+    getCallback: function (res) {
+
     },
 
     add: function () {

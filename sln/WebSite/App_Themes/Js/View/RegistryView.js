@@ -4,12 +4,33 @@
 
     initialize: function () {
         this.addEvents();
+        this.enabledPanels();
     },
 
     addEvents: function () {
         $("#lnkCancel").click(jQuery.proxy(this.onClean, this));
         $("#lnkSave").click(jQuery.proxy(this.onSave, this));
         $("#ddlRol").change(jQuery.proxy(this.onChange, this));
+    },
+
+    enabledPanels: function () {
+        switch (rolId) {
+            case 1: //Coordiador
+                {
+                    $("[rel=client]").show();
+                    break;
+                }
+            case 2: //Agente
+                {
+                    $("[rel=agent]").show();
+                    break;
+                }
+            case 3: //Cliente
+                {
+                    $("[rel=client]").show();
+                    break;
+                }
+        }
     },
 
     onClean: function () {
@@ -21,7 +42,7 @@
         if (this.onSaveHandler != null) {
             //datos basicos
             var id = 0;
-            var rol = $("#ddlRol option:selected").val();
+            var rol = rolId;
             var document = $("#txtDocument").val();
             var name = $("#txtName").val();
             var phone = $("#txtPhone").val();

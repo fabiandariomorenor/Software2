@@ -35,7 +35,12 @@ namespace WebSite.Ws
             Agent agent = new Agent();
             agent.Document = document;
             return agentBO.Delete(agent);
-             
+        }
+
+        [WebMethod]
+        public Agent Get(int document)
+        {
+            return new Agent();
         }
     }
 }

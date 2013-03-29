@@ -23,15 +23,24 @@
     },
 
     edit: function(id){
-        this.registry.get(id);
+        this.model.get(id, jQuery.proxy(this.getCallback, this));
+    },
+
+    getCallback: function (res) {
+        this.registry.setData(res);
     },
 
     delete: function(id){
-        this.model.delete(id);
+        this.model.delete(id, jQuery.proxy(this.deleteCallback, this));
+    },
+
+    deleteCallback: function(){
+        var name = this.view.getFilter();
+        this.list(name);
     },
 
     list: function (name) {
-        console.log(name);
+        
         if (name == undefined)
             name = "";
 

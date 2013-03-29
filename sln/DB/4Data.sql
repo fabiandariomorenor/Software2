@@ -83,7 +83,7 @@ INSERT INTO [dbo].[USER]
 GO
 INSERT INTO [SistemaTecnicos].[dbo].[AGENT]
            ([Document]
-           ,[Especializacion]
+           ,[Specialization]
            ,[ID_Manager])
      VALUES
            (2
@@ -107,7 +107,7 @@ INSERT INTO [SistemaTecnicos].[dbo].[USER]
 GO
 INSERT INTO [SistemaTecnicos].[dbo].[AGENT]
            ([Document]
-           ,[Especializacion]
+           ,[Specialization]
            ,[ID_Manager])
      VALUES
            (3
@@ -132,7 +132,7 @@ GO
 
 INSERT INTO [SistemaTecnicos].[dbo].[AGENT]
            ([Document]
-           ,[Especializacion]
+           ,[Specialization]
            ,[ID_Manager])
      VALUES
            (4

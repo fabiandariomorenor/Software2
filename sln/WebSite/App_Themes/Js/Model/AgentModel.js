@@ -15,5 +15,14 @@
         $.ajax({
             data: '{"document":' + document + '}'
         });
+    },
+
+    get: function(document, callback){
+        this.method = "Get";
+        Util.AjaxSetup(this, callback);
+        $.ajax({
+            data: '{"document":' + document + '}'
+        });
     }
+
 });

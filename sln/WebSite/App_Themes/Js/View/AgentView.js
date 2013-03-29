@@ -13,7 +13,7 @@
 
         $("#txtFind").keyup(jQuery.proxy(this.onFind, this));
 
-        $("#btnAddAgent").click(jQuery.proxy(this.onAdd, this));
+        $("#btnAdd").click(jQuery.proxy(this.onAdd, this));
     },
 
     addItemEvents: function () {
@@ -31,19 +31,21 @@
 
     onAdd: function () {
         if (this.onAddHandler != null) {
-            this.onAddHandler(1);
+            this.onAddHandler();
         }
     },
 
-    onEdit: function () {
+    onEdit: function (e) {
         if (this.onEditHandler != null) {
-            this.onEditHandler(1);
+            var val = $(e.currentTarget).attr("Value");
+            this.onEditHandler(val);
         }
     },
 
-    onDelete: function () {
+    onDelete: function (e) {
         if (this.onDeleteHandler != null) {
-            this.onDeleteHandler(1);
+            var val = $(e.currentTarget).attr("Value");
+            this.onDeleteHandler(val);
         }
     },
 
@@ -62,5 +64,9 @@
         template.dataBind("rptAgent", data);
 
         this.addItemEvents();
+    },
+
+    getFilter: function () {
+        return $("#txtFind").val();
     }
 });

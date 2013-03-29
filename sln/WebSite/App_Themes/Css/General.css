@@ -168,6 +168,7 @@ a:visited:
 }
 .modal_content h1
 {
-    padding:0px;
-    margin:0px;
+    border-bottom: 1px solid #129296;
+    margin: 10px 10px;
+    padding: 0;
 }

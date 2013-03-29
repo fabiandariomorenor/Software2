@@ -33,6 +33,7 @@ namespace DAO
         {
             return ExecuteScalar("UpdateUser", user);
         }
+
         public int Delete(User user) 
         {
             return ExecuteScalar("UserDelete", user);
