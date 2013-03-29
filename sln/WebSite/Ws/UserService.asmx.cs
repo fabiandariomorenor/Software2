@@ -44,44 +44,39 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public int Save(int rol, int document, int location, string name, int phone, string password, string address, DateTime date, int idCoordinator, string specialized)
+        public int Save(int rol, int document, int localization, string name, int phone, string password, string address, DateTime date, int managerId, string specialized)
         {
             switch(rol)
             {
                 case 1:
+                    return 0;
+
+                case 2:
+                    Agent userA = new Agent();
+                    AgentBO agentBo = new AgentBO();
+                    userA.ID_Rol = rol;
+                    userA.ID_Localization = localization;
+                    userA.Document = document;
+                    userA.Name = name;
+                    userA.Password = password;
+                    userA.Specialization = specialized;
+                    userA.ID_Manager = managerId;
+                    return agentBo.Save(userA);
+
+                case 3:
                     Client userC = new Client();
                     ClientBO clientBO = new ClientBO();
                     userC.ID_Rol = rol;
-                    userC.ID_Localization = location;
+                    userC.ID_Localization = localization;
                     userC.Document = document;
                     userC.Name = name;
                     userC.Password = password;
                     userC.DateExpDocumento = date;
                     return clientBO.Save(userC);
-                    break;
- 
-                case 2:
-                    Agent userA = new Agent();
-                    AgentBO agentBo = new AgentBO();
-                    userA.ID_Rol = rol;
-                    userA.ID_Localization = location;
-                    userA.Document = document;
-                    userA.Name = name;
-                    userA.Password = password;
-                    userA.Specialization = specialized;
-                    userA.ID_Manager = idCoordinator;
-                    return agentBo.Save(userA);
-                    break;
-
-                case 3:
-                    //Por implementar
-                    return 0;
-                    break;
 
                 default:
                     //Por implementar
                     return 0;
-                    break;
             }
             //return userBo.Save(user);
         }

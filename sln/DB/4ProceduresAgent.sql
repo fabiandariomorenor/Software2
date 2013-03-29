@@ -6,7 +6,7 @@
 	@ID_Localization int
 AS
 BEGIN
-	INSERT INTO [dbo].[AGENT]
+	INSERT INTO [dbo].[User]
            ([Document]
            ,[Name]
            ,[Password]

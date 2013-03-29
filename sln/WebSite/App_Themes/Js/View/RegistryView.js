@@ -41,7 +41,6 @@
     onSave: function () {
         if (this.onSaveHandler != null) {
             //datos basicos
-            var id = 0;
             var rol = rolId;
             var document = $("#txtDocument").val();
             var name = $("#txtName").val();
@@ -55,7 +54,7 @@
             //datos agente
             var specialized = $("#txtSpecialized").val();
 
-            this.onSaveHandler(id, rol, document, name, phone, password, address, date, specialized);
+            this.onSaveHandler(rol, document, name, phone, password, address, date, specialized);
         }
     },
 

@@ -1,6 +1,7 @@
 ﻿RegistryController = Backbone.Router.extend({
     view: null,
     model: null,
+    onChangeHandler:null,
 
     initialize: function () {
         this.model = new UserModel();
@@ -9,10 +10,11 @@
     },
 
     save: function (id, rol, document, name, phone, password, address, date, specialized) {
-        this.model.save(id, rol, document, name, phone, password, address, date, specialized, this.saveCallback);
+        this.model.save(id, rol, document, name, phone, password, address, date, specialized, jQuery.proxy(this.saveCallback,this));
     },
 
     saveCallback: function (res) {
+
         console.log(res);
     },
 
