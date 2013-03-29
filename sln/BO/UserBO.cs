@@ -38,7 +38,7 @@ namespace BO
             if (Get(user.Document) == null)
             {
                 //Create user
-                return userDao.Create(user);
+                return userDao.Insert(user);
 
             }
             else

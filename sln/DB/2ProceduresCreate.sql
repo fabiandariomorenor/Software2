@@ -16,30 +16,7 @@ END
 
 GO
 
-CREATE PROCEDURE [dbo].[UserCreate] 
-	@Document int,
-	@Name varchar(50),
-	@Password varchar(50),
-	@ID_Rol int,
-	@ID_Localization int
-AS
-BEGIN
-	INSERT INTO [dbo].[USER]
-           ([Document]
-           ,[Name]
-           ,[Password]
-           ,[ID_Rol]
-           ,[ID_Localization])
-	VALUES
-           (@Document
-           ,@Name
-           ,@Password
-           ,@ID_Rol
-           ,@ID_Localization)
-	SELECT Document FROM [USER] WHERE Document = @Document
-END
 
-GO
 
 CREATE PROCEDURE [dbo].[UserUpdate] 
 	@Document int,

@@ -24,9 +24,9 @@ namespace DAO
             return Get<User>("UserGet", user);
         }
 
-        public int Create(User user)
+        public int Insert(User user)
         {
-            return ExecuteScalar("CreateUser", user);
+            return ExecuteScalar("UserInsert", user);
         }
 
         public int Update(User user)

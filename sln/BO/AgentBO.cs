@@ -28,18 +28,31 @@ namespace BO
             return userBO.Delete(agent.Document);
         }
 
-        public int Save(User user)
+        public int Save(Agent agent)
         {
-            if (Get(user.Document) == null)
+            if (Get(agent.Document) == null)
             {
                 //Create user
-                return agentDao.Create(user);
+                return Insert(agent);
             }
             else
             {
                 //Update user
-                return agentDao.Update(user);
+                return agentDao.Update(agent);
             }
+        }
+
+        private int Insert(Agent agent)
+        {
+            UserBO userBO = new UserBO();
+            User user = new User();
+            user.Document = agent.Document;
+            user.Name = agent.Name;
+            user.Password = agent.Password;
+            user.ID_Rol = agent.ID_Rol;
+            user.ID_Localization = agent.ID_Localization;
+            userBO.Save(user);
+            return agentDao.Insert(agent);
         }
     }
 }

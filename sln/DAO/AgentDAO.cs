@@ -9,7 +9,6 @@ namespace DAO
 {
     public class AgentDAO : Base
     {
-
         public Agent Get(int document)
         {
             Agent agent = new Agent();
@@ -17,10 +16,9 @@ namespace DAO
             return Get<Agent>("AgentGet", agent);
         }
 
-
-        public int Create(User user)
+        public int Insert(Agent agent)
         {
-            return ExecuteScalar("CreateAgent", user);
+            return ExecuteScalar("AgentInsert", agent);
         }
 
         public int Update(User user)
