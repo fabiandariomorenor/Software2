@@ -21,7 +21,8 @@
             <img align="middle" src="../App_Themes/Images/Icon/agent.png" />Agentes</a>
         <a class="client" href="/admin/client.aspx"> 
             <img align="middle" src="../App_Themes/Images/Icon/client.png" />Clientes</a>
-    
+        <a class="task" href="/admin/task.aspx"> 
+            <img align="middle" src="../App_Themes/Images/Icon/task.png" />Tareas</a>
     </div>
 
     <asp:Panel ID="pnlLogin" Visible="false" runat="server">

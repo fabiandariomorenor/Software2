@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../App_Themes/Css/Agent.css" rel="stylesheet" type="text/css" />
-</asp:Content>
+</asp:Content>  
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <uc:AgentList runat=server />
+    <uc:AgentList runat="server" />
 </asp:Content>

@@ -29,5 +29,10 @@ namespace BO
                 return clientDao.UpdateClient(user);
             }
         }
+
+        public List<Client> List()
+        {
+            return new List<Client>();
+        }
     }
 }
