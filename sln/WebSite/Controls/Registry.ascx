@@ -38,25 +38,20 @@
         </div>
     </div>
 
-    
-        
-        <div rel="client" class="data hide">
-            <div class="row">
-                <span>Dirección:</span><input id="txtAddress" type="text"/>
-            </div>
-            <div class="row large">
-                <span>Fecha de expedición del documento:</span><input id="txtDate" type="text"/>
-            </div>
+    <div rel="client" class="data hide">
+        <div class="row">
+            <span>Dirección:</span><input id="txtAddress" type="text"/>
         </div>
-    
-
-    
-        
-        <div rel="agent" class="data">
-            <div class="row">
-                <span>Especialización:</span><input id="txtSpecialized" type="text"/>
-            </div>
+        <div class="row large">
+            <span>Fecha de expedición del documento:</span><input id="txtDate" type="text"/>
         </div>
+    </div>
+    
+    <div rel="agent" class="data">
+        <div class="row">
+            <span>Especialización:</span><input id="txtSpecialized" type="text"/>
+        </div>
+    </div>
     
     <div class="data">
         <div class="row buttoms">

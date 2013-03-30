@@ -64,6 +64,7 @@
     <Content Include="App_Themes\Css\Login.css" />
     <Content Include="App_Themes\Css\Registry.css" />
     <Content Include="App_Themes\Css\Schedule.css" />
+    <Content Include="App_Themes\Css\Task.css" />
     <Content Include="App_Themes\Images\Analysis\Casos de Uso.png" />
     <Content Include="App_Themes\Images\Analysis\Clases.png" />
     <Content Include="App_Themes\Images\Analysis\Diagrama de Base de Datos.jpg" />
@@ -97,6 +98,7 @@
     <Content Include="App_Themes\Js\Controller\AgentController.js" />
     <Content Include="App_Themes\Js\Controller\ClientController.js" />
     <Content Include="App_Themes\Js\Controller\RegistryController.js" />
+    <Content Include="App_Themes\Js\Controller\TaskController.js" />
     <Content Include="App_Themes\Js\Controller\UserControler.js" />
     <Content Include="App_Themes\Js\Library\backbone.js" />
     <Content Include="App_Themes\Js\Library\jQuery.js" />
@@ -106,6 +108,7 @@
     <Content Include="App_Themes\Js\Model\AgentModel.js" />
     <Content Include="App_Themes\Js\Model\AjaxModel.js" />
     <Content Include="App_Themes\Js\Model\ClientModel.js" />
+    <Content Include="App_Themes\Js\Model\TaskModel.js" />
     <Content Include="App_Themes\Js\Model\UserModel.js" />
     <Content Include="App_Themes\Js\Util\jQuery.extend.js" />
     <Content Include="App_Themes\Js\Util\Menu.js" />
@@ -115,6 +118,7 @@
     <Content Include="App_Themes\Js\View\AgentView.js" />
     <Content Include="App_Themes\Js\View\ClientView.js" />
     <Content Include="App_Themes\Js\View\RegistryView.js" />
+    <Content Include="App_Themes\Js\View\TaskView.js" />
     <Content Include="App_Themes\Js\View\UserView.js" />
     <Content Include="Controls\Activity.ascx" />
     <Content Include="Controls\Agent\AgentList.ascx" />
@@ -145,6 +149,7 @@
     <Content Include="WebForm1.aspx" />
     <Content Include="Ws\AgentService.asmx" />
     <Content Include="Ws\ClientService.asmx" />
+    <Content Include="Ws\TaskService.asmx" />
     <Content Include="Ws\UserService.asmx" />
   </ItemGroup>
   <ItemGroup>
@@ -358,6 +363,10 @@
     </Compile>
     <Compile Include="Ws\ClientService.asmx.cs">
       <DependentUpon>ClientService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\TaskService.asmx.cs">
+      <DependentUpon>TaskService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Ws\UserService.asmx.cs">

@@ -421,9 +421,13 @@ table.fc-border-separate {
 	border-collapse: separate;
 	}
 	
-.fc-agenda-days th {
+.fc-agenda-days th 
+{
 	text-align: center;
-	}
+	color: #AA3F41;
+    font-weight: normal;
+    text-align: center;
+}
 	
 .fc-agenda .fc-agenda-axis {
 	width: 50px;
@@ -570,8 +574,3 @@ table.fc-border-separate {
 	}
 	
 	
-#calendar 
-{
-    width: 900px;
-    margin: 0 auto;
-}

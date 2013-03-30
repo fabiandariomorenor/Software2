@@ -1,72 +1,58 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TaskEdit.ascx.cs" Inherits="WebSite.Controls.Task.TaskEdit" %>
 
-<div class="row">
-    <span>Cliente:</span>
-    <select>
-        <asp:Repeater ID="rptClient" runat="server">
-            <ItemTemplate>
-                <option value="<%#DataBinder.Eval(Container.DataItem, "Document")%>"><%#DataBinder.Eval(Container.DataItem, "Name")%></option>
-            </ItemTemplate>
-        </asp:Repeater>
-    </select>
-</div>
-<div class="row">
-    <span>Cliente:</span>
-    <textarea></textarea>
-</div>
+<script src="../../App_Themes/Js/Model/TaskModel.js" type="text/javascript"></script>
+<script src="../../App_Themes/Js/View/TaskView.js" type="text/javascript"></script>
+<script src="../../App_Themes/Js/Controller/TaskController.js" type="text/javascript"></script>
 
+<div class="data">
+    <div class="row">
+        <span>Cliente:</span>
+        <select id="ddlClient">
+            <asp:Repeater ID="rptClient" runat="server">
+                <ItemTemplate>
+                    <option value="<%#DataBinder.Eval(Container.DataItem, "Document")%>"><%#DataBinder.Eval(Container.DataItem, "Name")%></option>
+                </ItemTemplate>
+            </asp:Repeater>
+        </select>
+    </div>
+    <div class="row">
+        <span>Direccion:</span>
+        <input id="txtAddress" type="text"/>
+    </div>
+
+    <div class="row large">
+        <span>Descripcion:</span>
+        <textarea id="txtDescription"></textarea>
+    </div>
+
+    <div class="row">
+        <span>Fecha y hora:</span>
+    </div>
+</div>
 <div id="calendar"></div>
 
-<div class="row">
-    <span>Agente:</span>
-    <select>
-       
-    </select>
+<div class="data">
+    <div class="row">
+        <span>Agente:</span>
+        <select id="ddlAgent">
+            <asp:Repeater ID="rptAgent" runat="server">
+                <ItemTemplate>
+                    <option value="<%#DataBinder.Eval(Container.DataItem, "Document")%>"><%#DataBinder.Eval(Container.DataItem, "Name")%></option>
+                </ItemTemplate>
+            </asp:Repeater>
+        </select>
+    </div>
+
+    <div class="row large hide">
+        <span>Opinion del Cliente:</span>
+        <a id="lblComment"></a>
+    </div>
+
+    <div class="data">
+        <div class="row buttoms">
+            <a id="lnkCancel" class="not_buttom">Cancelar</a>
+            <a id="lnkSave" class="buttom">Guardar</a>
+        </div>
+    </div>
+    
 </div>
-
-<script>
-
-    $(document).ready(function () {
-
-        var date = new Date();
-        var d = date.getDate();
-        var m = date.getMonth();
-        var y = date.getFullYear();
-
-        var calendar = $('#calendar').fullCalendar({
-            header: {
-                left: 'prev,next today',
-                center: 'title'
-            },
-            allDaySlot: false,
-            minTime: 7,
-            maxTime:19,
-            selectable: true,
-            slotMinutes: 60,
-            selectHelper: true,
-            defaultView: 'agendaWeek',
-            events: [
-
-				{
-				    title: 'Birthday Party',
-				    start: new Date(y, m, d + 1, 19, 0),
-				    end: new Date(y, m, d + 1, 22, 30),
-				    allDay: false
-				}
-			],
-
-            dayClick: function (date, allDay, jsEvent, view) {
-
-                if (allDay) {
-                    alert('Clicked on the entire day: ' + date);
-                } else {
-                    alert('Clicked on the slot: ' + date);
-                }
-
-                $(target).css("color","#000")
-            }
-        });
-
-    });
-
-</script>
