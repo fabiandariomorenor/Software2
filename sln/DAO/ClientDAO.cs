@@ -31,14 +31,15 @@ namespace DAO
         {
             return Execute<Client>("ClientList", client);
         }
-        public List<Client> List()
-        {
-            return Execute<Client>("ClientList", "");
-        }
 
         public void Delete(Client client)
         {
             Execute<Client>("ClientDelete", client);
+        }
+
+        public int Insert(Client client)
+        {
+            return ExecuteScalar("ClientInsert", client);
         }
     }
 }

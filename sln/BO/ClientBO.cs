@@ -16,17 +16,17 @@ namespace BO
             return clientDao.Get(document);
         }
 
-        public int Save(User user)
+        public int Save(Client client)
         {
-            if (Get(user.Document) == null)
+            if (Get(client.Document) == null)
             {
                 //Create user
-                return clientDao.CreateClient(user);
+                return clientDao.Insert(client);
             }
             else
             {
                 //Update user
-                return clientDao.UpdateClient(user);
+                return clientDao.UpdateClient(client);
             }
         }
 
@@ -36,7 +36,9 @@ namespace BO
         }
         public List<Client> List()
         {
-            return clientDao.List();
+             var client = new Client();
+             client.Name = string.Empty;
+             return List(client); 
         }
 
         public int Delete(Client client)
@@ -45,5 +47,19 @@ namespace BO
             UserBO userBO = new UserBO();
             return userBO.Delete(client.Document);
         }
+
+        private int Insert(Client client)
+        {
+            UserBO userBO = new UserBO();
+            User user = new User();
+            user.Document = client.Document;
+            user.Name = client.Name;
+            user.Password = client.Password;
+            user.ID_Rol = client.ID_Rol;
+            user.ID_Localization = client.ID_Localization;
+            userBO.Save(user);
+            return clientDao.Insert(client);
+        }
+
     }
 }
