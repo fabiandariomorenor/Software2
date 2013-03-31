@@ -58,31 +58,6 @@ BEGIN
            (@Document
            ,@Address
            ,@DateExpDocument)
-GO
-
-
-
-	SELECT Document FROM [AGENT] WHERE Document = @Document
-END
-
-GO
-CREATE PROCEDURE [dbo].[ClientInsert] 
-	@Document int,
-	@Address varchar(50),
-	@DateExpDocument int
-AS
-BEGIN
-	INSERT INTO [dbo].[CLIENT]
-           ([Document]
-           ,[Address]
-           ,[DateExpDocument])
-     VALUES
-           (@Document
-           ,@Address
-           ,@DateExpDocument)
-GO
-
-
 
 	SELECT Document FROM [AGENT] WHERE Document = @Document
 END
