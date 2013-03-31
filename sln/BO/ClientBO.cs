@@ -30,9 +30,20 @@ namespace BO
             }
         }
 
+        public List<Client> List(Client client)
+        {
+            return clientDao.List(client);
+        }
         public List<Client> List()
         {
-            return new List<Client>();
+            return clientDao.List();
+        }
+
+        public int Delete(Client client)
+        {
+            clientDao.Delete(client);
+            UserBO userBO = new UserBO();
+            return userBO.Delete(client.Document);
         }
     }
 }

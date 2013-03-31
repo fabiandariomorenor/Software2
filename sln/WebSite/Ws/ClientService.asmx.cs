@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using Entity;
+using BO;
+using System.Web.Script.Serialization;
 
 namespace WebSite.Ws
 {
@@ -17,17 +19,21 @@ namespace WebSite.Ws
     [System.Web.Script.Services.ScriptService]
     public class ClientService : System.Web.Services.WebService
     {
-
+        ClientBO clientBO = new ClientBO();
         [WebMethod]
-        public string List(string name)
+        public List<Client> List(string name)
         {
-            return "Hello World";
+            Client client = new Client();
+            client.Name = name;
+            return clientBO.List(client);
         }
 
         [WebMethod]
-        public bool Delete(int document)
+        public int Delete(int document)
         {
-            return true;
+            Client client = new Client();
+            client.Document = document;
+            return clientBO.Delete(client);
         }
 
         [WebMethod]

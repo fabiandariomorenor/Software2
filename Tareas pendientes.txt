@@ -1,0 +1,11 @@
+listar clientes 		hecho
+crear cliente
+actualizar agente
+actualizar cliente
+eliminar cliente		hecho
+crear tarea
+actualizar tarea
+Calificar tarea
+tareas por agente
+total agentes
+agentes por hora
