@@ -52,9 +52,9 @@ namespace BO
         {
             UserBO userBO = new UserBO();
             User user = new User();
-           user.Document = client.Document;
+            user.Document = client.Document;
             user.Name = client.Name;
-           user.Password = client.Password;
+            user.Password = client.Password;
             user.ID_Rol = client.ID_Rol;
             user.ID_Localization = client.ID_Localization;
             userBO.Save(user);
@@ -63,3 +63,4 @@ namespace BO
 
     }
 }
+//modificacion

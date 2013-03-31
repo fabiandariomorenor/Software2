@@ -7,7 +7,7 @@ namespace Entity
 {
     public class Client : User
     {
-        public string Direccion { get; set; }
-        public DateTime DateExpDocumento { get; set; }
+        public string Address { get; set; }
+        public DateTime DateExpDocument { get; set; }
     }
 }
