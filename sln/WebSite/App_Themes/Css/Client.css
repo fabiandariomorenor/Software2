@@ -94,3 +94,14 @@
 {
     background-color:#D5893A;
 }
+
+.modal_content h1
+{
+    color:#D5893A;
+    border-bottom-color:#D5893A;
+    text-align:left;
+}
+.not_buttom
+{
+    color:#D5893A;
+}

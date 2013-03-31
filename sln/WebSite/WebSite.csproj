@@ -50,12 +50,15 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Admin\Agent.aspx" />
+    <Content Include="Admin\Assessment.aspx" />
     <Content Include="Admin\Client.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\Registry.aspx" />
     <Content Include="Admin\Task.aspx" />
+    <Content Include="Admin\TaskByAgent.aspx" />
     <Content Include="Analisis.aspx" />
     <Content Include="App_Themes\Css\Agent.css" />
+    <Content Include="App_Themes\Css\Assessment.css" />
     <Content Include="App_Themes\Css\Client.css" />
     <Content Include="App_Themes\Css\Footer.css" />
     <Content Include="App_Themes\Css\General.css" />
@@ -130,6 +133,8 @@
     <Content Include="Controls\Login.ascx" />
     <Content Include="Controls\PrivateHeader.ascx" />
     <Content Include="Controls\Registry.ascx" />
+    <Content Include="Controls\Task\TaskAssessment.ascx" />
+    <Content Include="Controls\Task\TaskByAgent.ascx" />
     <Content Include="Controls\Task\TaskEdit.ascx" />
     <Content Include="DiagramaBaseDatos.aspx" />
     <Content Include="DiagramaCasosUso.aspx" />
@@ -174,6 +179,13 @@
     <Compile Include="Admin\Agent.aspx.designer.cs">
       <DependentUpon>Agent.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Assessment.aspx.cs">
+      <DependentUpon>Assessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Assessment.aspx.designer.cs">
+      <DependentUpon>Assessment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Client.aspx.cs">
       <DependentUpon>Client.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -201,6 +213,13 @@
     </Compile>
     <Compile Include="Admin\Task.aspx.designer.cs">
       <DependentUpon>Task.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TaskByAgent.aspx.cs">
+      <DependentUpon>TaskByAgent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TaskByAgent.aspx.designer.cs">
+      <DependentUpon>TaskByAgent.aspx</DependentUpon>
     </Compile>
     <Compile Include="Analisis.aspx.cs">
       <DependentUpon>Analisis.aspx</DependentUpon>
@@ -278,6 +297,20 @@
     </Compile>
     <Compile Include="Controls\Registry.ascx.designer.cs">
       <DependentUpon>Registry.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Task\TaskAssessment.ascx.cs">
+      <DependentUpon>TaskAssessment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Task\TaskAssessment.ascx.designer.cs">
+      <DependentUpon>TaskAssessment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Task\TaskByAgent.ascx.cs">
+      <DependentUpon>TaskByAgent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Task\TaskByAgent.ascx.designer.cs">
+      <DependentUpon>TaskByAgent.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Task\TaskEdit.ascx.cs">
       <DependentUpon>TaskEdit.ascx</DependentUpon>

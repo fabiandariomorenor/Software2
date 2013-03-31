@@ -1,0 +1,50 @@
+﻿.content
+{
+    color:#555;    
+}
+.content .task
+{
+    float:left;
+    width:100%;
+    font-size:12px;
+}
+.content .task span, .content .task p, .content .task textarea
+{
+    float:left; 
+}
+.content .task p
+{
+    width:100%;
+}
+.content .task .row
+{
+    width:100%;
+    float:left;
+}
+.content .task .row.large
+{
+    height:70px;
+}
+.content .task span
+{
+    width:100px;
+}
+.content .task textarea, .content .task select
+{
+    width:250px;
+    padding-left:0px;
+    padding-right:0px;
+}
+.content .task select
+{
+    width:252px;
+}
+.content .task textarea
+{
+    height:70px;
+}
+.content .task .row .buttom
+{
+    margin-left:297px;    
+    margin-top:10px;
+}

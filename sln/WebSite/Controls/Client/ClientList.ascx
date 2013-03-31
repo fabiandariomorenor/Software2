@@ -3,7 +3,7 @@
 
 <div class="back_modal"></div>
 <div class="modal_content">
-    <h1>Agente</h1>
+    <h1>Informacion del Cliente</h1>
     <uc:Registry ID="Registry1" runat=server />
 </div>
 
@@ -18,7 +18,7 @@
 </div>
 
 <div class="toolbar">
-    Buscar un agente: <input id="txtFind" search="true" type="text"/>
+    Buscar un cliente: <input id="txtFind" search="true" type="text"/>
 </div>
 <div class="box">
     <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
