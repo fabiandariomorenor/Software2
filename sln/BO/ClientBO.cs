@@ -48,5 +48,18 @@ namespace BO
             UserBO userBO = new UserBO();
             return userBO.Delete(client.Document);
         }
+        private int Insert(Client client)
+        {
+            UserBO userBO = new UserBO();
+            User user = new User();
+           user.Document = client.Document;
+            user.Name = client.Name;
+           user.Password = client.Password;
+            user.ID_Rol = client.ID_Rol;
+            user.ID_Localization = client.ID_Localization;
+            userBO.Save(user);
+            return clientDao.Insert(client);
+        }
+
     }
 }

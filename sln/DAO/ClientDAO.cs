@@ -36,5 +36,10 @@ namespace DAO
         {
             Execute<Client>("ClientDelete", client);
         }
+        public int Insert(Client client)
+        {
+            return ExecuteScalar("ClientInsert", client);
+        }
+
     }
 }
