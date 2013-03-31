@@ -34,9 +34,12 @@ namespace BO
         {
             return clientDao.List(client);
         }
+
         public List<Client> List()
         {
-            return clientDao.List();
+            var client = new Client();
+            client.Name = string.Empty;
+            return List(client);
         }
 
         public int Delete(Client client)

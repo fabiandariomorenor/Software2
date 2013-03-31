@@ -31,10 +31,6 @@ namespace DAO
         {
             return Execute<Client>("ClientList", client);
         }
-        public List<Client> List()
-        {
-            return Execute<Client>("ClientList", "");
-        }
 
         public void Delete(Client client)
         {

@@ -8,12 +8,17 @@
         this.view = new ClientView();
 
         if (typeof (registryController)!="undefined")
+        {
             this.registry = registryController;
+            this.registry.onChangeHandler = jQuery.proxy(this.list, this);
+        }
 
         this.view.onFindHandler = jQuery.proxy(this.list, this);
         this.view.onEditHandler = jQuery.proxy(this.edit, this);
         this.view.onDeleteHandler = jQuery.proxy(this.delete, this);
         this.view.onAddHandler = jQuery.proxy(this.add, this);
+
+        this.list();
     },
 
     add: function(){
@@ -21,23 +26,31 @@
     },
 
     edit: function(id){
-        this.registry.get(id);
+        this.model.get(id, jQuery.proxy(this.getCallback, this));
+    },
+
+    getCallback: function (res) {
+        this.registry.setData(res);
     },
 
     delete: function(id){
-        this.model.delete(id);
+        this.model.delete(id, jQuery.proxy(this.deleteCallback, this));
+    },
+
+    deleteCallback: function(){
+        var name = this.view.getFilter();
+        this.list(name);
     },
 
     list: function (name) {
-        console.log(name);
+        
         if (name == undefined)
             name = "";
 
-        this.model.list(name, this.listCallback, name);
+        this.model.list(name,jQuery.proxy(this.listCallback, this), name);
     },
 
-    listCallback: function (res, ref) {
-        var data = res.ToObject();
+    listCallback: function (data, ref) {
         this.view.render(data, ref);
     }
 });

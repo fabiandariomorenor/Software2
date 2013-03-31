@@ -4,7 +4,7 @@
     color: #AAAAAA;
     display: inline-block;
     font-size: 13px;
-    height: 115px;
+    height: 80px;
     padding: 10px;
     width: 300px;
     position:relative;
@@ -65,6 +65,7 @@
 {
     color:#555;
     font-size:13px;
+    width:100%;
 }
 .box .title
 {
@@ -80,7 +81,6 @@
 }
 .content
 {
-    text-align:center;
     color:#555;
 }
 .toolbar
@@ -94,7 +94,15 @@
 {
     background-color:#D5893A;
 }
-
+#rptClient
+{
+    min-height:400px
+}
+.center
+{
+    width:100%;
+    text-align:center;
+}
 .modal_content h1
 {
     color:#D5893A;
