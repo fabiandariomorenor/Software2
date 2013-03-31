@@ -4,13 +4,13 @@
 <div class="back_modal"></div>
 <div class="modal_content">
     <h1>Informacion del Cliente</h1>
-    <uc:Registry ID="Registry1" runat=server />
+    <uc:Registry ID="Registry1" Rol="3" runat=server />
 </div>
 
 
-<script src="../App_Themes/Js/Model/ClientModel.js" type="text/javascript"></script>
-<script src="../App_Themes/Js/View/ClientView.js" type="text/javascript"></script>
-<script src="../App_Themes/Js/Controller/ClientController.js" type="text/javascript"></script>
+<script src="../../App_Themes/Js/Model/ClientModel.js" type="text/javascript"></script>
+<script src="../../App_Themes/Js/View/ClientView.js" type="text/javascript"></script>
+<script src="../../App_Themes/Js/Controller/ClientController.js" type="text/javascript"></script>
 
 <div class="title_box">Clientes
 
@@ -18,344 +18,29 @@
 </div>
 
 <div class="toolbar">
-    Buscar un cliente: <input id="txtFind" search="true" type="text"/>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete" title="Eliminar">
-            <img alt="Eliminar" src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit" title="Editar">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
+    Buscar un agente: <input id="txtFind" search="true" type="text"/>
 </div>
 
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
+<div id="rptClient"></div>
+<script template="rptClient" type="text/template">
+    <div class="box">
+        <img class="icon" src="../App_Themes/Images/People/{Image}.png" width="50px" />
+        <div class="info">
         
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
+            <div class="Name title">{Name}</div>
+            <span>Documento:<a>{Document}</a></span>
+            <span>Direccion:<a>{Address}</a></span>
             
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
+            <a class="delete" title="Eliminar" value="{Document}">
+                <img alt="Eliminar" src="../../App_Themes/Images/Icon/delete.png" />
+            </a>
+            <a class="edit" title="Editar" value="{Document}">
+                <img src="../../App_Themes/Images/Icon/edit.png" />
+            </a>
+        </div>
     </div>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div><div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-<div class="box">
-    <img class="icon" src="http://www.viahombre.com/wp-content/uploads/2012/01/Cortes-de-pelo-para-caras-ovales-1-Custom.jpg" width="50px" />
-    <div class="info">
-        
-        <div class="Name title">Fabian Dario</div>
-        <span>Documento:<a>1014192723</a></span>
-        <span>Especializacion:<a>Ingeniero de Sistemas</a></span>
-        <span>Tareas Pendientes:<a>2</a></span>
-            
-        
-        <a class="delete">
-            <img src="../../App_Themes/Images/Icon/delete.png" />
-        </a>
-        <a class="edit">
-            <img src="../../App_Themes/Images/Icon/edit.png" />
-        </a>
-    </div>
-</div>
-
-
-<div id="rptAgent"></div>
-<script template="rptAgent" type="text/template">
-    a a 
 </script>
-<script empty="rptAgent" type="text/template">
-    Nose enc
+<script empty="rptClient" type="text/template">
+    <p class="center">No se encontraron clientes</p>
 </script>
 

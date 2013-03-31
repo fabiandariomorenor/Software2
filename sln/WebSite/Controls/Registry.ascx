@@ -47,7 +47,7 @@
         </div>
     </div>
     
-    <div rel="agent" class="data">
+    <div rel="agent" class="data hide">
         <div class="row">
             <span>Especialización:</span><input id="txtSpecialized" type="text"/>
         </div>
