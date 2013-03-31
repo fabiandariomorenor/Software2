@@ -5,7 +5,7 @@
 <h1>Full Stack Framework</h1>
 <h2>.NET Framework 4</h2>
 <p>
-Para el desarrollo del proyecto de ingeniería de Software 2, se definió utilizar .NET Framework (versión 4) para el desarrollo Web,  con el Entorno de Desarrollo Integrado IDE Visual Studio 2010, y  como sistema servidor de windows Windows Server 2008 R2 .
+Para el desarrollo del  proyecto de ingeniería de Software 2, se definió utilizar .NET Framework (versión 4) para el desarrollo Web,  con el Entorno de Desarrollo Integrado IDE Visual Studio 2010, y  como sistema servidor de windows Windows Server 2008 R2 .
 </p>
 <h3>Introducción</h3>
 <p>
