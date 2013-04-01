@@ -20,7 +20,7 @@ El Framework de desarrollo .NET Framework es el eje principal sobre el que se de
 Por otra parte, los Servicios Web XML utilizan XML para enviar datos, garantizando así que cualquier cliente con capacidad XML puede recibir esos datos. Como XML es un estándar abierto, la mayoría de clientes modernos, como los sistemas operativos de PCs, teléfonos móviles, asistentes digitales personales (PDAs) y tablets, pueden aceptar datos XML. 
 
 </p>
-<h2>Windows Server System SQLServer 2008 R2</h2>
+<h2>Motor de Base de Datos SQLServer 2008 R2</h2>
 
 <p>
 Windows Server 2008 R2 es un servidor multipropósito diseñado para incrementar eficiencia de la infraestructura dle servidor o de la nube privada, lo que permite  reducir costos y tiempo. 
