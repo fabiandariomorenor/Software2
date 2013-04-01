@@ -1,19 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="WebSite.About" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .style1
-        {
-            text-align: justify;
-        }
-    </style>
+    .style1
+    {
+        text-align: justify;
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<h1>Full Stack Framework</h1>
+    <h1>Full Stack Framework</h1>
 <h2>.NET Framework 4</h2>
 <p class="style1">
     Para el desarrollo del proyecto de ingeniería de Software 2, se definió utilizar 
     .NET Framework (versión 4) para el desarrollo Web, con el Entorno de Desarrollo 
-    Integrado IDE Visual Studio 2010, y el motor de base de Datos de Windows Server 2008 R2.
+    Integrado IDE Visual Studio 2010, y el motor de base de Datos de SQLServer 2008 R2.
 </p>
 <h3>Introducción</h3>
 <p class="style1">
@@ -37,17 +37,17 @@ Por otra parte, los Servicios Web XML utilizan XML para enviar datos, garantizan
     administrar los objetos de bases de datos.
 
 </p>
-    <p class="style1">
-        El Motor de base de datos es el servicio principal para almacenar, procesar y 
-        proteger datos. El Motor de base de datos proporciona acceso controlado y 
-        procesamiento de transacciones rápido para la adminnitración de operaciones CRUD 
-        en las bases de datos relacionales.</p>
-    <p class="style1">
-        Se utilizará el Motor de base de datos para crear bases de datos relacionales 
-        para el procesamiento de transacciones o datos. Ademas de&nbsp; la creación de 
-        tablas para almacenar datos y objetos de base de datos (busquedas , vistas y 
-        procedimientos almacenados) para ver, administrar y proteger datos.</p>
-    <p class="style1">
+<p class="style1">
+    El Motor de base de datos es el servicio principal para almacenar, procesar y 
+    proteger datos. El Motor de base de datos proporciona acceso controlado y 
+    procesamiento de transacciones rápido para la adminnitración de operaciones CRUD 
+    en las bases de datos relacionales.</p>
+<p class="style1">
+    Se utilizará el Motor de base de datos para crear bases de datos relacionales 
+    para el procesamiento de transacciones o datos. Ademas de&nbsp; la creación de 
+    tablas para almacenar datos y objetos de base de datos (busquedas , vistas y 
+    procedimientos almacenados) para ver, administrar y proteger datos.</p>
+<p class="style1">
 &nbsp;&nbsp;</p>
 
  <h3>ASP.NET</h3>
