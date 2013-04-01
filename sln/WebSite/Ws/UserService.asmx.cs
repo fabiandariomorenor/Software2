@@ -71,7 +71,7 @@ namespace WebSite.Ws
                     userC.Document = document;
                     userC.Name = name;
                     userC.Password = password;
-                    userC.DateExpDocumento = date;
+                    userC.DateExpDocument= date;
                     return clientBO.Save(userC);
 
                 default:
