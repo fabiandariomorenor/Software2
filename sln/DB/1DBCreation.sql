@@ -1,10 +1,10 @@
 ﻿USE [master]
 GO
-/****** Object:  Database [SistemaTecnicos]    Script Date: 03/25/2013 20:19:01 ******/
+/****** Object:  Database [SistemaTecnicos]    Script Date: 04/02/2013 14:45:32 ******/
 CREATE DATABASE [SistemaTecnicos] ON  PRIMARY 
-( NAME = N'SistemaTecnicos', FILENAME = N'C:\SistemaTecnicos.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+( NAME = N'SistemaTecnicos', FILENAME = N'D:\SQLServer\Data\SistemaTecnicos.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
  LOG ON 
-( NAME = N'SistemaTecnicos_log', FILENAME = N'C:\SistemaTecnicos_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+( NAME = N'SistemaTecnicos_log', FILENAME = N'D:\SQLServer\Data\SistemaTecnicos_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
 GO
 ALTER DATABASE [SistemaTecnicos] SET COMPATIBILITY_LEVEL = 100
 GO
@@ -73,25 +73,7 @@ EXEC sys.sp_db_vardecimal_storage_format N'SistemaTecnicos', N'ON'
 GO
 USE [SistemaTecnicos]
 GO
-/****** Object:  Table [dbo].[ROL]    Script Date: 03/25/2013 20:19:02 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-SET ANSI_PADDING ON
-GO
-CREATE TABLE [dbo].[ROL](
-	[ID] [int] NOT NULL,
-	[Name] [varchar](50) NOT NULL,
- CONSTRAINT [PK_ROL] PRIMARY KEY CLUSTERED 
-(
-	[ID] ASC
-)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
-) ON [PRIMARY]
-GO
-SET ANSI_PADDING OFF
-GO
-/****** Object:  Table [dbo].[LOCALIZATION]    Script Date: 03/25/2013 20:19:02 ******/
+/****** Object:  Table [dbo].[LOCALIZATION]    Script Date: 04/02/2013 14:45:32 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -109,7 +91,25 @@ PRIMARY KEY CLUSTERED
 GO
 SET ANSI_PADDING OFF
 GO
-/****** Object:  Table [dbo].[STATE]    Script Date: 03/25/2013 20:19:02 ******/
+/****** Object:  Table [dbo].[ROL]    Script Date: 04/02/2013 14:45:32 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[ROL](
+	[ID] [int] NOT NULL,
+	[Name] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_ROL] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[STATE]    Script Date: 04/02/2013 14:45:32 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -127,7 +127,7 @@ CREATE TABLE [dbo].[STATE](
 GO
 SET ANSI_PADDING OFF
 GO
-/****** Object:  Table [dbo].[USER]    Script Date: 03/25/2013 20:19:02 ******/
+/****** Object:  Table [dbo].[USER]    Script Date: 04/02/2013 14:45:33 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -146,8 +146,9 @@ CREATE TABLE [dbo].[USER](
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-
-/****** Object:  Table [dbo].[MANAGER]    Script Date: 03/25/2013 20:19:03 ******/
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[MANAGER]    Script Date: 04/02/2013 14:45:33 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -160,7 +161,7 @@ CREATE TABLE [dbo].[MANAGER](
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CLIENT]    Script Date: 03/25/2013 20:19:03 ******/
+/****** Object:  Table [dbo].[CLIENT]    Script Date: 04/02/2013 14:45:33 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -179,7 +180,7 @@ CREATE TABLE [dbo].[CLIENT](
 GO
 SET ANSI_PADDING OFF
 GO
-/****** Object:  Table [dbo].[AGENT]    Script Date: 03/25/2013 20:19:03 ******/
+/****** Object:  Table [dbo].[AGENT]    Script Date: 04/02/2013 14:45:33 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -203,7 +204,7 @@ CREATE NONCLUSTERED INDEX [IX_AGENT] ON [dbo].[AGENT]
 	[Document] ASC
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TASK]    Script Date: 03/25/2013 20:19:03 ******/
+/****** Object:  Table [dbo].[TASK]    Script Date: 04/02/2013 14:45:33 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -212,16 +213,16 @@ SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[TASK](
 	[ID] [int] NOT NULL,
-	[ID_Cliente] [int] NOT NULL,
-	[ID_Agente] [int] NOT NULL,
-	[Descripcion] [varchar](50) NOT NULL,
-	[ID_Estado] [int] NOT NULL,
-	[FechaInicio] [datetime] NOT NULL,
-	[FechaFinalizacion] [datetime] NOT NULL,
-	[FechaEsperadaInit] [datetime] NOT NULL,
-	[FechaEsperadaFin] [datetime] NOT NULL,
-	[FechaRadicacion] [datetime] NOT NULL,
-	[Comentario] [varchar](50) NOT NULL,
+	[ID_Client] [int] NOT NULL,
+	[ID_Agent] [int] NOT NULL,
+	[Description] [varchar](50) NOT NULL,
+	[ID_State] [int] NOT NULL,
+	[InitDate] [datetime] NOT NULL,
+	[EndDate] [datetime] NOT NULL,
+	[ExpectedInitDate] [datetime] NOT NULL,
+	[ExpectedEndDate] [datetime] NOT NULL,
+	[ProcedureDate] [datetime] NOT NULL,
+	[Comment] [varchar](50) NOT NULL,
 	[Address] [varchar](50) NOT NULL,
 	[ID_Localization] [int] NOT NULL,
  CONSTRAINT [PK_TASK] PRIMARY KEY CLUSTERED 
@@ -232,63 +233,63 @@ CREATE TABLE [dbo].[TASK](
 GO
 SET ANSI_PADDING OFF
 GO
-/****** Object:  ForeignKey [FK_USER_LOCALIZATION]    Script Date: 03/25/2013 20:19:02 ******/
+/****** Object:  ForeignKey [FK_USER_LOCALIZATION]    Script Date: 04/02/2013 14:45:33 ******/
 ALTER TABLE [dbo].[USER]  WITH CHECK ADD  CONSTRAINT [FK_USER_LOCALIZATION] FOREIGN KEY([ID_Localization])
 REFERENCES [dbo].[LOCALIZATION] ([ID])
 GO
 ALTER TABLE [dbo].[USER] CHECK CONSTRAINT [FK_USER_LOCALIZATION]
 GO
-/****** Object:  ForeignKey [FK_USER_ROL]    Script Date: 03/25/2013 20:19:02 ******/
+/****** Object:  ForeignKey [FK_USER_ROL]    Script Date: 04/02/2013 14:45:33 ******/
 ALTER TABLE [dbo].[USER]  WITH CHECK ADD  CONSTRAINT [FK_USER_ROL] FOREIGN KEY([ID_Rol])
 REFERENCES [dbo].[ROL] ([ID])
 GO
 ALTER TABLE [dbo].[USER] CHECK CONSTRAINT [FK_USER_ROL]
 GO
-/****** Object:  ForeignKey [FK_MANAGER_USER]    Script Date: 03/25/2013 20:19:03 ******/
+/****** Object:  ForeignKey [FK_MANAGER_USER]    Script Date: 04/02/2013 14:45:33 ******/
 ALTER TABLE [dbo].[MANAGER]  WITH CHECK ADD  CONSTRAINT [FK_MANAGER_USER] FOREIGN KEY([Document])
 REFERENCES [dbo].[USER] ([Document])
 GO
 ALTER TABLE [dbo].[MANAGER] CHECK CONSTRAINT [FK_MANAGER_USER]
 GO
-/****** Object:  ForeignKey [FK_CLIENT_USER]    Script Date: 03/25/2013 20:19:03 ******/
+/****** Object:  ForeignKey [FK_CLIENT_USER]    Script Date: 04/02/2013 14:45:33 ******/
 ALTER TABLE [dbo].[CLIENT]  WITH CHECK ADD  CONSTRAINT [FK_CLIENT_USER] FOREIGN KEY([Document])
 REFERENCES [dbo].[USER] ([Document])
 GO
 ALTER TABLE [dbo].[CLIENT] CHECK CONSTRAINT [FK_CLIENT_USER]
 GO
-/****** Object:  ForeignKey [FK_AGENT_MANAGER]    Script Date: 03/25/2013 20:19:03 ******/
+/****** Object:  ForeignKey [FK_AGENT_MANAGER]    Script Date: 04/02/2013 14:45:33 ******/
 ALTER TABLE [dbo].[AGENT]  WITH CHECK ADD  CONSTRAINT [FK_AGENT_MANAGER] FOREIGN KEY([ID_Manager])
 REFERENCES [dbo].[MANAGER] ([Document])
 GO
 ALTER TABLE [dbo].[AGENT] CHECK CONSTRAINT [FK_AGENT_MANAGER]
 GO
-/****** Object:  ForeignKey [FK_AGENT_USER]    Script Date: 03/25/2013 20:19:03 ******/
+/****** Object:  ForeignKey [FK_AGENT_USER]    Script Date: 04/02/2013 14:45:33 ******/
 ALTER TABLE [dbo].[AGENT]  WITH CHECK ADD  CONSTRAINT [FK_AGENT_USER] FOREIGN KEY([Document])
 REFERENCES [dbo].[USER] ([Document])
 GO
 ALTER TABLE [dbo].[AGENT] CHECK CONSTRAINT [FK_AGENT_USER]
 GO
-/****** Object:  ForeignKey [FK_TASK_AGENT]    Script Date: 03/25/2013 20:19:03 ******/
-ALTER TABLE [dbo].[TASK]  WITH CHECK ADD  CONSTRAINT [FK_TASK_AGENT] FOREIGN KEY([ID_Agente])
+/****** Object:  ForeignKey [FK_TASK_AGENT]    Script Date: 04/02/2013 14:45:33 ******/
+ALTER TABLE [dbo].[TASK]  WITH CHECK ADD  CONSTRAINT [FK_TASK_AGENT] FOREIGN KEY([ID_Agent])
 REFERENCES [dbo].[AGENT] ([Document])
 GO
 ALTER TABLE [dbo].[TASK] CHECK CONSTRAINT [FK_TASK_AGENT]
 GO
-/****** Object:  ForeignKey [FK_TASK_CLIENT]    Script Date: 03/25/2013 20:19:03 ******/
-ALTER TABLE [dbo].[TASK]  WITH CHECK ADD  CONSTRAINT [FK_TASK_CLIENT] FOREIGN KEY([ID_Cliente])
+/****** Object:  ForeignKey [FK_TASK_CLIENT]    Script Date: 04/02/2013 14:45:33 ******/
+ALTER TABLE [dbo].[TASK]  WITH CHECK ADD  CONSTRAINT [FK_TASK_CLIENT] FOREIGN KEY([ID_Client])
 REFERENCES [dbo].[CLIENT] ([Document])
 GO
 ALTER TABLE [dbo].[TASK] CHECK CONSTRAINT [FK_TASK_CLIENT]
 GO
-/****** Object:  ForeignKey [FK_TASK_STATE]    Script Date: 03/25/2013 20:19:03 ******/
-ALTER TABLE [dbo].[TASK]  WITH CHECK ADD  CONSTRAINT [FK_TASK_STATE] FOREIGN KEY([ID_Estado])
-REFERENCES [dbo].[STATE] ([ID])
-GO
-ALTER TABLE [dbo].[TASK] CHECK CONSTRAINT [FK_TASK_STATE]
-GO
-/****** Object:  ForeignKey [FK_TASK_LOCALIZATION]    Script Date: 03/25/2013 20:19:03 ******/
+/****** Object:  ForeignKey [FK_TASK_LOCALIZATION]    Script Date: 04/02/2013 14:45:33 ******/
 ALTER TABLE [dbo].[TASK]  WITH CHECK ADD  CONSTRAINT [FK_TASK_LOCALIZATION] FOREIGN KEY([ID_Localization])
 REFERENCES [dbo].[LOCALIZATION] ([ID])
 GO
 ALTER TABLE [dbo].[TASK] CHECK CONSTRAINT [FK_TASK_LOCALIZATION]
+GO
+/****** Object:  ForeignKey [FK_TASK_STATE]    Script Date: 04/02/2013 14:45:33 ******/
+ALTER TABLE [dbo].[TASK]  WITH CHECK ADD  CONSTRAINT [FK_TASK_STATE] FOREIGN KEY([ID_State])
+REFERENCES [dbo].[STATE] ([ID])
+GO
+ALTER TABLE [dbo].[TASK] CHECK CONSTRAINT [FK_TASK_STATE]
 GO
