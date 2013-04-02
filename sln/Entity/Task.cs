@@ -8,17 +8,17 @@ namespace Entity
     public class Task
     {
         public int ID { get; set; }
-        public int ID_Cliente { get; set; }
-        public int ID_Agente { get; set; }
-        public int ID_Estado { get; set; }
-        public int ID_Localizacion { get; set; }
-        public string Descripcion { get; set; }
-        public string Direccion { get; set; }
-        public DateTime FechaInicio { get; set; }
-        public DateTime FechaFinalizacion { get; set; }
-        public DateTime FechaEsperadaInit { get; set; }
-        public DateTime FechaEsperadaFin { get; set; }
-        public DateTime FechaRadicacion { get; set; }
-        public string Comentario { get; set; }
+        public int ID_Client { get; set; }
+        public int ID_Agent { get; set; }
+        public int ID_State { get; set; }
+        public int ID_Localization { get; set; }
+        public string Description { get; set; }
+        public string Address { get; set; }
+        public DateTime InitDate { get; set; }
+        public DateTime EndDate  { get; set; }
+        public DateTime ExpectedInitDate { get; set; }
+        public DateTime ExpectedEndDate { get; set; }
+        public DateTime ProcedureDate { get; set; }
+        public string Comment { get; set; }
     }
 }

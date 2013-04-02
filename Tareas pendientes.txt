@@ -1,10 +1,10 @@
 listar clientes 		hecho
-crear cliente			hecho
-actualizar agente
-actualizar cliente
+crear cliente			hecho -> por revisar
+actualizar agente		por revisar
+actualizar cliente		por revisar
 eliminar cliente		hecho
-crear tarea
-actualizar tarea
+crear tarea			hecho
+actualizar tarea		hecho
 Calificar tarea
 tareas por agente
 total agentes

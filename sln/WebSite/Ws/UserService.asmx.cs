@@ -82,6 +82,8 @@ namespace WebSite.Ws
             //return userBo.Save(user);
            
         }
+
+        [WebMethod]
         public List<User> List(String name)
         {
             User user = new User();

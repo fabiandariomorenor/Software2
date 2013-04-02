@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using BO;
+using Entity;
 
 namespace WebSite.Ws
 {
@@ -18,9 +20,25 @@ namespace WebSite.Ws
     {
 
         [WebMethod]
-        public string Save(int clientId, string description, int currentDate, int agentId, string comment, string address)
+        public int Save(int id, int clientId, int agentId, int stateID, int locationId, string description, string address, DateTime expectedInitDate, 
+            DateTime expectedEndDate, string comment)
         {
-            return "Hello World";
+            Task task = new Task();
+            TaskBO taskBO = new TaskBO();
+            task.ID = id;
+            task.ID_Client = clientId;
+            task.ID_Agent = agentId;
+            task.ID_State = stateID;
+            task.ID_Localization = locationId;
+            task.Description = description;
+            task.Address = address;
+            task.InitDate = expectedInitDate;
+            task.EndDate = expectedEndDate;
+            task.ExpectedInitDate = expectedInitDate;
+            task.ExpectedEndDate = expectedEndDate;
+            task.ProcedureDate = DateTime.Now;
+            task.Comment = comment;
+            return taskBO.Save(task);
         }
     }
 }
