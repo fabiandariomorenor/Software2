@@ -47,5 +47,16 @@ namespace BO
                 return userDao.Update(user);
             }
         }
+        public List<User> List(User user)
+        {
+            return userDao.List(user);
+        }
+
+        public List<User> List()
+        {
+            var user = new User();
+            user.Name = string.Empty;
+            return List(user);
+        }
     }
 }

@@ -39,5 +39,9 @@ namespace DAO
             return ExecuteScalar("UserDelete", user);
         }
 
+        public List<User> List(User user)
+        {
+            return Execute<User>("UserList",user);
+        }
     }
 }

@@ -88,3 +88,13 @@ BEGIN
 	  WHERE Document=@Document
 END
 GO
+
+CREATE PROCEDURE [dbo].[UserList] 
+@Name varchar(50)
+AS
+BEGIN
+	select * 
+	from [User]
+	where (Name + convert(varchar,[USER].Document)) like '%'+@Name +'%'
+END
+go

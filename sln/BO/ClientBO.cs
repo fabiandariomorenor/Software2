@@ -16,17 +16,17 @@ namespace BO
             return clientDao.Get(document);
         }
 
-        public int Save(User user)
+        public int Save(Client client)
         {
-            if (Get(user.Document) == null)
+            if (Get(client.Document) == null)
             {
                 //Create user
-                return clientDao.CreateClient(user);
+                return Insert(client);
             }
             else
             {
                 //Update user
-                return clientDao.UpdateClient(user);
+                return clientDao.UpdateClient(client);
             }
         }
 

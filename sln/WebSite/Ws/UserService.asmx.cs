@@ -72,6 +72,7 @@ namespace WebSite.Ws
                     userC.Name = name;
                     userC.Password = password;
                     userC.DateExpDocument= date;
+                    userC.Address = address;
                     return clientBO.Save(userC);
 
                 default:
@@ -79,6 +80,13 @@ namespace WebSite.Ws
                     return 0;
             }
             //return userBo.Save(user);
+           
+        }
+        public List<User> List(String name)
+        {
+            User user = new User();
+            user.Name = name;
+            return userBo.List(user);
         }
     }
 }
