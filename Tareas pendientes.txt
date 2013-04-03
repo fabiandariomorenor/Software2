@@ -9,3 +9,5 @@ Calificar tarea
 tareas por agente
 total agentes
 agentes por hora
+
+--re que mirare si entre otra vez al proyecto-- Julian
