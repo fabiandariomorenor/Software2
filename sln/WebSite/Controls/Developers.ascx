@@ -43,3 +43,14 @@
         <h6>Codigo: 258024</h6>
     </div>
 </div>
+
+<div class="developer">
+    <div class="left">
+        <img width="50px" src="../App_Themes/Images/Developers/jorge.jpg" />
+    </div>
+    <div class="right">
+        <a>Jorge Andrés Serrano Jaimes </a>
+        <span>Estudiante de Ingeniería de Sistemas y la Computación.</span>
+        <h6>Codigo: 257452</h6>
+    </div>
+</div>

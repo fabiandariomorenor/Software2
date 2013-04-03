@@ -47,6 +47,7 @@
     <Content Include="3ProceduresRol.sql" />
     <Content Include="4ProceduresAgent.sql" />
     <Content Include="5Data.sql" />
+    <Content Include="7ProceduresClient.sql" />
     <Content Include="6TaskProcedures.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
