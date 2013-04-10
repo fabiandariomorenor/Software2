@@ -17,7 +17,7 @@
     <link href="/App_Themes/css/Index.css" rel="stylesheet" type="text/css" />
     
     <script type="text/javascript">
-        var siteUrl = "http://localhost:1456/";
+        var siteUrl = "<%=url %>";
     </script>
 
     <script src="/App_Themes/Js/Library/jQuery.js" type="text/javascript"></script>

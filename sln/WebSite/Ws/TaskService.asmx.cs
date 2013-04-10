@@ -20,7 +20,7 @@ namespace WebSite.Ws
     {
 
         [WebMethod]
-        public int Save(int id, int clientId, int agentId, int stateID, int locationId, string description, string address, DateTime expectedInitDate, 
+        public int Save(int id, decimal clientId, decimal agentId, int stateID, int locationId, string description, string address, DateTime expectedInitDate, 
             DateTime expectedEndDate, string comment)
         {
             Task task = new Task();

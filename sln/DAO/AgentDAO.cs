@@ -9,7 +9,7 @@ namespace DAO
 {
     public class AgentDAO : Base
     {
-        public Agent Get(int document)
+        public Agent Get(decimal document)
         {
             Agent agent = new Agent();
             agent.Document = document;
@@ -23,7 +23,7 @@ namespace DAO
 
         public int Update(User user)
         {
-            return ExecuteScalar("UpdateAgent", user);
+            return ExecuteScalar("AgentUpdate", user);
         }
 
         public List<Agent> List(Agent agent)

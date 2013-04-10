@@ -14,9 +14,6 @@ namespace WebSite.Controls
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            RolBO rolBO = new RolBO();
-            rptRol.DataSource = rolBO.List();
-            rptRol.DataBind();
         }
     }
 }

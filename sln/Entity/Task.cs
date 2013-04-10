@@ -8,8 +8,8 @@ namespace Entity
     public class Task
     {
         public int ID { get; set; }
-        public int ID_Client { get; set; }
-        public int ID_Agent { get; set; }
+        public decimal ID_Client { get; set; }
+        public decimal ID_Agent { get; set; }
         public int ID_State { get; set; }
         public int ID_Localization { get; set; }
         public string Description { get; set; }

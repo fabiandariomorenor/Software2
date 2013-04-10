@@ -1,30 +1,32 @@
-﻿CREATE PROCEDURE [dbo].[UserInsert] 
-	@Document int,
-	@Name varchar(50),
-	@Password varchar(50),
-	@ID_Rol int,
-	@ID_Localization int
+﻿CREATE PROCEDURE [dbo].[AgentList] 
+@Name varchar(50)
 AS
 BEGIN
-	INSERT INTO [dbo].[User]
-           ([Document]
-           ,[Name]
-           ,[Password]
-           ,[ID_Rol]
-           ,[ID_Localization])
-	VALUES
-           (@Document
-           ,@Name
-           ,@Password
-           ,@ID_Rol
-           ,@ID_Localization)
-	SELECT Document FROM [USER] WHERE Document = @Document
+	select * 
+	from AGENT 
+	join [user] 
+	on [USER].document=AGENT.Document
+	where (Name + convert(varchar,AGENT.Document)) like '%'+@Name +'%'
 END
+go
 
+CREATE PROCEDURE [dbo].[AgentDelete] 
+@Document int
+AS
+BEGIN
+	DELETE FROM [dbo].[AGENT]
+      WHERE Document=@Document
+
+	  Select count(*)
+	  from [AGENT]
+	  WHERE Document=@Document
+END
 GO
 
+
+
 CREATE PROCEDURE [dbo].[AgentInsert] 
-	@Document int,
+	@Document decimal(12,0),
 	@Specialization varchar(50),
 	@ID_Manager int
 AS
@@ -43,4 +45,28 @@ BEGIN
 END
 
 GO
+
+CREATE PROCEDURE [dbo].[AgentGet] 
+	@Document int
+AS
+BEGIN
+	SELECT * FROM AGENT
+	JOIN  [User] on [User].Document = Agent.Document
+	WHERE Agent.Document = @Document
+END
+
+GO
+
+
+CREATE PROCEDURE [dbo].[AgentUpdate] 
+	@Document decimal(12,0),
+	@Specialization varchar(50),
+	@ID_Manager int
+AS
+BEGIN
+	UPDATE [dbo].[AGENT]
+   SET [Specialization] = Specialization
+      ,[ID_Manager] = ID_Manager
+ WHERE Document = @Document
+END
 

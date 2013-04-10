@@ -2,9 +2,9 @@
 GO
 /****** Object:  Database [SistemaTecnicos]    Script Date: 04/02/2013 14:45:32 ******/
 CREATE DATABASE [SistemaTecnicos] ON  PRIMARY 
-( NAME = N'SistemaTecnicos', FILENAME = N'D:\SQLServer\Data\SistemaTecnicos.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+( NAME = N'SistemaTecnicos', FILENAME = N'D:\SistemaTecnicos.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
  LOG ON 
-( NAME = N'SistemaTecnicos_log', FILENAME = N'D:\SQLServer\Data\SistemaTecnicos_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+( NAME = N'SistemaTecnicos_log', FILENAME = N'D:\SistemaTecnicos_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
 GO
 ALTER DATABASE [SistemaTecnicos] SET COMPATIBILITY_LEVEL = 100
 GO
@@ -135,11 +135,12 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[USER](
-	[Document] [int] NOT NULL,
+	[Document] [decimal](12,0) NOT NULL,
 	[Name] [varchar](50) NOT NULL,
 	[Password] [varchar](50) NOT NULL,
 	[ID_Rol] [int] NOT NULL,
 	[ID_Localization] [int] NOT NULL,
+	[Phone] [decimal](12,0) NOT NULL
  CONSTRAINT [PK_USER] PRIMARY KEY CLUSTERED 
 (
 	[Document] ASC
@@ -154,7 +155,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[MANAGER](
-	[Document] [int] NOT NULL,
+	[Document] [decimal](12,0) NOT NULL,
  CONSTRAINT [PK_MANAGER] PRIMARY KEY CLUSTERED 
 (
 	[Document] ASC
@@ -169,7 +170,7 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[CLIENT](
-	[Document] [int] NOT NULL,
+	[Document] [decimal](12,0) NOT NULL,
 	[Address] [varchar](50) NOT NULL,
 	[DateExpDocument] [varchar](50) NOT NULL,
  CONSTRAINT [PK_CLIENT] PRIMARY KEY CLUSTERED 
@@ -188,9 +189,9 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[AGENT](
-	[Document] [int] NOT NULL,
+	[Document] [decimal](12,0) NOT NULL,
 	[Specialization] [varchar](50) NOT NULL,
-	[ID_Manager] [int] NOT NULL,
+	[ID_Manager] [decimal](12,0) NOT NULL,
  CONSTRAINT [PK_AGENT] PRIMARY KEY CLUSTERED 
 (
 	[Document] ASC
@@ -213,8 +214,8 @@ SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[TASK](
 	[ID] [int] NOT NULL,
-	[ID_Client] [int] NOT NULL,
-	[ID_Agent] [int] NOT NULL,
+	[ID_Client] [decimal](12,0) NOT NULL,
+	[ID_Agent] [decimal](12,0) NOT NULL,
 	[Description] [varchar](50) NOT NULL,
 	[ID_State] [int] NOT NULL,
 	[InitDate] [datetime] NOT NULL,

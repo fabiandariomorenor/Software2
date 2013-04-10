@@ -30,7 +30,7 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public int Delete(int document)
+        public int Delete(decimal document)
         {
             Agent agent = new Agent();
             agent.Document = document;
@@ -38,9 +38,9 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public Agent Get(int document)
+        public Agent Get(decimal document)
         {
-            return new Agent();
+            return agentBO.Get(document);
         }
     }
 }

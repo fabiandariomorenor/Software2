@@ -1,30 +1,30 @@
-﻿CREATE PROCEDURE [dbo].[UserInsert] 
-	@Document int,
-	@Name varchar(50),
-	@Password varchar(50),
-	@ID_Rol int,
-	@ID_Localization int
+﻿CREATE PROCEDURE [dbo].[ClientList] 
+@Name varchar(50)
 AS
 BEGIN
-	INSERT INTO [dbo].[User]
-           ([Document]
-           ,[Name]
-           ,[Password]
-           ,[ID_Rol]
-           ,[ID_Localization])
-	VALUES
-           (@Document
-           ,@Name
-           ,@Password
-           ,@ID_Rol
-           ,@ID_Localization)
-	SELECT Document FROM [USER] WHERE Document = @Document
+	select * 
+	from CLIENT
+	join [user] 
+	on [USER].document=Client.Document
+	where (Name + convert(varchar,CLIENT.Document)) like '%'+@Name +'%'
 END
+go
 
+CREATE PROCEDURE [dbo].[ClientDelete] 
+@Document decimal(12,0)
+AS
+BEGIN
+	DELETE FROM [dbo].[CLIENT]
+      WHERE Document=@Document
+	  
+	  Select count(*)
+	  from [CLIENT]
+	  WHERE Document=@Document
+END
 GO
 
 CREATE PROCEDURE [dbo].[ClientInsert] 
-	@Document int,
+	@Document decimal(12,0),
 	@Address varchar(50),
 	@DateExpDocument varchar(50)
 AS
@@ -48,9 +48,32 @@ GO
 GO
 
 CREATE PROCEDURE [dbo].[ClientGet] 
-	@Document int
+	@Document decimal(12,0)
 AS
 BEGIN
 	SELECT * FROM CLIENT
-	WHERE Document = @Document
+	join [user] 
+	on [USER].document=Client.Document
+	WHERE client.Document = @Document
 END
+
+
+
+go
+
+CREATE PROCEDURE [dbo].[ClientUpdate] 
+	@Document decimal(12,0),
+	@DateExpDocument datetime
+AS
+BEGIN
+	
+UPDATE [dbo].[CLIENT]
+   SET [Document] = @Document
+      ,[DateExpDocument] = @DateExpDocument
+ WHERE @Document = Document
+
+
+ SELECT Document FROM [CLIENT] WHERE Document = @Document
+END
+
+

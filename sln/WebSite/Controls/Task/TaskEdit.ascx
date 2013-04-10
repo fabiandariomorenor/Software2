@@ -10,7 +10,7 @@
         <select id="ddlClient">
             <asp:Repeater ID="rptClient" runat="server">
                 <ItemTemplate>
-                    <option value="<%#DataBinder.Eval(Container.DataItem, "Document")%>"><%#DataBinder.Eval(Container.DataItem, "Name")%></option>
+                    <option value="<%#DataBinder.Eval(Container.DataItem, "Document")%>"><%#DataBinder.Eval(Container.DataItem, "Document")%> - <%#DataBinder.Eval(Container.DataItem, "Name")%></option>
                 </ItemTemplate>
             </asp:Repeater>
         </select>

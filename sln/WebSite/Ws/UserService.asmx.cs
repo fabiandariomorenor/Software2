@@ -30,7 +30,7 @@ namespace WebSite.Ws
         }
 
         [WebMethod(EnableSession=true)]
-        public bool Validate(int document, string password)
+        public bool Validate(decimal document, string password)
         {
             if(userBo.Validate(document, password))
             {
@@ -44,7 +44,7 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public int Save(int rol, int document, int localization, string name, int phone, string password, string address, DateTime date, int managerId, string specialized)
+        public int Save(int rol, decimal document, int localization, string name, decimal phone, string password, string address, DateTime date, int managerId, string specialized)
         {
             switch(rol)
             {
@@ -52,28 +52,30 @@ namespace WebSite.Ws
                     return 0;
 
                 case 2:
-                    Agent userA = new Agent();
+                    Agent agent = new Agent();
                     AgentBO agentBo = new AgentBO();
-                    userA.ID_Rol = rol;
-                    userA.ID_Localization = localization;
-                    userA.Document = document;
-                    userA.Name = name;
-                    userA.Password = password;
-                    userA.Specialization = specialized;
-                    userA.ID_Manager = managerId;
-                    return agentBo.Save(userA);
+                    agent.ID_Rol = rol;
+                    agent.ID_Localization = localization;
+                    agent.Document = document;
+                    agent.Name = name;
+                    agent.Phone = phone;
+                    agent.Password = password;
+                    agent.Specialization = specialized;
+                    agent.ID_Manager = managerId;
+                    return agentBo.Save(agent);
 
                 case 3:
-                    Client userC = new Client();
+                    Client client = new Client();
                     ClientBO clientBO = new ClientBO();
-                    userC.ID_Rol = rol;
-                    userC.ID_Localization = localization;
-                    userC.Document = document;
-                    userC.Name = name;
-                    userC.Password = password;
-                    userC.DateExpDocument= date;
-                    userC.Address = address;
-                    return clientBO.Save(userC);
+                    client.ID_Rol = rol;
+                    client.ID_Localization = localization;
+                    client.Document = document;
+                    client.Name = name;
+                    client.Phone = phone;
+                    client.Password = password;
+                    client.DateExpDocument = date;
+                    client.Address = address;
+                    return clientBO.Save(client);
 
                 default:
                     //Por implementar

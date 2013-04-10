@@ -10,8 +10,9 @@ namespace BO
     public class AgentBO
     {
         AgentDAO agentDao = new AgentDAO();
+        UserBO userBO = new UserBO();
 
-        public User Get(int document)
+        public Agent Get(decimal document)
         {
             return agentDao.Get(document);
         }
@@ -38,20 +39,19 @@ namespace BO
             else
             {
                 //Update user
-                return agentDao.Update(agent);
+                return Update(agent);
             }
+        }
+
+        private int Update(Agent agent)
+        {
+            userBO.Save((User)agent);
+            return agentDao.Update(agent);
         }
 
         private int Insert(Agent agent)
         {
-            UserBO userBO = new UserBO();
-            User user = new User();
-            user.Document = agent.Document;
-            user.Name = agent.Name;
-            user.Password = agent.Password;
-            user.ID_Rol = agent.ID_Rol;
-            user.ID_Localization = agent.ID_Localization;
-            userBO.Save(user);
+            userBO.Save((User)agent);
             return agentDao.Insert(agent);
         }
     }

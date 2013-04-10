@@ -9,7 +9,7 @@ namespace DAO
 {
     public class UserDAO : Base
     {
-        public User Get(int document, string password)
+        public User Get(decimal document, string password)
         {
             User user = new User();
             user.Document = document;
@@ -17,7 +17,7 @@ namespace DAO
             return Get<User>("UserValidate", user);
         }
 
-        public User Get(int document)
+        public User Get(decimal document)
         {
             User user = new User();
             user.Document = document;
@@ -31,7 +31,7 @@ namespace DAO
 
         public int Update(User user)
         {
-            return ExecuteScalar("UpdateUser", user);
+            return ExecuteScalar("UserUpdate", user);
         }
 
         public int Delete(User user) 

@@ -11,7 +11,7 @@ namespace BO
     {
         UserDAO userDao = new UserDAO();
 
-        public bool Validate (int document, string password)
+        public bool Validate(decimal document, string password)
         {
             if (userDao.Get(document, password) == null)
             {
@@ -23,12 +23,12 @@ namespace BO
             }
         }
 
-        public User Get(int document)
+        public User Get(decimal document)
         {
             return userDao.Get(document);
         }
 
-        public int Delete(int document)
+        public int Delete(decimal document)
         {
             User user = new User();
             user.Document = document;

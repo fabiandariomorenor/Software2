@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="1DBCreation.sql" />
-    <Content Include="2ProceduresCreate.sql" />
+    <Content Include="2ProceduresUser.sql" />
     <Content Include="3ProceduresRol.sql" />
     <Content Include="4ProceduresAgent.sql" />
     <Content Include="5Data.sql" />

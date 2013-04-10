@@ -37,9 +37,9 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public Client Get(int document)
+        public Client Get(decimal document)
         {
-            return new Client();
+            return clientBO.Get(document);
         }
     }
 }

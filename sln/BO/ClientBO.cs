@@ -10,8 +10,9 @@ namespace BO
     public class ClientBO
     {
         ClientDAO clientDao = new ClientDAO();
+        UserBO userBO = new UserBO();
 
-        public User Get(int document)
+        public Client Get(decimal document)
         {
             return clientDao.Get(document);
         }
@@ -25,9 +26,15 @@ namespace BO
             }
             else
             {
-                //Update user
-                return clientDao.UpdateClient(client);
+                //Update 
+                return Update(client);
             }
+        }
+
+        private int Update(Client client)
+        {
+            userBO.Save((User)client);
+            return clientDao.Update(client);
         }
 
         public List<Client> List(Client client)
@@ -45,22 +52,13 @@ namespace BO
         public int Delete(Client client)
         {
             clientDao.Delete(client);
-            UserBO userBO = new UserBO();
             return userBO.Delete(client.Document);
         }
         private int Insert(Client client)
         {
-            UserBO userBO = new UserBO();
-            User user = new User();
-            user.Document = client.Document;
-            user.Name = client.Name;
-            user.Password = client.Password;
-            user.ID_Rol = client.ID_Rol;
-            user.ID_Localization = client.ID_Localization;
-            userBO.Save(user);
+            userBO.Save((User)client);
             return clientDao.Insert(client);
         }
 
     }
 }
-//modificacion

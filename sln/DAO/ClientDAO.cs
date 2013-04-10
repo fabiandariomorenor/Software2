@@ -9,22 +9,16 @@ namespace DAO
 {
     public class ClientDAO : Base
     {
-        public Client Get(int document)
+        public Client Get(decimal document)
         {
             Client client = new Client();
             client.Document = document;
             return Get<Client>("ClientGet", client);
         }
 
-
-        public int CreateClient(User user)
+        public int Update(Client user)
         {
-            return ExecuteScalar("CreateClient", user);
-        }
-
-        public int UpdateClient(User user)
-        {
-            return ExecuteScalar("UpdateClient", user);
+            return ExecuteScalar("ClientUpdate", user);
         }
 
         public List<Client> List(Client client)

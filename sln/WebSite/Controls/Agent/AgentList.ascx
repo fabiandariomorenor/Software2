@@ -30,6 +30,7 @@
             <div class="Name title">{Name}</div>
             <span>Documento:<a>{Document}</a></span>
             <span>Especializacion:<a>{Specialization}</a></span>
+            <span>Teléfono:<a>{Phone}</a></span>
             <span>Tareas Pendientes:<a>2</a></span>
             
         
