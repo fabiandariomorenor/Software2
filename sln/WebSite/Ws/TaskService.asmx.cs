@@ -18,13 +18,13 @@ namespace WebSite.Ws
     [System.Web.Script.Services.ScriptService]
     public class TaskService : System.Web.Services.WebService
     {
+        TaskBO taskBO = new TaskBO();
 
         [WebMethod]
         public int Save(int id, decimal clientId, decimal agentId, int stateID, int locationId, string description, string address, DateTime expectedInitDate, 
             DateTime expectedEndDate, string comment)
         {
             Task task = new Task();
-            TaskBO taskBO = new TaskBO();
             task.ID = id;
             task.ID_Client = clientId;
             task.ID_Agent = agentId;
@@ -40,5 +40,24 @@ namespace WebSite.Ws
             task.Comment = comment;
             return taskBO.Save(task);
         }
+
+        [WebMethod]
+        public List<Task> ListByClient(int clientId)
+        {
+            return taskBO.ListByClient(clientId);
+        }
+
+        [WebMethod]
+        public List<Task> ListByAgent(int agentId, DateTime startDate, DateTime endDate)
+        {
+            return taskBO.ListByAgent(agentId, startDate, endDate);
+        }
+
+        [WebMethod]
+        public void Review(int taskId, string comment, int statusId)
+        {
+            taskBO.Review(taskId, comment, statusId);
+        }
+
     }
 }
