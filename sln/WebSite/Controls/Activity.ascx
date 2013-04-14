@@ -9,7 +9,7 @@
     </div>
     <div class="right">
         <a>Desarrollo</a>
-        <span>Inicia el desarrollo del login</span>
+        <span>Inicia el desarrollo de la app</span>
     </div>
 </div>
 

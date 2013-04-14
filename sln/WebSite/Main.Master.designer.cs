@@ -58,15 +58,6 @@ namespace WebSite {
         protected global::WebSite.Controls.Developers Developers1;
         
         /// <summary>
-        /// Control Documents1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::WebSite.Controls.Documents Documents1;
-        
-        /// <summary>
         /// Control Activity1.
         /// </summary>
         /// <remarks>
