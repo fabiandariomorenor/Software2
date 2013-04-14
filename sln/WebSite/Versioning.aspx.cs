@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebSite
 {
-    public partial class Test : System.Web.UI.Page
+    public partial class Versioning : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

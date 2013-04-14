@@ -8,7 +8,7 @@
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <%--Titulo--%>
-    <h1>Administrador de Agentes</h1>
+    <h1>Administración de Agentes</h1>
 
     <%--Galeria--%>
     <div class="gallery">

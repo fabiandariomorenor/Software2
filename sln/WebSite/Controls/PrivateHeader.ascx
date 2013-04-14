@@ -9,7 +9,7 @@
     <%--Crear--%>
     
     <div class="project create">
-        <a href="/index.aspx" class="logo">Proyecto de Ingeniería de Software 2</a>
+        <a href="/home.aspx" class="logo"> ManAgent Task Planner® </a>
         <a class="name"><asp:Literal ID="ltName" Visible="false" runat="server"></asp:Literal></a>
     </div>
 

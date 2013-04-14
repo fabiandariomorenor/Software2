@@ -48,7 +48,8 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="Methodology.aspx" />
+    <Content Include="Technologies.aspx" />
     <Content Include="Admin\Agent.aspx" />
     <Content Include="Admin\Assessment.aspx" />
     <Content Include="Admin\Client.aspx" />
@@ -60,6 +61,7 @@
     <Content Include="App_Themes\Css\Agent.css" />
     <Content Include="App_Themes\Css\Assessment.css" />
     <Content Include="App_Themes\Css\Client.css" />
+    <Content Include="App_Themes\Css\Design.css" />
     <Content Include="App_Themes\Css\Footer.css" />
     <Content Include="App_Themes\Css\General.css" />
     <Content Include="App_Themes\Css\Header.css" />
@@ -153,14 +155,10 @@
     <Content Include="Controls\Task\TaskAssessment.ascx" />
     <Content Include="Controls\Task\TaskByAgent.ascx" />
     <Content Include="Controls\Task\TaskEdit.ascx" />
-    <Content Include="DiagramaBaseDatos.aspx" />
-    <Content Include="DiagramaCasosUso.aspx" />
-    <Content Include="DiagramaClases.aspx" />
-    <Content Include="DiagramaSecuencia.aspx" />
+    <Content Include="Design.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="Index.aspx" />
-    <Content Include="Index2.aspx" />
-    <Content Include="Test.aspx" />
-    <Content Include="Test2.aspx" />
+    <Content Include="Versioning.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -175,12 +173,19 @@
     <Content Include="Ws\UserService.asmx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Methodology.aspx.cs">
+      <DependentUpon>Methodology.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Methodology.aspx.designer.cs">
+      <DependentUpon>Methodology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Technologies.aspx.cs">
+      <DependentUpon>Technologies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Technologies.aspx.designer.cs">
+      <DependentUpon>Technologies.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -336,33 +341,19 @@
     <Compile Include="Controls\Task\TaskEdit.ascx.designer.cs">
       <DependentUpon>TaskEdit.ascx</DependentUpon>
     </Compile>
-    <Compile Include="DiagramaBaseDatos.aspx.cs">
-      <DependentUpon>DiagramaBaseDatos.aspx</DependentUpon>
+    <Compile Include="Design.aspx.cs">
+      <DependentUpon>Design.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DiagramaBaseDatos.aspx.designer.cs">
-      <DependentUpon>DiagramaBaseDatos.aspx</DependentUpon>
+    <Compile Include="Design.aspx.designer.cs">
+      <DependentUpon>Design.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DiagramaCasosUso.aspx.cs">
-      <DependentUpon>DiagramaCasosUso.aspx</DependentUpon>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DiagramaCasosUso.aspx.designer.cs">
-      <DependentUpon>DiagramaCasosUso.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DiagramaClases.aspx.cs">
-      <DependentUpon>DiagramaClases.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DiagramaClases.aspx.designer.cs">
-      <DependentUpon>DiagramaClases.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DiagramaSecuencia.aspx.cs">
-      <DependentUpon>DiagramaSecuencia.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DiagramaSecuencia.aspx.designer.cs">
-      <DependentUpon>DiagramaSecuencia.aspx</DependentUpon>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -370,13 +361,6 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Index2.aspx.cs">
-      <DependentUpon>Index2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Index2.aspx.designer.cs">
-      <DependentUpon>Index2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
@@ -386,19 +370,12 @@
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Test.aspx.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
+    <Compile Include="Versioning.aspx.cs">
+      <DependentUpon>Versioning.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Test.aspx.designer.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Test2.aspx.cs">
-      <DependentUpon>Test2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Test2.aspx.designer.cs">
-      <DependentUpon>Test2.aspx</DependentUpon>
+    <Compile Include="Versioning.aspx.designer.cs">
+      <DependentUpon>Versioning.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

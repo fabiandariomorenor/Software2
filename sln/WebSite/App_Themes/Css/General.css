@@ -179,3 +179,7 @@ a:visited:
     display:inline-block;
     
 }
+a:link,a:visited
+{
+    color:#129296;
+}

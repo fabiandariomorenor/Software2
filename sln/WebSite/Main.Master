@@ -52,18 +52,18 @@
                     
                     <%--Desarrolladores--%>
                     <div class="box">
-                        <div class="title">Equipo de Trabajo</div>
+                        <div class="title">Authors</div>
                         <%--Developers--%>
                         <uc:Developers ID="Developers1" runat=server />
                     </div>
 
-                     <%--Documentos--%>
+                    <%-- 
                     <div class="box">
                         <div class="title">Documentos</div>
-                        <%--Developers--%>
+                        
                         <uc:Documents ID="Documents1" runat=server />
                     </div>
-
+--%>
                     <%--Actividades--%>
                     <div class="box">
                         <div class="title">Actividades</div>

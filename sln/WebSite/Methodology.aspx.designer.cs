@@ -10,6 +10,6 @@
 namespace WebSite {
     
     
-    public partial class DiagramaCasosUso {
+    public partial class Methodology {
     }
 }

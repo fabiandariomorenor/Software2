@@ -5,16 +5,34 @@
 <link href="../App_Themes/Css/Login.css" rel="stylesheet" type="text/css" />
 
 <%--Header--%>
-<div class="header">
+<div class="header private">
     <%--Crear--%>
     
-    <div class="create">
-        <a href="/index.aspx" class="logo">Proyecto de Ingeniería de Software 2</a>
+    <div class="project create">
+        <a href="/index.aspx" class="logo"> ManAgent Task Planner® </a>
+        <a class="name"><asp:Literal ID="ltName" Visible="false" runat="server"></asp:Literal></a>
     </div>
 
-    <div class="create" style="float:right">
-        <a id="lnkLogin" class="logo">Login</a>
+    <div class="menu">
+
+        <a class="home public" href="/home.aspx"> 
+            <img align="middle" src="../App_Themes/Images/Icon/home.png" />Inicio</a>
+        <a class="design public" href="/design.aspx"> 
+            <img align="middle" src="../App_Themes/Images/Icon/diseno.png" />Diseño</a>
+        <a class="method public" href="/Methodology.aspx"> 
+            <img align="middle" src="../App_Themes/Images/Icon/metodologia.png" />Metodologia</a>
+        <a class="tech public" href="/Technologies.aspx"> 
+            <img align="middle" src="../App_Themes/Images/Icon/tecnologias.png" />Tecnologias</a>
+        
+        <a class="version public" href="/Versioning.aspx"> 
+            <img align="middle" src="../App_Themes/Images/Icon/repositorio.png" />Versionamiento</a>
     </div>
+
+    <asp:Panel ID="pnlLogin"  runat="server">
+        <div class="create" style="float:right">
+            <a id="lnkLogin" class="logo">Login</a>
+        </div>
+    </asp:Panel>
     
 </div>
 

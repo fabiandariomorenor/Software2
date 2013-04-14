@@ -87,6 +87,10 @@
     margin-left:5px;
     opacity:0.5;
 }
+.header .menu a.public
+{
+    opacity:1;    
+}
 .header .menu img
 {
     width:32px;
@@ -107,6 +111,22 @@
 .header .menu .task
 {
     background-color:#AA3F41;
+}
+.header .menu .version
+{
+    background-color:#6D6E71;
+}
+.header .menu .method
+{
+    background-color:#FF6309;
+}
+.header .menu .tech
+{
+    background-color:#0071B9;
+}
+.header .menu .design
+{
+    background-color:#05AEDA;
 }
 .header .menu .select
 {

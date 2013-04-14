@@ -10,6 +10,6 @@
 namespace WebSite {
     
     
-    public partial class DiagramaBaseDatos {
+    public partial class Versioning {
     }
 }

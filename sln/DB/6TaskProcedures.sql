@@ -46,7 +46,7 @@ CREATE PROCEDURE [dbo].[TaskInsert]
 	@ID_Localization int
 AS
 BEGIN
-	INSERT INTO [SistemaTecnicos].[dbo].[TASK]
+	INSERT INTO [dbo].[TASK]
            ([ID]
            ,[ID_Client]
            ,[ID_Agent]
@@ -98,7 +98,7 @@ CREATE PROCEDURE [dbo].[TaskUpdate]
 	@Comment varchar(50)
 AS
 BEGIN
-	UPDATE [SistemaTecnicos].[dbo].[TASK]
+	UPDATE [dbo].[TASK]
    SET [ID_State] = @ID_State
       ,[InitDate] = @InitDate
       ,[EndDate] = @EndDate

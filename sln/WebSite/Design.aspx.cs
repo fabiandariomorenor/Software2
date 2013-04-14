@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebSite
 {
-    public partial class DiagramaCasosUso : System.Web.UI.Page
+    public partial class Design : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
