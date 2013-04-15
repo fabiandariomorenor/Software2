@@ -83,7 +83,7 @@ GO
 
 USE [SistemaTecnicos]
 GO
-/****** Object:  StoredProcedure [dbo].[UserInsert]    Script Date: 04/02/2013 17:14:06 ******/
+
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -106,3 +106,19 @@ BEGIN
  WHERE ID = @ID
  SELECT ID FROM [TASK] WHERE ID = @ID
 END
+
+GO
+
+
+CREATE PROCEDURE [dbo].[ListByClient] 
+	@ID_Client int
+AS
+BEGIN
+	SELECT * FROM [TASK]
+	WHERE ID_Client = @ID_Client
+END
+
+
+
+GO
+

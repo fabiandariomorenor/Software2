@@ -32,9 +32,9 @@ namespace BO
             }
         }
 
-        public List<Task> ListByClient(int clientId)
+        public List<Task> ListByClient(Task task)
         {
-            return taskDao.ListByClient(clientId);
+            return taskDao.ListByClient(task);
         }
 
         public List<Task> ListByAgent(int agentId, DateTime startDate, DateTime endDate)

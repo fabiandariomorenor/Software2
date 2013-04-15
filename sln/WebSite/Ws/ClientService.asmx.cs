@@ -20,6 +20,7 @@ namespace WebSite.Ws
     public class ClientService : System.Web.Services.WebService
     {
         ClientBO clientBO = new ClientBO();
+
         [WebMethod]
         public List<Client> List(string name)
         {
@@ -41,5 +42,6 @@ namespace WebSite.Ws
         {
             return clientBO.Get(document);
         }
+
     }
 }

@@ -26,9 +26,9 @@ namespace DAO
             return ExecuteScalar("TaskUpdate", task);
         }
 
-        public List<Task> ListByClient(int clientId)
+        public List<Task> ListByClient(Task task)
         {
-            return Execute<Task>("ListByClient",clientId);
+            return Execute<Task>("ListByClient", task);
         }
     }
 }
