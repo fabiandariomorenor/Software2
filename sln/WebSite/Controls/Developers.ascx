@@ -46,7 +46,7 @@
 
 <div class="developer">
     <div class="left">
-        <img width="50px" src="../App_Themes/Images/Developers/jorge.jpg" />
+        <img width="50px" src="../App_Themes/Images/Developers/jorge.png" />
     </div>
     <div class="right">
         <a>Jorge Andrés Serrano Jaimes </a>
