@@ -21,8 +21,8 @@ namespace WebSite.Ws
         TaskBO taskBO = new TaskBO();
 
         [WebMethod]
-        public int Save(int id, decimal clientId, decimal agentId, int stateID, int locationId, string description, string address, DateTime expectedInitDate, 
-            DateTime expectedEndDate, string comment)
+        public int Save(int id, decimal clientId, decimal agentId, int stateID, int locationId, string description, string address, DateTime initDate, 
+            DateTime endDate, string comment)
         {
             Task task = new Task();
             task.ID = id;
@@ -32,10 +32,10 @@ namespace WebSite.Ws
             task.ID_Localization = locationId;
             task.Description = description;
             task.Address = address;
-            task.InitDate = expectedInitDate;
-            task.EndDate = expectedEndDate;
-            task.ExpectedInitDate = expectedInitDate;
-            task.ExpectedEndDate = expectedEndDate;
+            task.InitDate = initDate;
+            task.EndDate = endDate;
+            task.ExpectedInitDate = initDate;
+            task.ExpectedEndDate = endDate;
             task.ProcedureDate = DateTime.Now;
             task.Comment = comment;
             return taskBO.Save(task);

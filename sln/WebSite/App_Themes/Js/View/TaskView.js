@@ -1,6 +1,6 @@
 ﻿TaskView = Backbone.View.extend({
     calendar: null,
-    currentDate: null,
+    currentDate: '01/01/2013',
     onSaveHandler: null,
 
     initialize: function () {
@@ -24,8 +24,8 @@
 
             var clientId = $("#ddlClient option:selected").val();
             var description = $("#txtDescription").val();
-            var address = $("#txtAddress").val(); 
-            var agentId = $("#ddlAgent option:selected").val();
+            var address = $("#txtAddress").val();
+            var agentId = 1; // $("#ddlAgent option:selected").val();
             var comment = $("#lblComment").html();
 
             this.onSaveHandler(clientId, description, this.currentDate, agentId, comment, address);
@@ -49,7 +49,7 @@
             events: [
 
 				    {
-				        title: 'Birthday Party',
+				        title: 'Agenda',
 				        start: new Date(y, m, d + 1, 19, 0),
 				        end: new Date(y, m, d + 1, 22, 30),
 				        allDay: false

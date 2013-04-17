@@ -21,7 +21,7 @@
         <div class="row">
             <span>Teléfono:</span><input id="txtPhone" Integer="true" maxlength="10" type="text"/>
         </div>
-        <div class="row">
+        <div rel="agent" class="row hide">
             <span>Contraseña:</span><input id="txtUserPassword" maxlength="20" type="password"/>
         </div>
     </div>

@@ -52,17 +52,61 @@
             var address = $("#txtAddress").val();
             var date = $("#txtDate").val();
 
+            if (rolId == 3)
+                password = $("#txtDate").val();
+
             //datos agente
             var specialized = $("#txtSpecialized").val();
 
-            this.onSaveHandler(rol, document, name, phone, password, address, date, specialized);
+            if (this.validate(rol, document, name, phone, password, address, date, specialized)) {
+                this.onSaveHandler(rol, document, name, phone, password, address, date, specialized);
+            }
         }
+    },
+
+    validate: function (rol, document, name, phone, password, address, date, specialized) {
+        if (document.length < 6) {
+            alert("Por favor ingrese un documento valido");
+            return false;
+        }
+        else if (name.length < 6) {
+            alert("Por favor ingrese un nombre valido");
+            return false;
+        }
+        else if (phone.length < 6) {
+            alert("Por favor ingrese un teléfono valido");
+            return false;
+        }
+
+        //cliente
+        else if (rol == 3) {
+            if (address.length < 6) {
+                alert("Por favor ingrese una dirección valida");
+                return false;
+            }
+            else if (date.length < 6) {
+                alert("Por favor seleccione la fecha de expedición del documento");
+                return false;
+            }
+        }
+        else if (rol == 2) {
+            if (password.length < 6) {
+                alert("Por favor ingrese una contraseña valida");
+                return false;
+            }
+            else if (specialized.length < 6) {
+                alert("Por favor ingrese la especialización del agente");
+                return false;
+            }
+        }
+
+        return true;
     },
 
     show: function () {
         $(".modal_content,.back_modal").fadeIn();
         $('#txtDate').datepicker({
-            dateFormat: "dd/mm/yy",
+            dateFormat: "mm/dd/yy",
             maxDate: new Date(),
             changeYear: true,
             changeMonth: true
