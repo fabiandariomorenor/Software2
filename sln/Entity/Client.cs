@@ -8,6 +8,6 @@ namespace Entity
     public class Client : User
     {
         public string Address { get; set; }
-        public DateTime DateExpDocument { get; set; }
+        public string DateExpDocument { get; set; }
     }
 }

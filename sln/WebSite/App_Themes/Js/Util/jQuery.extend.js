@@ -3,7 +3,7 @@
         var keyCode = event.keyCode;
         console.log(keyCode);
         //si es un caracter valido, lo dejamos pasar
-        if (keyCode < 40 || (keyCode > 45 && keyCode < 58) || (keyCode > 95 && keyCode < 106)) {
+        if ((keyCode < 40 || (keyCode > 45 && keyCode < 58) || (keyCode > 95 && keyCode < 106)) && keyCode != 32) {
             return true;
         }
         else

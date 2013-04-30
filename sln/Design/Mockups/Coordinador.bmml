@@ -1,0 +1,88 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1008" measuredH="590" mockupW="900" mockupH="490">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="108" y="100" w="900" h="490" measuredW="200" measuredH="170" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Coordinador</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="133" y="157" w="-1" h="-1" measuredW="55" measuredH="19" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Total%3A%2058%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="133" y="132" w="-1" h="-1" measuredW="70" measuredH="26" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Agentes</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="133" y="261" w="-1" h="-1" measuredW="50" measuredH="24" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Tareas</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="133" y="287" w="-1" h="-1" measuredW="98" measuredH="19" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>53%20en%20ejecuci%F3n%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Link" x="133" y="306" w="-1" h="-1" measuredW="78" measuredH="19" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>8%20pendientes</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="133" y="359" w="-1" h="-1" measuredW="60" measuredH="24" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Clientes</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Link" x="133" y="383" w="-1" h="-1" measuredW="70" measuredH="19" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>854%20activos</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Link" x="133" y="325" w="-1" h="-1" measuredW="81" measuredH="19" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3%20canceladas</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::DataGrid" x="353" y="164" w="640" h="411" measuredW="467" measuredH="411" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%2C%20Lunes%2C%20Martes%2C%20Miercoles%2C%20Jueves%2C%20Viernes%2C%20Sabado%2C%20Domingo%0A07am%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A08am%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A09am%20%20%20%2C%203/58%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A10am%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%204/58%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A11am%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A12pm%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A01pm%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A02pm%20%20%2C%20%20%20%2C6/58%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A03pm%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A04pm%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A05pm%20%20%20%2C%20%20%20%2C%20%20%20%2C%207/58%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A06pm%20%20%20%2C8/45%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%0A07pm%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20%2C%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Label" x="567" y="132" w="-1" h="-1" measuredW="213" measuredH="26" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Disponibilidad%20de%20Agentes</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="133" y="176" w="-1" h="-1" measuredW="40" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Libres%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Link" x="199" y="220" w="-1" h="-1" measuredW="128" measuredH="19" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Arturo%2C%20Alvaro%2C%20Alberto</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Link" x="132" y="199" w="-1" h="-1" measuredW="164" measuredH="19" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Daniel%2C%20Andres%2C%20Luis%2C%20Gabriel</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="133" y="218" w="-1" h="-1" measuredW="64" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ocupados%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Link" x="180" y="177" w="-1" h="-1" measuredW="122" measuredH="19" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pedro%2C%20Juan%2C%20Fabian%2C%20</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

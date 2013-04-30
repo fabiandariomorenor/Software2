@@ -50,6 +50,25 @@ h2
     width: 100%;
     text-align:center;
 }
+h3
+{
+    color: #129296;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    border-bottom:1px solid #129296;
+    font-weight:normal;
+}
+li
+{
+    list-style:square;
+    margin-left:20px;
+}
+li b
+{
+    color:#129296;
+    font-weight:normal;
+}
 .developer
 {
     margin-top:5px;

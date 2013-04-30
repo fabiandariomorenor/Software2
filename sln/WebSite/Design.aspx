@@ -56,4 +56,74 @@
     </div>
     <p>Por favor de click sobre la imagen para descargar</p>
 
+
+    <div class="mockups">
+        <h2>Mockups</h2>
+
+        <h4>Login</h4>
+        <div class="gallery">
+           <div class="principal_image">
+                <a href="/App_Themes/Images/documents/Login.png" alt="Click para ampliar"><img src="/App_Themes/Images/documents/Login.png" /></a>
+            </div>              
+        </div>
+        <p>Por favor de click sobre la imagen para descargar</p>
+
+
+
+        <h4>Listado de Agentes</h4>
+        <div class="gallery">
+           <div class="principal_image">
+                <a href="/App_Themes/Images/documents/Listado de Agentes.png" alt="Click para ampliar"><img src="/App_Themes/Images/documents/Listado de Agentes.png" width="665px" /></a>
+            </div>              
+        </div>
+        <p>Por favor de click sobre la imagen para descargar</p>
+
+        <h4>Listado de Clientes</h4>
+        <div class="gallery">
+           <div class="principal_image">
+                <a href="/App_Themes/Images/documents/Listado de Clientes.png" alt="Click para ampliar"><img src="/App_Themes/Images/documents/Listado de Clientes.png" width="665px" /></a>
+            </div>              
+        </div>
+        <p>Por favor de click sobre la imagen para descargar</p>
+
+        <h4>Información del agente</h4>
+        <div class="gallery">
+           <div class="principal_image">
+                <a href="/App_Themes/Images/documents/Informacion Agente.png" alt="Click para ampliar"><img src="/App_Themes/Images/documents/Informacion Agente.png"  /></a>
+            </div>              
+        </div>
+        <p>Por favor de click sobre la imagen para descargar</p>
+
+        <h4>Información del cliente</h4>
+        <div class="gallery">
+           <div class="principal_image">
+                <a href="/App_Themes/Images/documents/Informacion Cliente.png" alt="Click para ampliar"><img src="/App_Themes/Images/documents/Informacion Cliente.png"  /></a>
+            </div>              
+        </div>
+        <p>Por favor de click sobre la imagen para descargar</p>
+
+        <h4>Información de la tarea</h4>
+        <div class="gallery">
+           <div class="principal_image">
+                <a href="/App_Themes/Images/documents/Informacion tarea.png" alt="Click para ampliar"><img src="/App_Themes/Images/documents/Informacion tarea.png"  /></a>
+            </div>              
+        </div>
+        <p>Por favor de click sobre la imagen para descargar</p>
+
+        <h4>Tareas por agente</h4>
+        <div class="gallery">
+           <div class="principal_image">
+                <a href="/App_Themes/Images/documents/Tareas por agente.png" alt="Click para ampliar"><img src="/App_Themes/Images/documents/Tareas por agente.png" width="665px" /></a>
+            </div>              
+        </div>
+        <p>Por favor de click sobre la imagen para descargar</p>
+
+        <h4>Tareas por cliente</h4>
+        <div class="gallery">
+           <div class="principal_image">
+                <a href="/App_Themes/Images/documents/Tareas por cliente.png" alt="Click para ampliar"><img src="/App_Themes/Images/documents/Tareas por cliente.png"  /></a>
+            </div>              
+        </div>
+        <p>Por favor de click sobre la imagen para descargar</p>
+    </div>
 </asp:Content>

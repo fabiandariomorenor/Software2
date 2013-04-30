@@ -36,6 +36,8 @@
 
     onClean: function () {
         $("input").val("");
+        $("#txtDocument").show();
+        $("#lblDocumentEdit").html("").hide();
         $(".modal_content,.back_modal").fadeOut();
     },
 
@@ -104,6 +106,7 @@
     },
 
     show: function () {
+    
         $(".modal_content,.back_modal").fadeIn();
         $('#txtDate').datepicker({
             dateFormat: "mm/dd/yy",
@@ -119,19 +122,23 @@
     },
 
     setData: function (obj) {
+        $("#lblDocumentEdit").html(obj.Document).show();
+        $("#txtDocument").hide();
         $("#txtDocument").val(obj.Document);
         $("#txtName").val(obj.Name);
         $("#txtPhone").val(obj.Phone);
         $("#txtUserPassword").val(obj.Password);
 
+        //datos agente
+        $("#txtSpecialized").val(obj.Specialization);
+
         //datos cliente
         $("#txtAddress").val(obj.Address);
 
-        var date = eval("new " + Util.ReplaceAll(obj.DateExpDocument, "/", ""));
+        //var date = eval("new " + Util.ReplaceAll(obj.DateExpDocument, "/", ""));
 
-        $("#txtDate").datepicker("setDate", date);
+        $("#txtDate").datepicker("setDate", obj.DateExpDocument);
 
-        //datos agente
-        $("#txtSpecialized").val(obj.Specialization);
+        
     }
 });

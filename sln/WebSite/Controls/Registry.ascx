@@ -13,7 +13,7 @@
 
     <div class="data">
         <div class="row">
-            <span>Documento:</span><input id="txtDocument" Integer="true" maxlength="10" type="text"/>
+            <span>Documento:</span><input id="txtDocument" Integer="true" maxlength="10" type="text"/><span id="lblDocumentEdit" style="display:none;"></span>
         </div>
         <div class="row">
             <span>Nombre:</span><input id="txtName" maxlength="50" type="text"/>

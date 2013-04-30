@@ -13,8 +13,8 @@
 }
 .content .gallery
 {
-
-    background-color:#f2f2f2;
+    text-align:center;
+    background-color:transparent;
 }
 .content .auxiliar_image img
 {
@@ -35,6 +35,7 @@
     background-color: #FFFFFF;
     margin: 0 auto;
     padding: 10px;
+    color:#555;
     width: 980px;
 }
 .content .left_column,.content .right_column
@@ -67,4 +68,8 @@
     background-color:#C1CD23;
     padding:5px;
     font-size:19px;
+}
+.mockups .principal_image
+{
+    border:0px !important;
 }

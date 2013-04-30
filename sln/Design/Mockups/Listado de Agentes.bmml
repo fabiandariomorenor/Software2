@@ -1,0 +1,354 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1230" measuredH="624" mockupW="1066" mockupH="578">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="164" y="46" w="1066" h="578" measuredW="200" measuredH="170" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Agentes</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="__group__" x="198" y="180" w="323" h="128" measuredW="323" measuredH="128" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="323" h="128" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="8"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Webcam" x="15" y="15" w="65" h="54" measuredW="177" measuredH="146" zOrder="1" locked="false" isInGroup="8"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="90" y="15" w="-1" h="-1" measuredW="104" measuredH="26" zOrder="2" locked="false" isInGroup="8">
+          <controlProperties>
+            <size>18</size>
+            <text>Pepito%20Perez</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="90" y="42" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="3" locked="false" isInGroup="8">
+          <controlProperties>
+            <text>Documento%3A%201.123.456</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="90" y="63" w="218" h="-1" measuredW="218" measuredH="21" zOrder="4" locked="false" isInGroup="8">
+          <controlProperties>
+            <text>Especializaci%F2n%3A%20Instalaci%F2n%20de%20redes</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="90" y="93" w="-1" h="-1" measuredW="63" measuredH="19" zOrder="5" locked="false" isInGroup="8">
+          <controlProperties>
+            <text>Ver%20tareas</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="9" controlTypeID="__group__" x="536" y="180" w="323" h="128" measuredW="323" measuredH="128" zOrder="2" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="323" h="128" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="9"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Webcam" x="15" y="15" w="65" h="54" measuredW="177" measuredH="146" zOrder="1" locked="false" isInGroup="9"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="90" y="15" w="-1" h="-1" measuredW="104" measuredH="26" zOrder="2" locked="false" isInGroup="9">
+          <controlProperties>
+            <size>18</size>
+            <text>Pepito%20Perez</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="90" y="42" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="3" locked="false" isInGroup="9">
+          <controlProperties>
+            <text>Documento%3A%201.123.456</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="90" y="63" w="218" h="-1" measuredW="218" measuredH="21" zOrder="4" locked="false" isInGroup="9">
+          <controlProperties>
+            <text>Especializaci%F2n%3A%20Instalaci%F2n%20de%20redes</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="90" y="93" w="-1" h="-1" measuredW="63" measuredH="19" zOrder="5" locked="false" isInGroup="9">
+          <controlProperties>
+            <text>Ver%20tareas</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="10" controlTypeID="__group__" x="874" y="180" w="323" h="128" measuredW="323" measuredH="128" zOrder="3" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="323" h="128" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="10"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Webcam" x="15" y="15" w="65" h="54" measuredW="177" measuredH="146" zOrder="1" locked="false" isInGroup="10"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="90" y="15" w="-1" h="-1" measuredW="104" measuredH="26" zOrder="2" locked="false" isInGroup="10">
+          <controlProperties>
+            <size>18</size>
+            <text>Pepito%20Perez</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="90" y="42" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="3" locked="false" isInGroup="10">
+          <controlProperties>
+            <text>Documento%3A%201.123.456</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="90" y="63" w="218" h="-1" measuredW="218" measuredH="21" zOrder="4" locked="false" isInGroup="10">
+          <controlProperties>
+            <text>Especializaci%F2n%3A%20Instalaci%F2n%20de%20redes</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="90" y="93" w="-1" h="-1" measuredW="63" measuredH="19" zOrder="5" locked="false" isInGroup="10">
+          <controlProperties>
+            <text>Ver%20tareas</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="11" controlTypeID="__group__" x="198" y="323" w="323" h="128" measuredW="323" measuredH="128" zOrder="4" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="323" h="128" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="11"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Webcam" x="15" y="15" w="65" h="54" measuredW="177" measuredH="146" zOrder="1" locked="false" isInGroup="11"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="90" y="15" w="-1" h="-1" measuredW="104" measuredH="26" zOrder="2" locked="false" isInGroup="11">
+          <controlProperties>
+            <size>18</size>
+            <text>Pepito%20Perez</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="90" y="42" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="3" locked="false" isInGroup="11">
+          <controlProperties>
+            <text>Documento%3A%201.123.456</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="90" y="63" w="218" h="-1" measuredW="218" measuredH="21" zOrder="4" locked="false" isInGroup="11">
+          <controlProperties>
+            <text>Especializaci%F2n%3A%20Instalaci%F2n%20de%20redes</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="90" y="93" w="-1" h="-1" measuredW="63" measuredH="19" zOrder="5" locked="false" isInGroup="11">
+          <controlProperties>
+            <text>Ver%20tareas</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="12" controlTypeID="__group__" x="536" y="323" w="323" h="128" measuredW="323" measuredH="128" zOrder="5" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="323" h="128" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="12"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Webcam" x="15" y="15" w="65" h="54" measuredW="177" measuredH="146" zOrder="1" locked="false" isInGroup="12"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="90" y="15" w="-1" h="-1" measuredW="104" measuredH="26" zOrder="2" locked="false" isInGroup="12">
+          <controlProperties>
+            <size>18</size>
+            <text>Pepito%20Perez</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="90" y="42" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="3" locked="false" isInGroup="12">
+          <controlProperties>
+            <text>Documento%3A%201.123.456</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="90" y="63" w="218" h="-1" measuredW="218" measuredH="21" zOrder="4" locked="false" isInGroup="12">
+          <controlProperties>
+            <text>Especializaci%F2n%3A%20Instalaci%F2n%20de%20redes</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="90" y="93" w="-1" h="-1" measuredW="63" measuredH="19" zOrder="5" locked="false" isInGroup="12">
+          <controlProperties>
+            <text>Ver%20tareas</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="13" controlTypeID="__group__" x="874" y="323" w="323" h="128" measuredW="323" measuredH="128" zOrder="6" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="323" h="128" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="13"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Webcam" x="15" y="15" w="65" h="54" measuredW="177" measuredH="146" zOrder="1" locked="false" isInGroup="13"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="90" y="15" w="-1" h="-1" measuredW="104" measuredH="26" zOrder="2" locked="false" isInGroup="13">
+          <controlProperties>
+            <size>18</size>
+            <text>Pepito%20Perez</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="90" y="42" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="3" locked="false" isInGroup="13">
+          <controlProperties>
+            <text>Documento%3A%201.123.456</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="90" y="63" w="218" h="-1" measuredW="218" measuredH="21" zOrder="4" locked="false" isInGroup="13">
+          <controlProperties>
+            <text>Especializaci%F2n%3A%20Instalaci%F2n%20de%20redes</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="90" y="93" w="-1" h="-1" measuredW="63" measuredH="19" zOrder="5" locked="false" isInGroup="13">
+          <controlProperties>
+            <text>Ver%20tareas</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="14" controlTypeID="__group__" x="198" y="466" w="323" h="128" measuredW="323" measuredH="128" zOrder="7" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="323" h="128" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="14"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Webcam" x="15" y="15" w="65" h="54" measuredW="177" measuredH="146" zOrder="1" locked="false" isInGroup="14"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="90" y="15" w="-1" h="-1" measuredW="104" measuredH="26" zOrder="2" locked="false" isInGroup="14">
+          <controlProperties>
+            <size>18</size>
+            <text>Pepito%20Perez</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="90" y="42" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="3" locked="false" isInGroup="14">
+          <controlProperties>
+            <text>Documento%3A%201.123.456</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="90" y="63" w="218" h="-1" measuredW="218" measuredH="21" zOrder="4" locked="false" isInGroup="14">
+          <controlProperties>
+            <text>Especializaci%F2n%3A%20Instalaci%F2n%20de%20redes</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="90" y="93" w="-1" h="-1" measuredW="63" measuredH="19" zOrder="5" locked="false" isInGroup="14">
+          <controlProperties>
+            <text>Ver%20tareas</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="15" controlTypeID="__group__" x="536" y="466" w="323" h="128" measuredW="323" measuredH="128" zOrder="8" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="323" h="128" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="15"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Webcam" x="15" y="15" w="65" h="54" measuredW="177" measuredH="146" zOrder="1" locked="false" isInGroup="15"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="90" y="15" w="-1" h="-1" measuredW="104" measuredH="26" zOrder="2" locked="false" isInGroup="15">
+          <controlProperties>
+            <size>18</size>
+            <text>Pepito%20Perez</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="90" y="42" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="3" locked="false" isInGroup="15">
+          <controlProperties>
+            <text>Documento%3A%201.123.456</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="90" y="63" w="218" h="-1" measuredW="218" measuredH="21" zOrder="4" locked="false" isInGroup="15">
+          <controlProperties>
+            <text>Especializaci%F2n%3A%20Instalaci%F2n%20de%20redes</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="90" y="93" w="-1" h="-1" measuredW="63" measuredH="19" zOrder="5" locked="false" isInGroup="15">
+          <controlProperties>
+            <text>Ver%20tareas</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="16" controlTypeID="__group__" x="874" y="466" w="323" h="128" measuredW="323" measuredH="128" zOrder="9" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="323" h="128" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="16"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Webcam" x="15" y="15" w="65" h="54" measuredW="177" measuredH="146" zOrder="1" locked="false" isInGroup="16"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="90" y="15" w="-1" h="-1" measuredW="104" measuredH="26" zOrder="2" locked="false" isInGroup="16">
+          <controlProperties>
+            <size>18</size>
+            <text>Pepito%20Perez</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="90" y="42" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="3" locked="false" isInGroup="16">
+          <controlProperties>
+            <text>Documento%3A%201.123.456</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="90" y="63" w="218" h="-1" measuredW="218" measuredH="21" zOrder="4" locked="false" isInGroup="16">
+          <controlProperties>
+            <text>Especializaci%F2n%3A%20Instalaci%F2n%20de%20redes</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="90" y="93" w="-1" h="-1" measuredW="63" measuredH="19" zOrder="5" locked="false" isInGroup="16">
+          <controlProperties>
+            <text>Ver%20tareas</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Button" x="1138" y="75" w="-1" h="-1" measuredW="59" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nuevo</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::SearchBox" x="1022" y="127" w="175" h="-1" measuredW="120" measuredH="25" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Buscar</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::HRule" x="198" y="111" w="999" h="-1" measuredW="100" measuredH="10" zOrder="12" locked="false" isInGroup="-1"/>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::HRule" x="196" y="157" w="999" h="-1" measuredW="100" measuredH="10" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Icon" x="497" y="180" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Icon" x="473" y="180" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::Icon" x="835" y="180" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Icon" x="811" y="180" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Icon" x="1173" y="180" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Icon" x="1149" y="180" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Icon" x="497" y="323" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Icon" x="473" y="323" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Icon" x="835" y="323" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Icon" x="811" y="323" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Icon" x="1173" y="323" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Icon" x="1149" y="323" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Icon" x="497" y="466" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Icon" x="473" y="466" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Icon" x="835" y="466" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Icon" x="811" y="466" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Icon" x="1173" y="466" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Icon" x="1149" y="466" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

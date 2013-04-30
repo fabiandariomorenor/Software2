@@ -41,6 +41,29 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Mockups\Coordinador.bmml" />
+    <None Include="Mockups\Informacion Agente.bmml" />
+    <None Include="Mockups\Informacion Cliente.bmml" />
+    <None Include="Mockups\Informacion tarea.bmml" />
+    <None Include="Mockups\Listado de Agentes.bmml" />
+    <None Include="Mockups\Listado de Clientes.bmml" />
+    <None Include="Mockups\Login.bmml" />
+    <None Include="Mockups\Tareas por agente.bmml" />
+    <None Include="Mockups\Tareas por cliente.bmml" />
+    <None Include="Uml\UML_Software2.oom" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mockups\Coordinador.png" />
+    <Content Include="Mockups\Informacion Agente.png" />
+    <Content Include="Mockups\Informacion Cliente.png" />
+    <Content Include="Mockups\Informacion tarea.png" />
+    <Content Include="Mockups\Listado de Agentes.png" />
+    <Content Include="Mockups\Listado de Clientes.png" />
+    <Content Include="Mockups\Login.png" />
+    <Content Include="Mockups\Tareas por agente.png" />
+    <Content Include="Mockups\Tareas por cliente.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

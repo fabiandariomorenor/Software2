@@ -3,7 +3,7 @@
 
 <div class="back_modal"></div>
 <div class="modal_content">
-    <h1>Informacion del Cliente</h1>
+    <h1>Información del Cliente</h1>
     <uc:Registry ID="Registry1" Rol="3" runat=server />
 </div>
 
@@ -18,7 +18,7 @@
 </div>
 
 <div class="toolbar">
-    Buscar un agente: <input id="txtFind" search="true" type="text"/>
+    Buscar un cliente: <input id="txtFind" search="true" type="text"/>
 </div>
 
 <div id="rptClient"></div>

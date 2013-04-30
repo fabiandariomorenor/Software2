@@ -6,6 +6,8 @@ using System.Web.Services;
 using Entity;
 using BO;
 using System.Web.Script.Serialization;
+using System.Globalization;
+using System.Threading;
 
 namespace WebSite.Ws
 {
@@ -24,13 +26,17 @@ namespace WebSite.Ws
         [WebMethod]
         public List<Client> List(string name)
         {
+            CultureInfo ci = new CultureInfo("en-US");
+            Thread.CurrentThread.CurrentCulture = ci;
+            Thread.CurrentThread.CurrentUICulture = ci;
+
             Client client = new Client();
             client.Name = name;
             return clientBO.List(client);
         }
 
         [WebMethod]
-        public int Delete(int document)
+        public int Delete(decimal document)
         {
             Client client = new Client();
             client.Document = document;

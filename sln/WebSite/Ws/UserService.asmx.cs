@@ -6,6 +6,8 @@ using System.Web.Services;
 using BO;
 using Entity;
 using System.Web.Script.Serialization;
+using System.Globalization;
+using System.Threading;
 
 namespace WebSite.Ws
 {
@@ -44,8 +46,12 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public int Save(int rol, decimal document, int localization, string name, decimal phone, string password, string address, DateTime date, int managerId, string specialized)
+        public int Save(int rol, decimal document, int localization, string name, decimal phone, string password, string address, string date, int managerId, string specialized)
         {
+            CultureInfo ci = new CultureInfo("en-US");
+            Thread.CurrentThread.CurrentCulture = ci;
+            Thread.CurrentThread.CurrentUICulture = ci;
+
             switch(rol)
             {
                 case 1:

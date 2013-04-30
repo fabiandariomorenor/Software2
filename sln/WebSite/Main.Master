@@ -52,7 +52,7 @@
                     
                     <%--Desarrolladores--%>
                     <div class="box">
-                        <div class="title">Authors</div>
+                        <div class="title">Autores</div>
                         <%--Developers--%>
                         <uc:Developers ID="Developers1" runat=server />
                     </div>

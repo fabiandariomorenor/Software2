@@ -10,7 +10,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Full Stack Framework</h1>
-<h2>.NET Framework 4</h2>
+<h3>.NET Framework 4</h3>
 <p class="style1">
     Para el desarrollo del proyecto de ingeniería de Software 2, se definió utilizar 
     .NET Framework (versión 4) para el desarrollo Web, con el Entorno de Desarrollo 
@@ -52,7 +52,7 @@ Por otra parte, los Servicios Web XML utilizan XML para enviar datos, garantizan
      utilizar la seguridad interna del servidor. Que por su independencia de la utilización de scripts, puede ser visualizado prácticamente en todos los dispositivos que dispongan de acceso a Internet y de un navegador Web .
 </p>
 
-&nbsp;<h2>Ventajas de Desarrollo con  .NET Framework</h2>
+&nbsp;<h3>Ventajas de Desarrollo con  .NET Framework</h3>
 <p class="style1">
     La implementación del Framework esta basada en estándares y practicas Web, 
     soportando completamente las tecnologías actuales de Internet, cómo HTML 
@@ -64,7 +64,7 @@ Por otra parte, los Servicios Web XML utilizan XML para enviar datos, garantizan
     utilizada por Microsoft para el desarrollodo de aplicaciones Windows, 
     garantizando completamente el soporte técnologico.</p>
 
-    <h2>Motor de Base de Datos SQLServer 2008 R2</h2>
+    <h3>Motor de Base de Datos SQLServer 2008 R2</h3>
 
 <p class="style1">
     Se utilizara&nbsp; el servicio de Motor de base de datos de Microsoft&nbsp;SQL Server 
@@ -84,7 +84,7 @@ Por otra parte, los Servicios Web XML utilizan XML para enviar datos, garantizan
     procedimientos almacenados) para ver, administrar y guardar datos.</p>
 <p class="style1">
 &nbsp;&nbsp;</p>
-    <h2>Referencias</h2>
+    <h3>Referencias</h3>
     <br />
     <li><a bi:index="0" bi:type="secondarycta" class="hpFeat_Link Arrow" 
             href="http://www.microsoft.com/downloads/info.aspx?na=40&amp;p=3&amp;SrcDisplayLang=en&amp;SrcCategoryId=&amp;SrcFamilyId=0856eacb-4362-4b0d-8edd-aab15c5e04f5&amp;u=http://go.microsoft.com/fwlink/?LinkId=53646">
