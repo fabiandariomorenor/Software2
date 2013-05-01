@@ -60,13 +60,25 @@ GO
 
 CREATE PROCEDURE [dbo].[AgentUpdate] 
 	@Document decimal(12,0),
-	@Specialization varchar(50),
-	@ID_Manager int
+	@Specialization varchar(50)
 AS
 BEGIN
 	UPDATE [dbo].[AGENT]
-   SET [Specialization] = Specialization
-      ,[ID_Manager] = ID_Manager
+   SET [Specialization] = @Specialization
  WHERE Document = @Document
+
+SELECT Document FROM [AGENT] WHERE Document = @Document
 END
+
+GO
+
+CREATE PROCEDURE [dbo].[ListByAgent] 
+	@ID_Agent int
+AS
+BEGIN
+	SELECT * FROM [TASK] 
+	WHERE ID_Agent = @ID_Agent 
+END
+
+
 

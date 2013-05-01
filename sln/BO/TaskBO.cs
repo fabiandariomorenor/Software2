@@ -37,14 +37,15 @@ namespace BO
             return taskDao.ListByClient(task);
         }
 
-        public List<Task> ListByAgent(int agentId, DateTime startDate, DateTime endDate)
+        public List<Task> ListByAgent(Task task)
         {
-            throw new NotImplementedException();
+            return taskDao.ListByAgent(task);
         }
 
-        public object Review(int taskId, string comment, int statusId)
+        public int Review(Task task)
         {
-            throw new NotImplementedException();
+            return taskDao.Review(task);
         }
+
     }
 }

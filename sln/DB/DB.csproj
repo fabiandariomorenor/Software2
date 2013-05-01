@@ -49,6 +49,7 @@
     <Content Include="5Data.sql" />
     <Content Include="7ProceduresClient.sql" />
     <Content Include="6TaskProcedures.sql" />
+    <Content Include="8ProceduresReview.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

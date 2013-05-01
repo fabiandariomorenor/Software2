@@ -40,26 +40,5 @@ namespace WebSite.Ws
             task.Comment = comment;
             return taskBO.Save(task);
         }
-
-        [WebMethod]
-        public List<Task> ListByClient(int clientId)
-        {
-            Task task = new Task();
-            task.ID_Client = clientId;
-            return taskBO.ListByClient(task);
-        }
-
-        [WebMethod]
-        public List<Task> ListByAgent(int agentId, DateTime startDate, DateTime endDate)
-        {
-            return taskBO.ListByAgent(agentId, startDate, endDate);
-        }
-
-        [WebMethod]
-        public void Review(int taskId, string comment, int statusId)
-        {
-            taskBO.Review(taskId, comment, statusId);
-        }
-
     }
 }

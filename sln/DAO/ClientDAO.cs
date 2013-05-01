@@ -30,10 +30,16 @@ namespace DAO
         {
             Execute<Client>("ClientDelete", client);
         }
+
         public int Insert(Client client)
         {
             return ExecuteScalar("ClientInsert", client);
         }
+
+        /*public int ConfirmTask(decimal document, string password)
+        {
+            return ExecuteScalar("ConfirmTask", Task);
+        }*/
 
     }
 }
