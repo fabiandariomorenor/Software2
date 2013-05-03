@@ -10,7 +10,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>Informacion de la Tarea</h1>
+    <h1>Información de la Tarea</h1>
     <uc:TaskEdit runat=server />
 
 </asp:Content>

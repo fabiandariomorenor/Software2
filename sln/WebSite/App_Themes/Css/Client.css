@@ -4,7 +4,7 @@
     color: #AAAAAA;
     display: inline-block;
     font-size: 13px;
-    height: 80px;
+    height: 90px;
     padding: 10px;
     width: 300px;
     position:relative;
@@ -90,9 +90,11 @@
     padding:5px;
     text-align:right;
 }
-.buttom
+.buttom, .buttom:visited
 {
     background-color:#D5893A;
+    color:#fff !important;
+    text-decoration:none;
 }
 #rptClient
 {
@@ -112,4 +114,8 @@
 .not_buttom
 {
     color:#D5893A;
+}
+.box span a
+{
+    margin-left:0px;
 }

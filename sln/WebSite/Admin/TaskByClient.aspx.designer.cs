@@ -7,18 +7,18 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace WebSite.Controls.Task {
+namespace WebSite.Admin {
     
     
-    public partial class TaskEdit {
+    public partial class TaskByClient {
         
         /// <summary>
-        /// Control rptAgent.
+        /// Control TaskByClient1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptAgent;
+        protected global::WebSite.Controls.Task.TaskByClient TaskByClient1;
     }
 }

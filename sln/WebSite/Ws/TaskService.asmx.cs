@@ -42,10 +42,11 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public List<Task> ListByClient(int clientId)
+        public List<Task> ListByClient(int clientId, string description)
         {
             Task task = new Task();
             task.ID_Client = clientId;
+            task.Description = description;
             return taskBO.ListByClient(task);
         }
 

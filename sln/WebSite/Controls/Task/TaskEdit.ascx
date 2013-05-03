@@ -5,16 +5,7 @@
 <script src="../../App_Themes/Js/Controller/TaskController.js" type="text/javascript"></script>
 
 <div class="data">
-    <div class="row">
-        <span>Cliente:</span>
-        <select id="ddlClient">
-            <asp:Repeater ID="rptClient" runat="server">
-                <ItemTemplate>
-                    <option value="<%#DataBinder.Eval(Container.DataItem, "Document")%>"><%#DataBinder.Eval(Container.DataItem, "Document")%> - <%#DataBinder.Eval(Container.DataItem, "Name")%></option>
-                </ItemTemplate>
-            </asp:Repeater>
-        </select>
-    </div>
+
     <div class="row">
         <span>Direccion:</span>
         <input id="txtAddress" type="text"/>

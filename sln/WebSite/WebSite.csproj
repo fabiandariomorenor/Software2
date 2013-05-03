@@ -48,6 +48,7 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\TaskByClient.aspx" />
     <Content Include="App_Themes\Css\About.css" />
     <Content Include="App_Themes\Images\Analysis\Casos de Uso.png" />
     <Content Include="App_Themes\Images\Analysis\Clases.png" />
@@ -124,6 +125,9 @@
     <Content Include="App_Themes\Images\People\9.png" />
     <Content Include="App_Themes\Images\Principal.jpg" />
     <Content Include="App_Themes\Images\Principal.png" />
+    <Content Include="App_Themes\Js\Controller\TaskByClientController.js" />
+    <Content Include="App_Themes\Js\View\TaskByClientView.js" />
+    <Content Include="Controls\Task\TaskByClient.ascx" />
     <Content Include="Methodology.aspx" />
     <Content Include="Technologies.aspx" />
     <Content Include="Admin\Agent.aspx" />
@@ -206,6 +210,20 @@
     <Content Include="Ws\UserService.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\TaskByClient.aspx.cs">
+      <DependentUpon>TaskByClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TaskByClient.aspx.designer.cs">
+      <DependentUpon>TaskByClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Task\TaskByClient.ascx.cs">
+      <DependentUpon>TaskByClient.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Task\TaskByClient.ascx.designer.cs">
+      <DependentUpon>TaskByClient.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Methodology.aspx.cs">
       <DependentUpon>Methodology.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

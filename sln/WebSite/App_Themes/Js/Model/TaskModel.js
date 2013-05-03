@@ -1,11 +1,16 @@
 ﻿TaskModel = AjaxModel.extend({
     service: "TaskService.asmx",
 
-    list: function (name, callback, ref) {
-        this.method = "List";
+    defaults:{
+        clientId:0,
+        description:""
+    },
+
+    listByClient: function (obj, callback, ref) {
+        this.method = "ListByClient";
         Util.AjaxSetup(this, callback, null, ref);
         $.ajax({
-            data: '{"name":"' + name + '"}'
+            data: '{"description":"' + obj.description + '","clientId":' + obj.clientId + '}'
         });
     },
     

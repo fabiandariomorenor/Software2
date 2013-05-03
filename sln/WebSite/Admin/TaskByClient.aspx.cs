@@ -4,15 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using BO;
 
-namespace WebSite.Controls.Task
+namespace WebSite.Admin
 {
-    public partial class TaskEdit : System.Web.UI.UserControl
+    public partial class TaskByClient : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

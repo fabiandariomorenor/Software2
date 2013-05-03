@@ -9,7 +9,7 @@
     },
 
     addEvents: function () {
-        $(".menu .task").addClass("select");
+        $(".menu .client").addClass("select");
 
         $("#lnkCancel").click(jQuery.proxy(this.onClean, this));
         $("#lnkSave").click(jQuery.proxy(this.onSave, this));

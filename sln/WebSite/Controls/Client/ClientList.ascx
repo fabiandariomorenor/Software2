@@ -31,7 +31,7 @@
             <span>Documento:<a>{Document}</a></span>
             <span>Direccion:<a>{Address}</a></span>
             <span>Teléfono:<a>{Phone}</a></span>
-            
+            <span><a href="TaskByClient.aspx?clientId={Document}">Ver Tareas</a></span>
             <a class="delete" title="Eliminar" value="{Document}">
                 <img alt="Eliminar" src="../../App_Themes/Images/Icon/delete.png" />
             </a>
