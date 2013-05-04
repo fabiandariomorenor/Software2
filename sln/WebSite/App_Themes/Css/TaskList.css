@@ -1,0 +1,12 @@
+﻿.box 
+{
+    background-color:#fcfab0;
+    height:250px;
+    width:250px;
+    padding-bottom:17px;
+    overflow:hidden;
+}
+.box .info span a
+{
+    margin-left:5px;
+}

@@ -20,5 +20,8 @@ namespace Entity
         public DateTime ExpectedEndDate { get; set; }
         public DateTime ProcedureDate { get; set; }
         public string Comment { get; set; }
+
+        public string AgentName { get; set; }
+        public string StateName { get; set; }
     }
 }

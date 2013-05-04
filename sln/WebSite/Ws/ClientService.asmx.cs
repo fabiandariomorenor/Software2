@@ -49,7 +49,7 @@ namespace WebSite.Ws
             return clientBO.Get(document);
         }
 
-        [WebMethod]
+     /*   [WebMethod]
         public int Review(int taskID, int stateID, string comment)
         {
             Task task = new Task();
@@ -67,6 +67,6 @@ namespace WebSite.Ws
             TaskBO taskBo = new TaskBO();
             task.ID_Client = clientId;
             return taskBo.ListByClient(task);
-        }
+        }*/
     }
 }

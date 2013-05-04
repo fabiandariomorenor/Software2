@@ -28,12 +28,12 @@ namespace DAO
 
         public List<Task> ListByClient(Task task)
         {
-            return Execute<Task>("ListByClient", task);
+            return Execute<Task>("TaskByClient", task);
         }
 
         public List<Task> ListByAgent(Task task)
         {
-            return Execute<Task>("ListByAgent", task);
+            return Execute<Task>("TaskByAgent", task);
         }
 
         public int Review(Task task)

@@ -3,6 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../App_Themes/Css/Client.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/Css/TaskList.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 

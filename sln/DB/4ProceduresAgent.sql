@@ -71,14 +71,3 @@ SELECT Document FROM [AGENT] WHERE Document = @Document
 END
 
 GO
-
-CREATE PROCEDURE [dbo].[ListByAgent] 
-	@ID_Agent int
-AS
-BEGIN
-	SELECT * FROM [TASK] 
-	WHERE ID_Agent = @ID_Agent 
-END
-
-
-

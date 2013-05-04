@@ -54,14 +54,14 @@ namespace WebSite.Ws
             return taskBo.Review(task);
         }*/
 
-        [WebMethod]
+      /*  [WebMethod]
         public List<Task> ListByAgent(int agentId)
         {
             Task task = new Task();
             TaskBO taskBo = new TaskBO();
             task.ID_Agent = agentId;
             return taskBo.ListByAgent(task);
-        }
+        }*/
 
     }
 }

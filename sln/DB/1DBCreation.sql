@@ -216,15 +216,15 @@ CREATE TABLE [dbo].[TASK](
 	[ID] [int] NOT NULL,
 	[ID_Client] [decimal](12,0) NOT NULL,
 	[ID_Agent] [decimal](12,0) NOT NULL,
-	[Description] [varchar](50) NOT NULL,
+	[Description] [varchar](500) NOT NULL,
 	[ID_State] [int] NOT NULL,
 	[InitDate] [datetime] NOT NULL,
 	[EndDate] [datetime] NOT NULL,
 	[ExpectedInitDate] [datetime] NOT NULL,
 	[ExpectedEndDate] [datetime] NOT NULL,
 	[ProcedureDate] [datetime] NOT NULL,
-	[Comment] [varchar](50) NOT NULL,
-	[Address] [varchar](50) NOT NULL,
+	[Comment] [varchar](500) NOT NULL,
+	[Address] [varchar](500) NOT NULL,
 	[ID_Localization] [int] NOT NULL,
  CONSTRAINT [PK_TASK] PRIMARY KEY CLUSTERED 
 (

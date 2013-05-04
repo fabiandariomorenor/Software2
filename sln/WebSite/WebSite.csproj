@@ -50,6 +50,7 @@
   <ItemGroup>
     <Content Include="Admin\TaskByClient.aspx" />
     <Content Include="App_Themes\Css\About.css" />
+    <Content Include="App_Themes\Css\TaskList.css" />
     <Content Include="App_Themes\Images\Analysis\Casos de Uso.png" />
     <Content Include="App_Themes\Images\Analysis\Clases.png" />
     <Content Include="App_Themes\Images\Analysis\Diagrama de Base de Datos.jpg" />

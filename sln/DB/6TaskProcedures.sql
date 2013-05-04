@@ -110,15 +110,31 @@ END
 GO
 
 
-CREATE PROCEDURE [dbo].[ListByClient] 
+CREATE PROCEDURE [dbo].[TaskByAgent] 
+	@ID_Agent int
+AS
+BEGIN
+	SELECT * FROM [TASK] 
+	WHERE ID_Agent = @ID_Agent 
+END
+
+go
+
+
+
+CREATE PROCEDURE [dbo].[TaskByClient] 
 	@ID_Client int
 AS
 BEGIN
-	SELECT * FROM [TASK]
+	SELECT *, 
+	[User].Name as AgentName ,
+	[State].Name as StateName 
+	FROM [TASK]
+	JOIN Agent on Agent.Document = [TASK].ID_Agent
+	JOIN [User] on [User].Document = Agent.Document
+	JOIN [State] on [State].Id = Task.ID_State
 	WHERE ID_Client = @ID_Client
 END
-
-
 
 GO
 
