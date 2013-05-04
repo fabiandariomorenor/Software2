@@ -8,6 +8,6 @@ namespace Entity
     public class Agent : User
     {
         public string Specialization { get; set; }
-        public int ID_Manager { get; set; }
+        public decimal ID_Manager { get; set; }
     }
 }

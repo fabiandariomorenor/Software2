@@ -26,7 +26,7 @@ GO
 CREATE PROCEDURE [dbo].[ClientInsert] 
 	@Document decimal(12,0),
 	@Address varchar(50),
-	@DateExpDocument varchar(50)
+	@DateExpDocument datetime
 AS
 BEGIN
 	INSERT INTO [dbo].[CLIENT]
@@ -63,12 +63,13 @@ go
 
 CREATE PROCEDURE [dbo].[ClientUpdate] 
 	@Document decimal(12,0),
+	@Address varchar(50),
 	@DateExpDocument datetime
 AS
 BEGIN
 	
 UPDATE [dbo].[CLIENT]
-   SET [Document] = @Document
+   SET [Address] = @Address
       ,[DateExpDocument] = @DateExpDocument
  WHERE @Document = Document
 

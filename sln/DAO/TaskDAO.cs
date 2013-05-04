@@ -30,5 +30,15 @@ namespace DAO
         {
             return Execute<Task>("ListByClient", task);
         }
+
+        public List<Task> ListByAgent(Task task)
+        {
+            return Execute<Task>("ListByAgent", task);
+        }
+
+        public int Review(Task task)
+        {
+            return ExecuteScalar("TaskReviewClient", task);
+        }
     }
 }
