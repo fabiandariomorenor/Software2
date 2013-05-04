@@ -34,15 +34,15 @@ CREATE PROCEDURE [dbo].[TaskInsert]
 	@ID int,
 	@ID_Client int,
 	@ID_Agent int,
-	@Description varchar(50),
+	@Description varchar(500),
 	@ID_State varchar(50),
 	@InitDate datetime,
 	@EndDate datetime,
 	@ExpectedInitDate datetime,
 	@ExpectedEndDate datetime,
 	@ProcedureDate datetime,
-	@Comment varchar(50),
-	@Address varchar(50),
+	@Comment varchar(500),
+	@Address varchar(500),
 	@ID_Localization int
 AS
 BEGIN
@@ -95,7 +95,7 @@ CREATE PROCEDURE [dbo].[TaskUpdate]
 	@EndDate datetime,
 	@ExpectedInitDate datetime,
 	@ExpectedEndDate datetime,
-	@Comment varchar(50)
+	@Comment varchar(500)
 AS
 BEGIN
 	UPDATE [dbo].[TASK]
