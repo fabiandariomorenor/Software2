@@ -22,11 +22,11 @@
         });
     },
 
-    "delete": function(document, callback){
+    "delete": function(id, callback){
         this.method = "Delete";
         Util.AjaxSetup(this, callback);
         $.ajax({
-            data: '{"document":' + document + '}'
+            data: '{"id":' + id + '}'
         });
     }
 });

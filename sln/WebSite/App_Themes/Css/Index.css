@@ -37,6 +37,7 @@
     padding: 10px;
     color:#555;
     width: 980px;
+    min-height:450px;
 }
 .content .left_column,.content .right_column
 {

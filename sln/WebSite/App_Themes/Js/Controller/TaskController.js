@@ -6,6 +6,7 @@
         this.model = new TaskModel();
         this.view = new TaskView();
         this.view.onSaveHandler = jQuery.proxy(this.save, this);
+        
     },
 
     save: function (clientId, description, currentDate, agentId, comment, address) {

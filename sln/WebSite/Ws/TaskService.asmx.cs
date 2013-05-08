@@ -62,5 +62,10 @@ namespace WebSite.Ws
             taskBO.Review(taskId, comment, statusId);
         }
 
+        [WebMethod]
+        public void Delete(int id)
+        {
+            //eliminar tarea
+        }
     }
 }

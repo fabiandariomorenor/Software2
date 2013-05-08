@@ -123,7 +123,8 @@ go
 
 
 CREATE PROCEDURE [dbo].[TaskByClient] 
-	@ID_Client int
+	@ID_Client int,
+	@Description varchar(50)
 AS
 BEGIN
 	SELECT *, 
@@ -133,8 +134,14 @@ BEGIN
 	JOIN Agent on Agent.Document = [TASK].ID_Agent
 	JOIN [User] on [User].Document = Agent.Document
 	JOIN [State] on [State].Id = Task.ID_State
-	WHERE ID_Client = @ID_Client
+	WHERE ID_Client = @ID_Client 
+	AND [TASK].Address LIKE '%'+@Description+'%'
+	AND [TASK].Comment LIKE '%'+@Description+'%'
+	AND [TASK].Description LIKE '%'+@Description+'%'
+	AND [User].Name LIKE '%'+@Description+'%'
+	AND [State].Name LIKE '%'+@Description+'%'
 END
+
 
 GO
 

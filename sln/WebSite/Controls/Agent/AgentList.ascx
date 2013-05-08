@@ -31,7 +31,7 @@
             <span>Documento:<a>{Document}</a></span>
             <span>Especializacion:<a>{Specialization}</a></span>
             <span>Teléfono:<a>{Phone}</a></span>
-            <span>Tareas Pendientes:<a>2</a></span>
+            <span><a href="TaskByAgent.aspx?agentId={Document}">Ver Tareas</a></span>
             
         
             <a class="delete" title="Eliminar" value="{Document}">
