@@ -46,12 +46,34 @@
 
 
      <%--Titulo--%>
-    <h2>Diagrama de Secuencia</h2>
+    <h2>Diagrama de Secuencia User</h2>
 
     <%--Galeria--%>
     <div class="gallery">
        <div class="principal_image">
-            <a href="/App_Themes/Images/Analysis/Secuencia.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/Secuencia.png" width="665px" /></a>
+            <a href="/App_Themes/Images/Analysis/secuenciaUser.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/Secuencia.png" width="665px" /></a>
+        </div>              
+    </div>
+    <p>Por favor de click sobre la imagen para descargar</p>
+
+      <%--Titulo--%>
+    <h2>Diagrama de Secuencia Agent</h2>
+
+    <%--Galeria--%>
+    <div class="gallery">
+       <div class="principal_image">
+            <a href="/App_Themes/Images/Analysis/secuenciaAgent.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/Secuencia.png" width="665px" /></a>
+        </div>              
+    </div>
+    <p>Por favor de click sobre la imagen para descargar</p>
+
+      <%--Titulo--%>
+    <h2>Diagrama de Secuencia Client</h2>
+
+    <%--Galeria--%>
+    <div class="gallery">
+       <div class="principal_image">
+            <a href="/App_Themes/Images/Analysis/secuenciaClient.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/Secuencia.png" width="665px" /></a>
         </div>              
     </div>
     <p>Por favor de click sobre la imagen para descargar</p>
