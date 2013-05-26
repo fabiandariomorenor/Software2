@@ -6,7 +6,7 @@
         this.model = new TaskModel();
         this.view = new TaskView();
         this.view.onSaveHandler = jQuery.proxy(this.save, this);
-        
+
     },
 
     save: function (clientId, description, currentDate, agentId, comment, address) {
@@ -14,7 +14,13 @@
     },
 
     saveCallback: function (res) {
-        
+        if (res > 0) {
+            alert("Su tarea fue almacenada");
+            window.location = "TaskByClient.aspx?clientId=" + clientId;
+        }
+        else {
+            alert("Ocurrio un error almacenando la tarea");
+        }
     }
 });
 

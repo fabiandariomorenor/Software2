@@ -213,7 +213,7 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[TASK](
-	[ID] [int] NOT NULL,
+	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[ID_Client] [decimal](12,0) NOT NULL,
 	[ID_Agent] [decimal](12,0) NOT NULL,
 	[Description] [varchar](500) NOT NULL,

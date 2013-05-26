@@ -47,8 +47,8 @@ CREATE PROCEDURE [dbo].[TaskInsert]
 AS
 BEGIN
 	INSERT INTO [dbo].[TASK]
-           ([ID]
-           ,[ID_Client]
+           (
+            [ID_Client]
            ,[ID_Agent]
            ,[Description]
            ,[ID_State]
@@ -61,8 +61,8 @@ BEGIN
            ,[Address]
            ,[ID_Localization])
      VALUES
-           (@ID
-           ,@ID_Client
+           (
+            @ID_Client
            ,@ID_Agent
            ,@Description
            ,@ID_State
@@ -74,7 +74,7 @@ BEGIN
            ,@Comment
            ,@Address
            ,@ID_Localization)
-	SELECT ID FROM [TASK] WHERE ID = @ID
+	SELECT CONVERT(INT,@@IDENTITY )
 END
 
 
@@ -128,6 +128,7 @@ BEGIN
 	AND [TASK].Description LIKE '%'+@Description+'%'
 	AND [User].Name LIKE '%'+@Description+'%'
 	AND [State].Name LIKE '%'+@Description+'%'
+	ORDER BY InitDate
 	
 END
 
@@ -153,6 +154,7 @@ BEGIN
 	AND [TASK].Description LIKE '%'+@Description+'%'
 	AND [User].Name LIKE '%'+@Description+'%'
 	AND [State].Name LIKE '%'+@Description+'%'
+	ORDER BY InitDate
 END
 
 

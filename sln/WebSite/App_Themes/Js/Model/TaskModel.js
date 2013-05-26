@@ -27,7 +27,7 @@
         this.method = "Save";
         Util.AjaxSetup(this, callback);
         $.ajax({
-            data: '{"endDate":"' + "01/01/2013" + '","locationId":' + 1 + ',"stateID":' + 0 + ',"id":' + 0 + ',"clientId":' + clientId + ',"description":"' + description + '","initDate":"' + "01/01/2013" + '","agentId":' + agentId + ',"comment":"' + comment + '","address":"' + address + '"}'
+            data: '{"endDate":"' + "01/01/2013" + '","locationId":' + 1 + ',"stateID":' + 0 + ',"id":' + 0 + ',"clientId":' + clientId + ',"description":"' + description + '","initDate":"' + currentDate + '","agentId":' + agentId + ',"comment":"' + comment + '","address":"' + address + '"}'
         });
     },
 

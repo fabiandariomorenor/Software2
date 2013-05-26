@@ -10,9 +10,11 @@ namespace WebSite.Controls.Task
 {
     public partial class TaskEdit : System.Web.UI.UserControl
     {
+        protected string ClientId = "0";
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Request.QueryString["ClientId"] != null)
+                ClientId = Request.QueryString["ClientId"];
         }
     }
 }

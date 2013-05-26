@@ -26,6 +26,8 @@
                 <span>Agente:<a>{AgentName}</a></span>
                 <span>Direccion:<a>{Address}</a></span>
                 <span>Estado:<a>{StateName}</a></span>
+                <span>Fecha:<a>{InitDate}</a></span>
+                <span>Hora:<a>{HourInitDate}</a></span>
                 <span><p>{Description}</p></span>
                 
                 <a class="delete" title="Eliminar" value="{ID}">

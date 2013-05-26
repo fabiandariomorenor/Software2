@@ -18,7 +18,7 @@ namespace BO
 
         public int Save(Task task)
         {
-            if (Get(task.ID) == null)
+            if (task.ID == 0)
             {
                 //Create task
                 //Por defecto al crear ID_State es 1

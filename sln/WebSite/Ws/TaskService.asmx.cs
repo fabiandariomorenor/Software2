@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Services;
 using BO;
 using Entity;
+using System.Globalization;
 
 namespace WebSite.Ws
 {
@@ -21,9 +22,11 @@ namespace WebSite.Ws
         TaskBO taskBO = new TaskBO();
 
         [WebMethod]
-        public int Save(int id, decimal clientId, decimal agentId, int stateID, int locationId, string description, string address, DateTime initDate, 
-            DateTime endDate, string comment)
+        public int Save(int id, decimal clientId, decimal agentId, int stateID, int locationId, string description, string address, string initDate, 
+            string endDate, string comment)
         {
+            initDate = initDate.Replace(" GMT", "");
+            endDate = initDate.Replace(" GMT", "");
             Task task = new Task();
             task.ID = id;
             task.ID_Client = clientId;
@@ -32,11 +35,11 @@ namespace WebSite.Ws
             task.ID_Localization = locationId;
             task.Description = description;
             task.Address = address;
-            task.InitDate = initDate;
-            task.EndDate = endDate;
-            task.ExpectedInitDate = initDate;
-            task.ExpectedEndDate = endDate;
-            task.ProcedureDate = DateTime.Now;
+            task.InitDate = DateTime.ParseExact(initDate, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+            task.EndDate = DateTime.ParseExact(endDate, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+            task.ExpectedInitDate = DateTime.ParseExact(initDate, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+            task.ExpectedEndDate = DateTime.ParseExact(endDate, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+            task.ProcedureDate = DateTime.ParseExact(initDate, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture);
             task.Comment = comment;
             return taskBO.Save(task);
         }

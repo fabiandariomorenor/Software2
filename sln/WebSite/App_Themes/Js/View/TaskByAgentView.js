@@ -47,6 +47,10 @@
     },
 
     render: function (data) {
+        for (var i = 0; i < data.length; i++) {
+            var date = eval("new " + Util.ReplaceAll(data[i].InitDate, "/", ""));
+            data[i].HourInitDate = date.getHours() + " : 00";
+        }
         template.dataBind("rptTask", data);
         this.addItemEvents();
     }

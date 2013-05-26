@@ -16,17 +16,19 @@
     }
 
     this.FormatDate = function (date) {
-        if (date.indexOf("new Date(") == 0) {
-            var d = eval(date);
-            var day = Util.FormatDigits(d.getDate());
-            var month = Util.FormatDigits(d.getMonth() + 1);
-            var year = Util.FormatDigits(d.getFullYear());
+        if (date != null) {
+            if (date.toString().indexOf("Date(") == 1) {
+                var d = eval("new " + Util.ReplaceAll(date, "/", ""));
+                var day = d.getDate();
+                var month = d.getMonth() + 1;
+                var year = d.getFullYear();
 
-            if (year > 1900) {
-                date = month + "/" + day + "/" + year;
-            }
-            else {
-                date = "";
+                if (year > 1900) {
+                    date = month + "/" + day + "/" + year;
+                }
+                else {
+                    date = "";
+                }
             }
         }
 
@@ -42,7 +44,7 @@
 
             for (var property in obj) {
                 if (obj.hasOwnProperty(property)) {
-                    var propValue = obj[property];
+                    var propValue = Util.FormatDate(obj[property]);
                     var propName = prefix + property;
 
                     if (propValue instanceof Object) {

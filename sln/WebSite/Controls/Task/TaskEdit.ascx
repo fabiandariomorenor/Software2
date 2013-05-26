@@ -4,6 +4,9 @@
 <script src="../../App_Themes/Js/View/TaskView.js" type="text/javascript"></script>
 <script src="../../App_Themes/Js/Controller/TaskController.js" type="text/javascript"></script>
 
+<script>
+    var clientId = <%=ClientId %>
+</script>
 <div class="data">
 
     <div class="row">
@@ -17,7 +20,7 @@
     </div>
 
     <div class="row">
-        <span>Fecha y hora:</span>
+        <span>Fecha y hora</span>
     </div>
 </div>
 <div id="calendar"></div>

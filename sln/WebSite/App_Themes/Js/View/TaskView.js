@@ -22,10 +22,10 @@
     onSave: function () {
         if (this.onSaveHandler != null) {
 
-            var clientId = $("#ddlClient option:selected").val();
+            clientId = clientId;
             var description = $("#txtDescription").val();
             var address = $("#txtAddress").val();
-            var agentId = 1; // $("#ddlAgent option:selected").val();
+            var agentId = 123456; // $("#ddlAgent option:selected").val();
             var comment = $("#lblComment").html();
 
             this.onSaveHandler(clientId, description, this.currentDate, agentId, comment, address);
@@ -61,6 +61,6 @@
     },
 
     onDateClick: function (date, allDay, jsEvent, view) {
-        this.currentDate = date;
+        this.currentDate = date.toUTCString();
     }
 });
