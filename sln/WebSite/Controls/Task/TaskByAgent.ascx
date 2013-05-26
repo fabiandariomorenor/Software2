@@ -4,8 +4,8 @@
         var agentId = <%=agentId %>;
     </script>
     <script src="../../App_Themes/Js/Model/TaskModel.js" type="text/javascript"></script>
-    <script src="../../App_Themes/Js/View/TaskByClientView.js" type="text/javascript"></script>
-    <script src="../../App_Themes/Js/Controller/TaskByClientController.js" type="text/javascript"></script>
+    <script src="../../App_Themes/Js/View/TaskByAgentView.js" type="text/javascript"></script>
+    <script src="../../App_Themes/Js/Controller/TaskByAgentController.js" type="text/javascript"></script>
 
     <div class="title_box">Tareas de <%=agentName%>
     </div>
@@ -20,7 +20,7 @@
             
             <div class="info">
                 
-                <span>Agente:<a>{AgentName}</a></span>
+                <span>Client:<a>{ClientName}</a></span>
                 <span>Direccion:<a>{Address}</a></span>
                 <span>Estado:<a>{StateName}</a></span>
                 <span><p>{Description}</p></span>

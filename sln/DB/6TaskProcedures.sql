@@ -111,11 +111,24 @@ GO
 
 
 CREATE PROCEDURE [dbo].[TaskByAgent] 
-	@ID_Agent int
+	@ID_Agent int,
+	@Description varchar(50)
 AS
 BEGIN
-	SELECT * FROM [TASK] 
+	SELECT *, 
+	[User].Name as ClientName ,
+	[State].Name as StateName 
+	FROM [TASK]
+	JOIN Client on Client.Document = [TASK].ID_Client
+	JOIN [User] on [User].Document = Client.Document
+	JOIN [State] on [State].Id = Task.ID_State
 	WHERE ID_Agent = @ID_Agent 
+	AND [TASK].Address LIKE '%'+@Description+'%'
+	AND [TASK].Comment LIKE '%'+@Description+'%'
+	AND [TASK].Description LIKE '%'+@Description+'%'
+	AND [User].Name LIKE '%'+@Description+'%'
+	AND [State].Name LIKE '%'+@Description+'%'
+	
 END
 
 go

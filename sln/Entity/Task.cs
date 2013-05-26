@@ -21,6 +21,7 @@ namespace Entity
         public DateTime ProcedureDate { get; set; }
         public string Comment { get; set; }
 
+        public string ClientName { get; set; }
         public string AgentName { get; set; }
         public string StateName { get; set; }
     }

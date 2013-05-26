@@ -9,13 +9,14 @@
         });
     },
     
-    delete: function(document, callback){
+    "delete": function(document, callback){
         this.method = "Delete";
         Util.AjaxSetup(this, callback);
         $.ajax({
             data: '{"document":' + document + '}'
         });
-    },
+     },
+
      get: function(document, callback){
         this.method = "Get";
         Util.AjaxSetup(this, callback);

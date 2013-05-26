@@ -51,9 +51,12 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public List<Task> ListByAgent(int agentId, DateTime startDate, DateTime endDate)
+        public List<Task> ListByAgent(int agentId, string description)
         {
-            return taskBO.ListByAgent(agentId, startDate, endDate);
+            Task task = new Task();
+            task.ID_Agent= agentId;
+            task.Description = description;
+            return taskBO.ListByAgent(task);
         }
 
         [WebMethod]
@@ -65,7 +68,7 @@ namespace WebSite.Ws
         [WebMethod]
         public void Delete(int id)
         {
-            //eliminar tarea
+            taskBO.Delete(id);
         }
     }
 }

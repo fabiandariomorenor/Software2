@@ -2,7 +2,8 @@
     service: "TaskService.asmx",
 
     defaults:{
-        clientId:0,
+        clientId: 0,
+        agentId: 0,
         description:""
     },
 
@@ -11,6 +12,14 @@
         Util.AjaxSetup(this, callback, null, ref);
         $.ajax({
             data: '{"description":"' + obj.description + '","clientId":' + obj.clientId + '}'
+        });
+    },
+
+    listByAgent: function (obj, callback, ref) {
+        this.method = "ListByAgent";
+        Util.AjaxSetup(this, callback, null, ref);
+        $.ajax({
+            data: '{"description":"' + obj.description + '","agentId":' + obj.agentId + '}'
         });
     },
     
