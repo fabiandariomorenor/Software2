@@ -4,7 +4,7 @@
     var clientId = <%=ClientId %>;
     var agentId = <%=AgentId %>;
     var taskId = <%=TaskId %>;
-    var currentDate = new Date(<%=Date.Year %>,<%=Date.Month %>,<%=Date.Day %>,<%=Date.Hour %>,<%=Date.Minute %>);
+    var currentDate = new Date(<%=Date.Year %>,<%=Date.Month %>,<%=Date.Day %>,<%=Date.Hour +1 %>,0);
     
 </script>
 

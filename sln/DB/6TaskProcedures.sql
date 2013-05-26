@@ -115,7 +115,7 @@ CREATE PROCEDURE [dbo].[TaskByAgent]
 	@Description varchar(50)
 AS
 BEGIN
-	SELECT *, 
+	SELECT [TASK].*, 
 	[User].Name as ClientName ,
 	[State].Name as StateName 
 	FROM [TASK]
@@ -141,7 +141,7 @@ CREATE PROCEDURE [dbo].[TaskByClient]
 	@Description varchar(50)
 AS
 BEGIN
-	SELECT *, 
+	SELECT [TASK].*, 
 	[User].Name as AgentName ,
 	[State].Name as StateName 
 	FROM [TASK]

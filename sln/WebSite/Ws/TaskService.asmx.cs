@@ -25,11 +25,14 @@ namespace WebSite.Ws
         public int Save(int id, decimal clientId, decimal agentId, int stateID, int locationId, string description, string address, string initDate, 
             string endDate, string comment)
         {
-            Task task = new Task();
+            Task task = taskBO.Get(id);
             task.ID = id;
             task.ID_Client = clientId;
             task.ID_Agent = agentId;
-            task.ID_State = stateID;
+
+            if (stateID > 0)
+                task.ID_State = stateID;
+
             task.ID_Localization = locationId;
             task.Description = description;
             task.Address = address;

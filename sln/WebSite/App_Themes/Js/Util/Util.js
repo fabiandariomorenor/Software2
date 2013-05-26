@@ -148,6 +148,12 @@
             context: ref
         });
     }
+
+    this.FormatDigit = function(num){
+        if(parseInt(num)<10)
+            return "0"+num;
+        return num;
+    }
 }
 
 var Util = new Util();
