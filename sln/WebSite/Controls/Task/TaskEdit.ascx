@@ -11,16 +11,16 @@
 
     <div class="row">
         <span>Direccion:</span>
-        <input id="txtAddress" type="text"/>
+        <input id="txtAddress" type="text" value="<%=Address %>"/>
     </div>
 
     <div class="row large">
         <span>Descripcion:</span>
-        <textarea id="txtDescription"></textarea>
+        <textarea id="txtDescription"><%=Description %></textarea>
     </div>
 
     <div class="row">
-        <span>Fecha y hora: </span> <span id="lblCurrentDate"></span>
+        <span>Fecha y hora: </span> <span class="lblCurrentDate"><%=Date %></span>
     </div>
 </div>
 <div id="calendar"></div>

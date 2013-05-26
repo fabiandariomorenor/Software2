@@ -60,19 +60,15 @@
             alert("Por favor seleccione un agente");
             return false;
         }
-        /*
-        if (Util.Trim(addcommentress).length == 0) {
-        alert("Por favor escriba un comentario");
-        return false;
-        }*/
+       
 
         return true;
     },
 
     render: function () {
         var date = new Date();
-        var d = date.getDate();
-        var m = date.getMonth();
+        var d = date.getDate()+1;
+        var m = date.getMonth()+1;
         var y = date.getFullYear();
 
         this.calendar = $('#calendar').fullCalendar({
@@ -105,7 +101,7 @@
         var hour = d.getHours();
         
         var dateLabel = day + '/' + month + '/' + year + " " + hour + ":00";
-        $("#lblCurrentDate").html(dateLabel);
+        $(".lblCurrentDate").html(dateLabel);
         this.currentDate = date.toUTCString();
     }
 });
