@@ -22,14 +22,27 @@
     onSave: function () {
         if (this.onSaveHandler != null) {
 
-            clientId = clientId;
+            var client = clientId;
             var description = $("#txtDescription").val();
             var address = $("#txtAddress").val();
             var agentId = 123456; // $("#ddlAgent option:selected").val();
             var comment = $("#lblComment").html();
 
-            this.onSaveHandler(clientId, description, this.currentDate, agentId, comment, address);
+            this.validate(client, description, address, agentId, comment)
+            {
+                this.onSaveHandler(clientId, description, this.currentDate, agentId, comment, address);
+            }
         }
+    },
+
+    validate: function (client, description, address, agentId, comment) {
+        if (!(clientId > 0)) {
+            alert("El cliente no es valido");
+            return false;
+        }
+
+        if(Util.Trimdescription.length == 0)
+
     },
 
     render: function () {

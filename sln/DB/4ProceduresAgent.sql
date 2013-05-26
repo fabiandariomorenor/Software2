@@ -60,14 +60,14 @@ GO
 
 CREATE PROCEDURE [dbo].[AgentUpdate] 
 	@Document decimal(12,0),
-	@Specialization varchar(50)
+	@Specialization varchar(200)
 AS
 BEGIN
 	UPDATE [dbo].[AGENT]
    SET [Specialization] = @Specialization
  WHERE Document = @Document
 
-SELECT Document FROM [AGENT] WHERE Document = @Document
+
 END
 
 GO
