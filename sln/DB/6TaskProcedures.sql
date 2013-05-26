@@ -90,6 +90,9 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[TaskUpdate] 
 	@ID int,
+	@ID_Agent int,
+	@Description varchar(500),
+	@Address varchar(500),
 	@ID_State varchar(50),
 	@InitDate datetime,
 	@EndDate datetime,
@@ -103,6 +106,10 @@ BEGIN
       ,[InitDate] = @InitDate
       ,[EndDate] = @EndDate
       ,[Comment] = @Comment
+	  ,[ID_Agent] = @ID_Agent
+      ,[Description] = @Description
+      ,[Address] = @Address
+
  WHERE ID = @ID
  SELECT ID FROM [TASK] WHERE ID = @ID
 END
