@@ -52,6 +52,11 @@ namespace BO
             return taskDao.ReviewAgent(task);
         }
 
+        public List<Task> ListByState(Task task)
+        {
+            return taskDao.ListByState(task);
+        }
+
         public void Delete(int id)
         {
             throw new NotImplementedException();

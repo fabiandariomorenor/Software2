@@ -83,6 +83,15 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
+        public List<Task> ListByState(int clientId, int statusId)
+        {
+            Task task = new Task();
+            task.ID_Client = clientId;
+            task.ID_State = statusId;
+            return taskBO.ListByState(task);
+        }
+
+        [WebMethod]
         public void Delete(int id)
         {
             taskBO.Delete(id);

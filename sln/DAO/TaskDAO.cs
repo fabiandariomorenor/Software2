@@ -41,6 +41,11 @@ namespace DAO
             return ExecuteScalar("TaskReviewClient", task);
         }
 
+        public List<Task> ListByState(Task task)
+        {
+            return Execute<Task>("TaskByState", task);
+        }
+
         public int ReviewAgent(Task task)
         {
             return ExecuteScalar("TaskReviewAgent", task);

@@ -198,5 +198,15 @@ BEGIN
  SELECT ID FROM [TASK] WHERE ID = @ID
 END
 
+GO
+
+CREATE PROCEDURE [dbo].[TaskByState] 
+	@ID_Client int,
+	@ID_State int
+AS
+BEGIN
+	SELECT * FROM [TASK]
+	WHERE ID_Client = @ID_Client AND ID_State = @ID_State
+END
 
 	
