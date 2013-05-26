@@ -11,10 +11,10 @@ namespace WebSite.Controls.Task
     public partial class TaskEdit : System.Web.UI.UserControl
     {
         protected string ClientId = "0";
-        protected string Address = "0";
-        protected string Description = "0";
-        protected string Date = "0";
-        protected string AgentId = "0";
+        protected string Address = "";
+        protected string Description = "";
+        protected string Date = "";
+        protected string AgentId = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,7 +28,15 @@ namespace WebSite.Controls.Task
                 TaskBO taskBo = new TaskBO();
                 var task = taskBo.Get(id);
                 ClientId = task.ID_Client.ToString();
-                AgentId = task.ID_Agent;
+                AgentId = task.ID_Agent.ToString();
+                Address = task.Address;
+                Description = task.Description;
+
+                AgentBO agentBo = new AgentBO();
+                var agent = agentBo.Get(task.ID_Agent);
+
+
+                rptAgent.DataSource = new List<Entity.Agent>() { agent };
             }
         }
     }
