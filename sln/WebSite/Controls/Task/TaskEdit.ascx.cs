@@ -16,6 +16,7 @@ namespace WebSite.Controls.Task
         protected DateTime Date = DateTime.Now;
         protected string AgentId = "0";
         protected string TaskId = "0";
+        protected string Mode = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -42,6 +43,12 @@ namespace WebSite.Controls.Task
 
                 rptAgent.DataSource = new List<Entity.Agent>() { agent };
                 rptAgent.DataBind();
+            }
+
+            if (Request.QueryString["AgentId"] != null)
+            {
+                pnlSave.Visible = false;
+                Mode = "Agent";
             }
         }
     }

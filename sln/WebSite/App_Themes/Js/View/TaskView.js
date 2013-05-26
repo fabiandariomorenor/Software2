@@ -17,6 +17,12 @@
 
     onClean: function () {
         $("input, textarea").val("");
+
+        if (mode != "Agent")
+            window.location = "TaskByClient.aspx?clientId=" + clientId;
+        else if (parseInt(agentId) > 0) {
+            window.location = "TaskByAgent.aspx?agentId=" + agentId;
+        }
     },
 
     onSave: function () {
@@ -68,15 +74,15 @@
             alert("Por favor seleccione un agente");
             return false;
         }
-       
+
 
         return true;
     },
 
     render: function () {
         var date = new Date();
-        var d = date.getDate()+1;
-        var m = date.getMonth()+1;
+        var d = date.getDate() + 1;
+        var m = date.getMonth() + 1;
         var y = date.getFullYear();
 
         this.calendar = $('#calendar').fullCalendar({
@@ -107,7 +113,7 @@
         var month = d.getMonth() + 1;
         var year = d.getFullYear();
         var hour = d.getHours();
-        
+
         var dateLabel = day + '/' + month + '/' + year + " " + hour + ":00";
         $(".lblCurrentDate").html(dateLabel);
         this.currentDate = date;

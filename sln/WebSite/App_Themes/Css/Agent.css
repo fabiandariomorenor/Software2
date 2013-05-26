@@ -10,7 +10,7 @@
     position:relative;
     text-align:left;
 }
-.box .edit, .box .delete
+.box .edit, .box .delete,.box .play,.box .stop
 {
     position:absolute;
     top:0px;
@@ -24,6 +24,22 @@
 .box .delete
 {
     right:0px;
+}
+.box .play
+{
+    right:48px;
+    background-color:#7BBF6A;
+}
+.box .stop
+{
+    right:48px;
+    background-color:#66BDFF;
+    width:24px;
+    height:24px;
+}
+.box .stop img
+{
+    margin:4px;
 }
 .title_box
 {

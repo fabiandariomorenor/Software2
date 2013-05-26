@@ -5,7 +5,7 @@
     var agentId = <%=AgentId %>;
     var taskId = <%=TaskId %>;
     var currentDate = new Date(<%=Date.Year %>,<%=Date.Month %>,<%=Date.Day %>,<%=Date.Hour +1 %>,0);
-    
+    var mode = "<%=Mode %>";
 </script>
 
 <script src="../../App_Themes/Js/Model/TaskModel.js" type="text/javascript"></script>
@@ -51,7 +51,10 @@
     <div class="data">
         <div class="row buttoms">
             <a id="lnkCancel" class="not_buttom">Cancelar</a>
-            <a id="lnkSave" class="buttom">Guardar</a>
+            
+            <asp:Panel ID="pnlSave" runat="server">
+                <a id="lnkSave" class="buttom">Guardar</a>
+            </asp:Panel>
         </div>
     </div>
     

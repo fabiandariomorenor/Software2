@@ -31,6 +31,14 @@
         });
     },
 
+    updateStatus: function (taskId, statusId, callback) {
+        this.method = "ReviewAgent";
+        Util.AjaxSetup(this, callback);
+        $.ajax({
+            data: '{"taskId":' + taskId + ',"statusId":' + statusId + '}'
+        });
+    },
+
     "delete": function(id, callback){
         this.method = "Delete";
         Util.AjaxSetup(this, callback);

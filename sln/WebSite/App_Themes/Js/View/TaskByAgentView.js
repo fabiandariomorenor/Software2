@@ -2,27 +2,36 @@
     onFindHandler: null,
     onDeleteHandler: null,
     onEditHandler: null,
+    onPlayHandler: null,
 
     initialize: function () {
         this.addEvents();
     },
 
     addEvents: function () {
-        $(".menu .client").addClass("select");
+        $(".menu .agent").addClass("select");
         $("#txtFind").keyup(jQuery.proxy(this.onFind, this));
     },
 
     addItemEvents: function () {
         $(".box").mouseenter(function () {
-            $(this).find(".edit,.delete").stop().fadeIn();
+            $(this).find(".edit,.delete,.play,.stop").stop().fadeIn();
         });
 
         $(".box").mouseleave(function () {
-            $(this).find(".edit,.delete").stop().hide();
+            $(this).find(".edit,.delete,.play,.stop").stop().hide();
         })
 
         $(".box").find(".edit").click(jQuery.proxy(this.onEdit, this));
         $(".box").find(".delete").click(jQuery.proxy(this.onDelete, this));
+        $(".box").find(".play").click(jQuery.proxy(this.onPlay, this));
+    },
+
+    onPlay: function (e) {
+        if (this.onPlayHandler != null) {
+            var val = $(e.currentTarget).attr("Value");
+            this.onPlayHandler(val);
+        }
     },
 
     onEdit: function (e) {

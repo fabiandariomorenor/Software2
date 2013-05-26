@@ -24,7 +24,15 @@
                 <span>Direccion:<a>{Address}</a></span>
                 <span>Estado:<a>{StateName}</a></span>
                 <span><p>{Description}</p></span>
-                
+               
+                <a class="stop" title="Completar" value="{ID}">
+                    <img alt="Completar" src="../../App_Themes/Images/stop.png" />
+                </a>
+                 
+                <a class="play" title="Play" value="{ID}">
+                    <img alt="Play" src="../../App_Themes/Images/play1.png" />
+                </a>
+
                 <a class="delete" title="Eliminar" value="{ID}">
                     <img alt="Eliminar" src="../../App_Themes/Images/Icon/delete.png" />
                 </a>
