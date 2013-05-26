@@ -123,11 +123,11 @@ BEGIN
 	JOIN [User] on [User].Document = Client.Document
 	JOIN [State] on [State].Id = Task.ID_State
 	WHERE ID_Agent = @ID_Agent 
-	AND [TASK].Address LIKE '%'+@Description+'%'
-	AND [TASK].Comment LIKE '%'+@Description+'%'
-	AND [TASK].Description LIKE '%'+@Description+'%'
-	AND [User].Name LIKE '%'+@Description+'%'
-	AND [State].Name LIKE '%'+@Description+'%'
+	AND ([TASK].Address LIKE '%'+@Description+'%'
+	OR [TASK].Comment LIKE '%'+@Description+'%'
+	OR [TASK].Description LIKE '%'+@Description+'%'
+	OR [User].Name LIKE '%'+@Description+'%'
+	OR [State].Name LIKE '%'+@Description+'%')
 	ORDER BY InitDate
 	
 END
@@ -149,11 +149,12 @@ BEGIN
 	JOIN [User] on [User].Document = Agent.Document
 	JOIN [State] on [State].Id = Task.ID_State
 	WHERE ID_Client = @ID_Client 
-	AND [TASK].Address LIKE '%'+@Description+'%'
-	AND [TASK].Comment LIKE '%'+@Description+'%'
-	AND [TASK].Description LIKE '%'+@Description+'%'
-	AND [User].Name LIKE '%'+@Description+'%'
-	AND [State].Name LIKE '%'+@Description+'%'
+	AND 
+	([TASK].Address LIKE '%'+@Description+'%'
+	OR [TASK].Comment LIKE '%'+@Description+'%'
+	OR [TASK].Description LIKE '%'+@Description+'%'
+	OR [User].Name LIKE '%'+@Description+'%'
+	OR [State].Name LIKE '%'+@Description+'%')
 	ORDER BY InitDate
 END
 

@@ -1,6 +1,6 @@
 ﻿TaskView = Backbone.View.extend({
     calendar: null,
-    currentDate: '01/01/2013',
+    currentDate: null,
     onSaveHandler: null,
 
     initialize: function () {
@@ -28,21 +28,15 @@
             var agentId = 123456; // $("#ddlAgent option:selected").val();
             var comment = $("#lblComment").html();
 
-            this.validate(client, description, address, agentId, comment)
-            {
+            if (this.validate(client, description, address, agentId, comment, this.currentDate)) {
                 this.onSaveHandler(clientId, description, this.currentDate, agentId, comment, address);
             }
         }
     },
 
-    validate: function (client, description, address, agentId, comment) {
+    validate: function (client, description, address, agentId, comment, date) {
         if (!(clientId > 0)) {
             alert("El cliente no es valido");
-            return false;
-        }
-
-        if (Util.Trim(description).length == 0) {
-            alert("Ingrese una descripción de la tarea");
             return false;
         }
 
@@ -51,15 +45,28 @@
             return false;
         }
 
+        if (Util.Trim(description).length == 0) {
+            alert("Ingrese una descripción de la tarea");
+            return false;
+        }
+
+        if (date == null) {
+            alert("Por favor seleccione una fecha");
+            return false;
+        }
+
+
         if (!(agentId > 0)) {
             alert("Por favor seleccione un agente");
             return false;
         }
-
+        /*
         if (Util.Trim(addcommentress).length == 0) {
-            alert("Por favor escriba un comentario");
-            return false;
-        }
+        alert("Por favor escriba un comentario");
+        return false;
+        }*/
+
+        return true;
     },
 
     render: function () {
@@ -91,6 +98,14 @@
     },
 
     onDateClick: function (date, allDay, jsEvent, view) {
+        var d = date;
+        var day = d.getDate();
+        var month = d.getMonth() + 1;
+        var year = d.getFullYear();
+        var hour = d.getHours();
+        
+        var dateLabel = day + '/' + month + '/' + year + " " + hour + ":00";
+        $("#lblCurrentDate").html(dateLabel);
         this.currentDate = date.toUTCString();
     }
 });

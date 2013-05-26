@@ -20,7 +20,7 @@
     </div>
 
     <div class="row">
-        <span>Fecha y hora</span>
+        <span>Fecha y hora: </span> <span id="lblCurrentDate"></span>
     </div>
 </div>
 <div id="calendar"></div>
