@@ -42,26 +42,5 @@ namespace WebSite.Ws
         {
             return agentBO.Get(document);
         }
-
-        /*[WebMethod]
-        public int Review(int taskID, int stateID, string comment)
-        {
-            Task task = new Task();
-            TaskBO taskBo = new TaskBO();
-            task.ID = taskID;
-            task.ID_State = stateID;
-            task.Comment = comment;
-            return taskBo.Review(task);
-        }*/
-
-      /*  [WebMethod]
-        public List<Task> ListByAgent(int agentId)
-        {
-            Task task = new Task();
-            TaskBO taskBo = new TaskBO();
-            task.ID_Agent = agentId;
-            return taskBo.ListByAgent(task);
-        }*/
-
     }
 }

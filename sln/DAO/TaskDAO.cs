@@ -36,9 +36,14 @@ namespace DAO
             return Execute<Task>("TaskByAgent", task);
         }
 
-        public int Review(Task task)
+        public int ReviewClient(Task task)
         {
             return ExecuteScalar("TaskReviewClient", task);
+        }
+
+        public int ReviewAgent(Task task)
+        {
+            return ExecuteScalar("TaskReviewAgent", task);
         }
     }
 }

@@ -42,9 +42,14 @@ namespace BO
             return taskDao.ListByAgent(task);
         }
 
-        public object Review(int taskId, string comment, int statusId)
+        public int ReviewClient(Task task)
         {
-            throw new NotImplementedException();
+            return taskDao.ReviewClient(task);
+        }
+
+        public int ReviewAgent(Task task)
+        {
+            return taskDao.ReviewAgent(task);
         }
 
         public void Delete(int id)
