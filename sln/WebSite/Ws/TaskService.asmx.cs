@@ -64,9 +64,22 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public void Review(int taskId, string comment, int statusId)
+        public void ReviewClient(int taskId, string comment, int statusId)
         {
-            taskBO.Review(taskId, comment, statusId);
+            Task task = new Task();
+            task.ID = taskId;
+            task.ID_State = statusId;
+            task.Comment = comment;
+            taskBO.ReviewClient(task);
+        }
+
+        [WebMethod]
+        public void ReviewAgent(int taskId, int statusId)
+        {
+            Task task = new Task();
+            task.ID = taskId;
+            task.ID_State = statusId;
+            taskBO.ReviewAgent(task);
         }
 
         [WebMethod]

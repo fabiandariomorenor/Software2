@@ -168,5 +168,35 @@ END
 
 GO
 
+CREATE PROCEDURE [dbo].[TaskReviewAgent] 
+	@ID int,
+	@ID_State int
+AS
+IF ((SELECT ID_State FROM TASK WHERE ID = @ID) = 1 AND (@ID_State = 2 OR @ID_State = 5)) 
+OR ((SELECT ID_State FROM TASK WHERE ID = @ID) = 2 AND (@ID_State = 3 OR @ID_State = 5))
+BEGIN
+	UPDATE [dbo].[TASK]
+   SET [ID_State] = @ID_State
+ WHERE ID = @ID
+ SELECT ID FROM [TASK] WHERE ID = @ID AND ID_State = @ID_State
+END
+
+GO
+
+CREATE PROCEDURE [dbo].[TaskReviewClient] 
+	@ID int,
+	@ID_State int,
+	@Comment varchar(50)
+AS
+IF (((SELECT ID_State FROM TASK WHERE ID = @ID) = 1 OR (SELECT ID_State FROM TASK WHERE ID = @ID) = 2) AND  @ID_State = 5)
+OR ((SELECT ID_State FROM TASK WHERE ID = @ID) = 3 AND @ID_State = 4)
+BEGIN
+	UPDATE [dbo].[TASK]
+   SET [ID_State] = @ID_State
+      ,[Comment] = @Comment
+ WHERE ID = @ID
+ SELECT ID FROM [TASK] WHERE ID = @ID
+END
+
 
 	
