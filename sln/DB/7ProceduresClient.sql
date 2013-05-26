@@ -64,7 +64,7 @@ go
 CREATE PROCEDURE [dbo].[ClientUpdate] 
 	@Document decimal(12,0),
 	@Address varchar(50),
-	@DateExpDocument datetime
+	@DateExpDocument varchar(50)
 AS
 BEGIN
 	

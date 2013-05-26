@@ -41,8 +41,25 @@
             return false;
         }
 
-        if(Util.Trimdescription.length == 0)
+        if (Util.Trim(description).length == 0) {
+            alert("Ingrese una descripción de la tarea");
+            return false;
+        }
 
+        if (Util.Trim(address).length == 0) {
+            alert("Ingrese una dirección de la tarea");
+            return false;
+        }
+
+        if (!(agentId > 0)) {
+            alert("Por favor seleccione un agente");
+            return false;
+        }
+
+        if (Util.Trim(addcommentress).length == 0) {
+            alert("Por favor escriba un comentario");
+            return false;
+        }
     },
 
     render: function () {
