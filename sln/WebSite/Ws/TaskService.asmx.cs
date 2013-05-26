@@ -25,8 +25,6 @@ namespace WebSite.Ws
         public int Save(int id, decimal clientId, decimal agentId, int stateID, int locationId, string description, string address, string initDate, 
             string endDate, string comment)
         {
-            initDate = initDate.Replace(" GMT", "");
-            endDate = initDate.Replace(" GMT", "");
             Task task = new Task();
             task.ID = id;
             task.ID_Client = clientId;
@@ -35,11 +33,11 @@ namespace WebSite.Ws
             task.ID_Localization = locationId;
             task.Description = description;
             task.Address = address;
-            task.InitDate = DateTime.ParseExact(initDate, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-            task.EndDate = DateTime.ParseExact(endDate, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-            task.ExpectedInitDate = DateTime.ParseExact(initDate, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-            task.ExpectedEndDate = DateTime.ParseExact(endDate, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-            task.ProcedureDate = DateTime.ParseExact(initDate, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+            task.InitDate = DateTime.ParseExact(initDate, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
+            task.EndDate = DateTime.ParseExact(endDate, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
+            task.ExpectedInitDate = DateTime.ParseExact(initDate, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
+            task.ExpectedEndDate = DateTime.ParseExact(endDate, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
+            task.ProcedureDate = DateTime.ParseExact(initDate, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
             task.Comment = comment;
             return taskBO.Save(task);
         }

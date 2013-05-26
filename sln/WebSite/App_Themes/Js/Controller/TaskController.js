@@ -10,7 +10,7 @@
     },
 
     save: function (clientId, description, currentDate, agentId, comment, address) {
-        this.model.save(clientId, description, currentDate, agentId, comment, address, jQuery.proxy(this.saveCallback, this));
+        this.model.save(taskId, clientId, description, currentDate, agentId, comment, address, jQuery.proxy(this.saveCallback, this));
     },
 
     saveCallback: function (res) {

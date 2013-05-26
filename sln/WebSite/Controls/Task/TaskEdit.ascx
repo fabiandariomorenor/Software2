@@ -1,12 +1,18 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TaskEdit.ascx.cs" Inherits="WebSite.Controls.Task.TaskEdit" %>
 
+<script>
+    var clientId = <%=ClientId %>;
+    var agentId = <%=AgentId %>;
+    var taskId = <%=TaskId %>;
+    var currentDate = new Date(<%=Date.Year %>,<%=Date.Month %>,<%=Date.Day %>,<%=Date.Hour %>,<%=Date.Minute %>);
+    
+</script>
+
 <script src="../../App_Themes/Js/Model/TaskModel.js" type="text/javascript"></script>
 <script src="../../App_Themes/Js/View/TaskView.js" type="text/javascript"></script>
 <script src="../../App_Themes/Js/Controller/TaskController.js" type="text/javascript"></script>
 
-<script>
-    var clientId = <%=ClientId %>
-</script>
+
 <div class="data">
 
     <div class="row">

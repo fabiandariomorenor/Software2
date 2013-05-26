@@ -23,11 +23,11 @@
         });
     },
     
-    save: function(clientId, description, currentDate,  agentId, comment,address,  callback){
+    save: function(taskId, clientId, description, currentDate,  agentId, comment,address,  callback){
         this.method = "Save";
         Util.AjaxSetup(this, callback);
         $.ajax({
-            data: '{"endDate":"' + "01/01/2013" + '","locationId":' + 1 + ',"stateID":' + 0 + ',"id":' + 0 + ',"clientId":' + clientId + ',"description":"' + description + '","initDate":"' + currentDate + '","agentId":' + agentId + ',"comment":"' + comment + '","address":"' + address + '"}'
+            data: '{"endDate":"' + currentDate + '","locationId":' + 1 + ',"stateID":' + 0 + ',"id":' + taskId + ',"clientId":' + clientId + ',"description":"' + description + '","initDate":"' + currentDate + '","agentId":' + agentId + ',"comment":"' + comment + '","address":"' + address + '"}'
         });
     },
 

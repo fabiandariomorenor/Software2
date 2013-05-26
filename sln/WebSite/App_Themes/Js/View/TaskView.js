@@ -1,6 +1,6 @@
 ﻿TaskView = Backbone.View.extend({
     calendar: null,
-    currentDate: null,
+    currentDate: currentDate,
     onSaveHandler: null,
 
     initialize: function () {
@@ -29,7 +29,15 @@
             var comment = $("#lblComment").html();
 
             if (this.validate(client, description, address, agentId, comment, this.currentDate)) {
-                this.onSaveHandler(clientId, description, this.currentDate, agentId, comment, address);
+
+                var d = this.currentDate;
+                var day = d.getDate();
+                var month = d.getMonth() + 1;
+                var year = d.getFullYear();
+                var hour = d.getHours();
+
+                var dateLabel = day + '/0' + month + '/' + year + " " + hour + ":00";
+                this.onSaveHandler(clientId, description, dateLabel, agentId, comment, address);
             }
         }
     },
@@ -102,6 +110,6 @@
         
         var dateLabel = day + '/' + month + '/' + year + " " + hour + ":00";
         $(".lblCurrentDate").html(dateLabel);
-        this.currentDate = date.toUTCString();
+        this.currentDate = date;
     }
 });
