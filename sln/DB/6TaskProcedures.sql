@@ -116,6 +116,18 @@ END
 
 GO
 
+CREATE PROCEDURE [dbo].[TaskDelete] 
+@ID int
+AS
+BEGIN
+	DELETE FROM [dbo].[TASK]
+      WHERE  ID = @ID
+
+	  Select count(*)
+	  from [TASK]
+	  WHERE ID = @ID
+END
+GO
 
 CREATE PROCEDURE [dbo].[TaskByAgent] 
 	@ID_Agent int,
