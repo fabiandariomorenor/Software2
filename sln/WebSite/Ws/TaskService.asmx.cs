@@ -94,7 +94,11 @@ namespace WebSite.Ws
         [WebMethod]
         public void Delete(int id)
         {
-            taskBO.Delete(id);
+            // taskBO.Delete(id);
+            Task task = new Task();
+            task.ID= id;
+            taskBO.Delete(task);
+
         }
 
         [WebMethod]
