@@ -109,11 +109,11 @@
     },
 
     onDateClick: function (date, allDay, jsEvent, view) {
-        var d = date;
-        var day = d.getDate();
-        var month = d.getMonth() + 1;
-        var year = d.getFullYear();
-        var hour = d.getHours();
+        var d = this.currentDate;
+        var day = Util.FormatDigit(d.getDate());
+        var month = Util.FormatDigit(d.getMonth() + 1);
+        var year = Util.FormatDigit(d.getFullYear());
+        var hour = Util.FormatDigit(d.getHours());
 
         var dateLabel = day + '/' + month + '/' + year + " " + hour + ":00";
         $(".lblCurrentDate").html(dateLabel);
