@@ -16,6 +16,11 @@ namespace BO
             return taskDao.Get(id);
         }
 
+        public int Delete(Task task)
+        {
+            // return taskDao.ListByState(task);
+            return taskDao.Delete(task);
+        }
         public int Save(Task task)
         {
             if (task.ID == 0)

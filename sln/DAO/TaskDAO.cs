@@ -21,6 +21,11 @@ namespace DAO
             return ExecuteScalar("TaskInsert", task);
         }
 
+        public int Delete(Task task)
+        {
+            return ExecuteScalar("TaskDelete", task);
+        }
+
         public int Update(Task task)
         {
             return ExecuteScalar("TaskUpdate", task);
