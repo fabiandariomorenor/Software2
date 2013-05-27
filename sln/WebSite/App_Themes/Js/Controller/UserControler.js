@@ -6,7 +6,23 @@
         this.model = new UserModel();
         this.view = new UserView();
         this.view.onLoginHandler = jQuery.proxy(this.login, this);
+        this.view.onValidateHandler = jQuery.proxy(this.validate, this);
+    },
 
+    validate: function (user, date) {
+        this.model.validate(user, date, this.validateCallback);
+    },
+
+    validateCallback: function (res) {
+
+        //si no existe el cliente
+        if (res > 0) {
+            clientId = res;
+            this.view.hideValidate();
+        }
+        else {
+            alert("El usuario o la contraseña no son validos");
+        }
     },
 
     login: function (user, pass) {

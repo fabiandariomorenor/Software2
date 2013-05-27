@@ -9,6 +9,14 @@
         });
     },
 
+    validate: function (document, pass, callback) {
+        this.method = "ClientValidate";
+        Util.AjaxSetup(this, callback);
+        $.ajax({
+            data: '{"document":' + document + ',"date":"' + pass + '"}'
+        });
+    },
+
     save: function (rol, document, name, phone, password, address, date, specialized, callback) {
         this.method = "Save";
         Util.AjaxSetup(this, callback);

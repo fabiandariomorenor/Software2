@@ -15,6 +15,14 @@
         });
     },
 
+    listByClientByStatus: function (clientId, statusId, callback, ref) {
+        this.method = "ListByClient";
+        Util.AjaxSetup(this, callback, null, ref);
+        $.ajax({
+            data: '{"statusId":"' + statusId + '","clientId":' + clientId + '}'
+        });
+    },
+
     listByAgent: function (obj, callback, ref) {
         this.method = "ListByAgent";
         Util.AjaxSetup(this, callback, null, ref);

@@ -134,10 +134,13 @@
     <Content Include="App_Themes\Images\stop.png" />
     <Content Include="App_Themes\Js\Controller\TaskByAgentController.js" />
     <Content Include="App_Themes\Js\Controller\TaskByClientController.js" />
+    <Content Include="App_Themes\Js\Controller\TaskReviewController.js" />
     <Content Include="App_Themes\Js\View\TaskByAgentView.js" />
     <Content Include="App_Themes\Js\View\TaskByClientView.js" />
+    <Content Include="App_Themes\Js\View\TaskReviewView.js" />
     <Content Include="Controls\Task\TaskByClient.ascx" />
     <Content Include="Methodology.aspx" />
+    <Content Include="Review.aspx" />
     <Content Include="Technologies.aspx" />
     <Content Include="Admin\Agent.aspx" />
     <Content Include="Admin\Assessment.aspx" />
@@ -239,6 +242,13 @@
     </Compile>
     <Compile Include="Methodology.aspx.designer.cs">
       <DependentUpon>Methodology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Review.aspx.cs">
+      <DependentUpon>Review.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Review.aspx.designer.cs">
+      <DependentUpon>Review.aspx</DependentUpon>
     </Compile>
     <Compile Include="Technologies.aspx.cs">
       <DependentUpon>Technologies.aspx</DependentUpon>

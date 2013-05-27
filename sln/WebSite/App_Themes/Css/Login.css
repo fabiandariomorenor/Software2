@@ -37,3 +37,11 @@
     margin-left: 185px;
     margin-top: 10px;
 }
+.client_login
+{
+    float: left;
+    font-size: 12px;
+    height: 175px;
+    padding: 10px;
+    width: 250px;
+}

@@ -45,6 +45,13 @@ namespace WebSite.Ws
             }
         }
 
+        [WebMethod(EnableSession = true)]
+        public int ClientValidate(decimal document, string date)
+        {
+            //id del cliente
+            return 1323123;
+        }
+
         [WebMethod]
         public int Save(int rol, decimal document, int localization, string name, decimal phone, string password, string address, string date, int managerId, string specialized)
         {
