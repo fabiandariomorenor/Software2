@@ -50,5 +50,10 @@ namespace DAO
         {
             return ExecuteScalar("TaskReviewAgent", task);
         }
+
+        public List<Agent> AgentPerHour(Agent agent)
+        {
+            return Execute<Agent>("AgentPerHour", agent);
+        }
     }
 }

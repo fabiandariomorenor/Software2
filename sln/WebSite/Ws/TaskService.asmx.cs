@@ -96,5 +96,14 @@ namespace WebSite.Ws
         {
             taskBO.Delete(id);
         }
+
+        [WebMethod]
+        public List<Agent> AgentPerHour(string date)
+        {
+            Agent agent = new Agent();
+            agent.Datetime = date;
+            return taskBO.AgentPerHour(agent);
+        }
+
     }
 }

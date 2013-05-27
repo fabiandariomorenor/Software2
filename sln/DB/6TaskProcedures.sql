@@ -209,4 +209,12 @@ BEGIN
 	WHERE ID_Client = @ID_Client AND ID_State = @ID_State
 END
 
-	
+GO
+
+CREATE PROCEDURE [dbo].[AgentPerHour] 
+	@Datetime varchar(20)
+AS
+BEGIN
+	SELECT [AGENT].Document, [USER].Name FROM AGENT JOIN [USER] ON AGENT.Document = [USER].Document WHERE [AGENT].Document NOT IN
+	(SELECT ID_Agent FROM TASK WHERE InitDate = CONVERT (datetime, @Datetime, 120)) 
+END
