@@ -61,5 +61,10 @@ namespace BO
         {
             throw new NotImplementedException();
         }
+
+        public List<Agent> AgentPerHour(Agent agent)
+        {
+            return taskDao.AgentPerHour(agent);
+        }
     }
 }
