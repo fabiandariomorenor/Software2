@@ -1,5 +1,5 @@
 ﻿TaskReviewView = Backbone.View.extend({
-    onEditHandler: null,
+    onSaveHandler: null,
 
     initialize: function () {
         this.addEvents();
@@ -11,22 +11,14 @@
     },
 
     addItemEvents: function () {
-        $(".box").mouseenter(function () {
-            $(this).find(".edit,.delete").stop().fadeIn();
-        });
-
-        $(".box").mouseleave(function () {
-            $(this).find(".edit,.delete").stop().hide();
-        })
-
-        $(".box").find(".edit").click(jQuery.proxy(this.onEdit, this));
-        $(".box").find(".delete").click(jQuery.proxy(this.onDelete, this));
+        $(".box").find(".btnComment").click(jQuery.proxy(this.onSave, this));
     },
 
-    onEdit: function (e) {
-        if (this.onEditHandler != null) {
+    onSave: function (e) {
+        if (this.onSaveHandler != null) {
             var val = $(e.currentTarget).attr("Value");
-            this.onEditHandler(val);
+            var comment = "El servicio fue calificado como " + $(".box[Value=" + val + "]  [name=rb" + val + "]:checked").attr("Value");
+            this.onSaveHandler(val, comment);
         }
     },
 
@@ -38,6 +30,13 @@
 
         template.dataBind("rptTask", data);
         this.addItemEvents();
+
+        if (data.length > 0) {
+            $("#lblMsgReview").show();
+        }
+        else {
+            $("#lblMsgReview").hide();
+        }
     }
 
 });

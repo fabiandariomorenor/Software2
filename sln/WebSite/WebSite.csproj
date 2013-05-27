@@ -50,6 +50,7 @@
   <ItemGroup>
     <Content Include="Admin\TaskByClient.aspx" />
     <Content Include="App_Themes\Css\About.css" />
+    <Content Include="App_Themes\Css\Review.css" />
     <Content Include="App_Themes\Css\TaskList.css" />
     <Content Include="App_Themes\Images\Analysis\Casos de Uso.png" />
     <Content Include="App_Themes\Images\Analysis\Clases.png" />
@@ -131,6 +132,8 @@
     <Content Include="App_Themes\Images\play1.png" />
     <Content Include="App_Themes\Images\Principal.jpg" />
     <Content Include="App_Themes\Images\Principal.png" />
+    <Content Include="App_Themes\Images\review.jpg" />
+    <Content Include="App_Themes\Images\review1.jpg" />
     <Content Include="App_Themes\Images\stop.png" />
     <Content Include="App_Themes\Js\Controller\TaskByAgentController.js" />
     <Content Include="App_Themes\Js\Controller\TaskByClientController.js" />

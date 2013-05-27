@@ -47,6 +47,22 @@
         });
     },
 
+    reviewClient: function (taskId, comment, callback) {
+        this.method = "ReviewClient";
+        Util.AjaxSetup(this, callback);
+        $.ajax({
+            data: '{"taskId":' + taskId + ',"comment":"' + comment + '"}'
+        });
+    },
+
+    listAgent: function (date, comment, callback) {
+        this.method = "AgentPerHour";
+        Util.AjaxSetup(this, callback);
+        $.ajax({
+            data: '{"date":"' + date + '"}'
+        });
+    },
+
     "delete": function(id, callback){
         this.method = "Delete";
         Util.AjaxSetup(this, callback);

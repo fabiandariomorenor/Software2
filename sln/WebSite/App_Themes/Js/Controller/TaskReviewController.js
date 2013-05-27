@@ -5,11 +5,16 @@
     initialize: function () {
         this.model = new TaskModel();
         this.view = new TaskReviewView();
-       // this.list();
+        this.view.onSaveHandler = jQuery.proxy(this.save, this);
     },
 
-    edit: function (id) {
-        window.location = "task.aspx?Id=" + id + "&agentId=" + agentId;
+    save: function (taskId, comment) {
+        this.model.reviewClient(taskId, comment, jQuery.proxy(this.reviewClientCallback, this));
+    },
+
+    reviewClientCallback: function (res) {
+        alert("Gracias por su opinion");
+        this.list();
     },
 
     list: function () {

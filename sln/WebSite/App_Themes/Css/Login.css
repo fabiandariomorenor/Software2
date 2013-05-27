@@ -42,6 +42,10 @@
     float: left;
     font-size: 12px;
     height: 175px;
-    padding: 10px;
+    padding-top: 10px;
     width: 250px;
+}
+.client_login #btnValidate
+{
+    margin-left:141px;
 }

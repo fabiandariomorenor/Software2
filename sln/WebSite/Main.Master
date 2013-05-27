@@ -50,6 +50,11 @@
                 <%--Columna Derecha--%>
                 <div class="right_column">
                     
+                    
+                    <a class="quality" href="review.aspx"> 
+                        <img src="App_Themes/Images/review1.jpg" />
+                    </a>
+                    
                     <%--Desarrolladores--%>
                     <div class="box">
                         <div class="title">Autores</div>

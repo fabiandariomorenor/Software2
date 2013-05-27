@@ -16,6 +16,7 @@
             for (var i = 0; i < len; i++) {
                 var templateItemHtml = templateHtml;
                 lstData[i].RowIndex = i;
+                lstData[i].RowNumber = i + 1;
 
                 //si es un objeto
                 if (lstData[i].substr == undefined) {
@@ -24,6 +25,7 @@
                 else {
                     templateItemHtml = Util.ReplaceAll(templateItemHtml, "{Value}", lstData[i]);
                     templateItemHtml = Util.ReplaceAll(templateItemHtml, "{RowIndex}", i);
+
                 }
 
                 html += templateItemHtml;

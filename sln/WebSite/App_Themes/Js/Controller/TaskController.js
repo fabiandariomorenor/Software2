@@ -6,6 +6,14 @@
         this.model = new TaskModel();
         this.view = new TaskView();
         this.view.onSaveHandler = jQuery.proxy(this.save, this);
+        this.view.onChangeDate = jQuery.proxy(this.listAgent, this);
+    },
+
+    listAgent: function (date) {
+        this.model.listAgent(date, jQuery.proxy(this.listAgentCallback, this));
+    },
+
+    listAgentCallback: function (res) {
 
     },
 

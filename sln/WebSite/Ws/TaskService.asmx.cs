@@ -64,11 +64,11 @@ namespace WebSite.Ws
         }
 
         [WebMethod]
-        public void ReviewClient(int taskId, string comment, int statusId)
+        public void ReviewClient(int taskId, string comment)
         {
             Task task = new Task();
             task.ID = taskId;
-            task.ID_State = statusId;
+            task.ID_State = 4;
             task.Comment = comment;
             taskBO.ReviewClient(task);
         }

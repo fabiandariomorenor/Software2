@@ -2,6 +2,7 @@
     calendar: null,
     currentDate: currentDate,
     onSaveHandler: null,
+    onChangeDate:null,
 
     initialize: function () {
         this.addEvents();
@@ -117,5 +118,9 @@
         var dateLabel = day + '/' + month + '/' + year + " " + hour + ":00";
         $(".lblCurrentDate").html(dateLabel);
         this.currentDate = date;
+
+        if (this.onChangeDate != null) {
+            this.onChangeDate(dateLabel);
+        }
     }
 });

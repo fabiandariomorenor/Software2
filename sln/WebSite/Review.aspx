@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
 <link href="../App_Themes/Css/jquery.css" rel="stylesheet" type="text/css" />
+<link href="App_Themes/Css/Review.css" rel="stylesheet" type="text/css" />
 <script src="../App_Themes/Js/Library/jQuery.UI.js" type="text/javascript"></script>
 <script src="App_Themes/Js/Util/Template.js" type="text/javascript"></script>
     
@@ -17,9 +18,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Califica el Servicio</h1>
     
-    Por favor ingresa el número de tu documento y la fecha de expedición del mismo
-
+    <div class="review_content">
+    
+    <span class="lblMsgClientLogin">Por favor ingresa el número de tu documento y la fecha de expedición del mismo</span>
     <div class="client_login" >
+    
     <span>Documento</span>
     <input id="txtDocumento" Integer="true" maxlength="10" type="text" />
     <br />
@@ -29,39 +32,35 @@
     <a id="btnValidate" class="buttom">Validar</a>
     </div>
 
+    
+    <span id="lblMsgReview">Por favor califique el servicio prestado por nuestra compania</span><BR /><BR />
+
     <div id="rptTask"></div>
     <script template="rptTask" type="text/template">
-        <div class="box">
-            
+        <div class="box task" Value="{ID}">
+            <div class="number">{RowNumber}.</div>
             <div class="info">
                 
-                <span>Client:<a>{ClientName}</a></span>
-                <span>Direccion:<a>{Address}</a></span>
-                <span>Estado:<a>{StateName}</a></span>
-                <span><p>{Description}</p></span>
-               
-                <a class="stop" title="Completar" value="{ID}">
-                    <img alt="Completar" src="../../App_Themes/Images/stop.png" />
-                </a>
-                 
-                 
-                <a class="play" title="Play" value="{ID}" >
-                    <img alt="Play" src="../../App_Themes/Images/play1.png" />
-                </a>
+                <span><b>Agente que atendio el requerimiento:</b><a>{AgentName}</a></span>
+                <span><b>Direccion donde se presto el servicio:</b><a>{Address}</a></span>
+                <span><p><b>Servicio Prestado: </b>{Description}</p></span>
                 
+                <span><b>como califica el servicio prestado?</b></span>
 
-                <a class="delete" title="Eliminar" value="{ID}">
-                    <img alt="Eliminar" src="../../App_Themes/Images/Icon/delete.png" />
-                </a>
-                <a class="edit" title="Editar" value="{ID}">
-                    <img src="../../App_Themes/Images/Icon/edit.png" />
-                </a>
+                <span>
+                    <input name="rb{ID}" type="radio" value="Bueno" checked="yes"/>Bueno
+                    <input name="rb{ID}" type="radio" value="Regular"/>Regular
+                    <input name="rb{ID}" type="radio" value="Malo"/>Malo
+                </span>
+                <span>
+                <a Value="{ID}" class="btnComment buttom">Enviar</a>
+                </span>
             </div>
         </div>
     </script>
     <script empty="rptTask" type="text/template">
-        <p class="center">No se encontraron tareas</p>
+        <p class="center">No hay servicios por calificar</p>
     </script>
 
-
+    </div>
 </asp:Content>

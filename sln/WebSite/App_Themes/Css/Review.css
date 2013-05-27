@@ -1,0 +1,56 @@
+﻿.box.task
+{
+    background-color: #FCFAB0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 11px;
+    padding-top: 10px;
+    width: 100%;
+}
+.box.task .number
+{
+    color: #0A8C8E;
+    float: left;
+    font-size: 25px;
+    margin-top: -9px;
+    text-align: center;
+    width: 30px;
+}
+.box.task .info p
+{
+    margin:0px;
+    padding:0px 0 10px;
+}
+.box.task .info
+{
+    width:635px;
+    float:left;
+}
+#rptTask .center
+{
+    text-align:center;
+}
+.box.task .info span a
+{
+    margin-left:5px;
+}
+.box.task .info span
+{
+    width:100%;
+    float:left;
+    padding-left:10px;
+}
+.review_content
+{
+    font-size:12px;
+}
+.box.task .btnComment
+{
+    margin-top:20px;
+    float:right;
+    margin-right:22px;
+}
+#lblMsgReview
+{
+    display:none;
+}

@@ -139,6 +139,12 @@
     margin-right:10px;
     padding-top:3px;
 }
+.quality
+{
+    border:5px solid #EBF0B8;
+    display:inline-block;
+    cursor:pointer;
+}
 /*Fin Header*/
  
  

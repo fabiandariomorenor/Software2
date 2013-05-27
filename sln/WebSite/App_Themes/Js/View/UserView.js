@@ -78,7 +78,7 @@
     },
 
     hideValidate: function () {
-        $(".client_login").hide();
+        $(".client_login,.lblMsgClientLogin").hide();
     }
 
 });
