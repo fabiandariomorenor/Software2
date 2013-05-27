@@ -22,7 +22,7 @@
 
 
     <%--Titulo--%>
-    <h2>Diagrama de Clases</h2>
+    <h2>Diagrama de Datos</h2>
 
     <%--Galeria--%>
     <div class="gallery">

@@ -8,6 +8,7 @@
         this.view.onFindHandler = jQuery.proxy(this.list, this);
         this.view.onEditHandler = jQuery.proxy(this.edit, this);
         this.view.onPlayHandler = jQuery.proxy(this.play, this);
+        this.view.onStopHandler = jQuery.proxy(this.stop, this);
         this.view.onDeleteHandler = jQuery.proxy(this["delete"], this);
         this.model.set({ agentId: agentId });
         this.list();
@@ -15,6 +16,10 @@
 
     play: function (id) {
         this.model.updateStatus(id, 2, jQuery.proxy(this.playCallback, this));
+    },
+
+    stop: function (id) {
+        this.model.updateStatus(id, 3, jQuery.proxy(this.playCallback, this));
     },
 
     playCallback: function (res) {

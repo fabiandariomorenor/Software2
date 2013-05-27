@@ -3,6 +3,7 @@
 
 <link href="../App_Themes/Css/jquery.css" rel="stylesheet" type="text/css" />
 <script src="../App_Themes/Js/Library/jQuery.UI.js" type="text/javascript"></script>
+<script src="App_Themes/Js/Util/Template.js" type="text/javascript"></script>
     
 <script src="App_Themes/Js/Model/TaskModel.js" type="text/javascript"></script>
 <script src="App_Themes/Js/View/TaskReviewView.js" type="text/javascript"></script>
@@ -43,9 +44,11 @@
                     <img alt="Completar" src="../../App_Themes/Images/stop.png" />
                 </a>
                  
-                <a class="play" title="Play" value="{ID}">
+                 
+                <a class="play" title="Play" value="{ID}" >
                     <img alt="Play" src="../../App_Themes/Images/play1.png" />
                 </a>
+                
 
                 <a class="delete" title="Eliminar" value="{ID}">
                     <img alt="Eliminar" src="../../App_Themes/Images/Icon/delete.png" />

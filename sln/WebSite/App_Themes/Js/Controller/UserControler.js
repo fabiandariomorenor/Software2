@@ -10,7 +10,7 @@
     },
 
     validate: function (user, date) {
-        this.model.validate(user, date, this.validateCallback);
+        this.model.validate(user, date, jQuery.proxy(this.validateCallback, this));
     },
 
     validateCallback: function (res) {
@@ -18,6 +18,7 @@
         //si no existe el cliente
         if (res > 0) {
             clientId = res;
+            taskReviewController.list();
             this.view.hideValidate();
         }
         else {

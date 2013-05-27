@@ -16,10 +16,10 @@
     },
 
     listByClientByStatus: function (clientId, statusId, callback, ref) {
-        this.method = "ListByClient";
+        this.method = "ListByState";
         Util.AjaxSetup(this, callback, null, ref);
         $.ajax({
-            data: '{"statusId":"' + statusId + '","clientId":' + clientId + '}'
+            data: '{"statusId":' + statusId + ',"clientId":' + clientId + '}'
         });
     },
 

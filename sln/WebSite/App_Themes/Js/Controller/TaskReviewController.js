@@ -5,7 +5,7 @@
     initialize: function () {
         this.model = new TaskModel();
         this.view = new TaskReviewView();
-        this.list();
+       // this.list();
     },
 
     edit: function (id) {

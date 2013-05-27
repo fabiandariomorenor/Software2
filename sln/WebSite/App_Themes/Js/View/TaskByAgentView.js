@@ -3,6 +3,7 @@
     onDeleteHandler: null,
     onEditHandler: null,
     onPlayHandler: null,
+    onStopHandler: null,
 
     initialize: function () {
         this.addEvents();
@@ -25,6 +26,14 @@
         $(".box").find(".edit").click(jQuery.proxy(this.onEdit, this));
         $(".box").find(".delete").click(jQuery.proxy(this.onDelete, this));
         $(".box").find(".play").click(jQuery.proxy(this.onPlay, this));
+        $(".box").find(".stop").click(jQuery.proxy(this.onStop, this));
+    },
+
+    onStop: function (e) {
+        if (this.onStopHandler != null) {
+            var val = $(e.currentTarget).attr("Value");
+            this.onStopHandler(val);
+        }
     },
 
     onPlay: function (e) {
@@ -59,7 +68,18 @@
         for (var i = 0; i < data.length; i++) {
             var date = eval("new " + Util.ReplaceAll(data[i].InitDate, "/", ""));
             data[i].HourInitDate = date.getHours() + " : 00";
+
+            data[i].PlayEnabled = "none";
+            data[i].StopEnabled = "none";
+
+            if (data[i].ID_State == 1) {
+                data[i].PlayEnabled = "block";
+            }
+            else if (data[i].ID_State == 2) {
+                data[i].StopEnabled = "block";
+            }
         }
+
         template.dataBind("rptTask", data);
         this.addItemEvents();
     }
