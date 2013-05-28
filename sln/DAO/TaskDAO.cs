@@ -60,5 +60,10 @@ namespace DAO
         {
             return Execute<Agent>("AgentPerHour", agent);
         }
+
+        public List<Tasksearch> TaskAgentHour(Tasksearch tasksearch)
+        {
+            return Execute<Tasksearch>("TaskAgentHour", tasksearch);
+        }
     }
 }

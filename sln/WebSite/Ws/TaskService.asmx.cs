@@ -113,5 +113,14 @@ namespace WebSite.Ws
             return taskBO.AgentPerHour(agent);
         }
 
+        [WebMethod]
+        public List<Tasksearch> TaskAgentHour(DateTime initdate, DateTime enddate)
+        {
+            Tasksearch tasksearch = new Tasksearch();
+            tasksearch.InitDate = initdate;
+            tasksearch.EndDate = enddate;
+            return taskBO.TaskAgentHour(tasksearch);
+        }
+
     }
 }

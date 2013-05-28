@@ -71,5 +71,10 @@ namespace BO
         {
             return taskDao.AgentPerHour(agent);
         }
+
+        public List<Tasksearch> TaskAgentHour(Tasksearch tasksearch)
+        {
+            return taskDao.TaskAgentHour(tasksearch);
+        }
     }
 }
