@@ -11,6 +11,7 @@ namespace Entity
         public DateTime EndDate { get; set; }
         public DateTime TaskDate { get; set; }
         public Int32 Task_Hour { get; set; }
+        public Int32 Task_PerHour { get; set; }
         
     }
 }
