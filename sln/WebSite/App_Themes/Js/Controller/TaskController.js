@@ -24,13 +24,13 @@
         for (var i = 0; i < res.length; i++) {
             var start = eval("new " + Util.ReplaceAll(res[i].TaskDate, "/", ""));
             var end = eval("new " + Util.ReplaceAll(res[i].TaskDate, "/", "")).addHours(1);
-            var color = "#BCC721";
-            var count = 0;
+            var color = "#0A8C8E";
+            var count = res[i].Task_PerHour;
 
             if (count == totalAgent)
                 color = "#f00";
             events_array.push({
-                title: ("0" + '/' + totalAgent),
+                title: (count + ' agente(s) ocupado(s) de ' + totalAgent),
                 start: start,
                 end: end,
                 allDay: false,
