@@ -234,7 +234,7 @@ CREATE PROCEDURE [dbo].[AgentPerHour]
 AS
 BEGIN
 	SELECT [AGENT].Document, [USER].Name FROM AGENT JOIN [USER] ON AGENT.Document = [USER].Document WHERE [AGENT].Document NOT IN
-	(SELECT ID_Agent FROM TASK WHERE InitDate = CONVERT (datetime, @Datetime, 120)) 
+	(SELECT ID_Agent FROM TASK WHERE InitDate = CONVERT (datetime, @Datetime, 131)) 
 END
 
 GO
