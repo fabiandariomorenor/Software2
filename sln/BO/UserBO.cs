@@ -23,6 +23,19 @@ namespace BO
             }
         }
 
+        public bool ClientValidate(decimal document, String date)
+        {
+            if (userDao.GetClient(document, date) == null)
+            {
+                return false  ;
+            }
+            else
+            {
+                return true;
+            }
+           
+        }
+
         public User Get(decimal document)
         {
             return userDao.Get(document);

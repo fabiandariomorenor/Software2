@@ -46,10 +46,21 @@ namespace WebSite.Ws
         }
 
         [WebMethod(EnableSession = true)]
-        public int ClientValidate(decimal document, string date)
+        public decimal ClientValidate(decimal document, string date)
         {
             //id del cliente
-            return 1323123;
+            
+            if (userBo.Validate(document, date))
+            {
+               
+                 return document;
+            }
+            else
+            {
+                
+                return 0;
+            }
+
         }
 
         [WebMethod]
