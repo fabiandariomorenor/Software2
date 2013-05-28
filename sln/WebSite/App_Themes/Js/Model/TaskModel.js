@@ -55,7 +55,7 @@
         });
     },
 
-    listAgent: function (date, comment, callback) {
+    listAgent: function (date, callback) {
         this.method = "AgentPerHour";
         Util.AjaxSetup(this, callback);
         $.ajax({

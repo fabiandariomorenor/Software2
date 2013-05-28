@@ -48,7 +48,7 @@
     },
 
     listAgentCallback: function (res) {
-
+        this.view.renderAgent(res);
     },
 
     save: function (clientId, description, currentDate, agentId, comment, address) {

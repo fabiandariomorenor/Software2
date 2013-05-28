@@ -9,6 +9,6 @@ namespace Entity
     {
         public string Specialization { get; set; }
         public decimal ID_Manager { get; set; }
-        public string Datetime { get; set; }
+        public DateTime Datetime { get; set; }
     }
 }
