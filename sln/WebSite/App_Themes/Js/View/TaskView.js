@@ -2,7 +2,7 @@
     calendar: null,
     currentDate: currentDate,
     onSaveHandler: null,
-    onChangeDate:null,
+    onChangeDate: null,
 
     initialize: function () {
         this.addEvents();
@@ -80,11 +80,7 @@
         return true;
     },
 
-    render: function () {
-        var date = new Date();
-        var d = date.getDate() + 1;
-        var m = date.getMonth() + 1;
-        var y = date.getFullYear();
+    render: function (events_array) {
 
         this.calendar = $('#calendar').fullCalendar({
             allDaySlot: false,
@@ -94,16 +90,28 @@
             slotMinutes: 60,
             selectHelper: true,
             defaultView: 'agendaWeek',
-            events: [
+            weekends: false,
+            eventRender: function (event, element, view) {
 
-				    {
-				        title: 'Agenda',
-				        start: new Date(y, m, d + 1, 19, 0),
-				        end: new Date(y, m, d + 1, 22, 30),
-				        allDay: false
-				    }
-			    ],
+            },
+            dayClick: jQuery.proxy(this.onDateClick, this)
+        });
+    },
 
+    addDisponibility: function () {
+        this.calendar = $('#calendar').fullCalendar({
+            allDaySlot: false,
+            minTime: 7,
+            maxTime: 19,
+            selectable: true,
+            slotMinutes: 60,
+            selectHelper: true,
+            defaultView: 'agendaWeek',
+            events: events_array,
+            weekends: false,
+            eventRender: function (event, element, view) {
+
+            },
             dayClick: jQuery.proxy(this.onDateClick, this)
         });
     },
