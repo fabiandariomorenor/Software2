@@ -119,6 +119,11 @@
     <Content Include="App_Themes\Images\jQuery\ui-icons_ffd27a_256x240.png" />
     <Content Include="App_Themes\Images\jQuery\ui-icons_ffffff_256x240.png" />
     <Content Include="App_Themes\Images\Logo.png" />
+    <Content Include="App_Themes\Images\Patterns\dao.PNG" />
+    <Content Include="App_Themes\Images\Patterns\DAOBO.jpg" />
+    <Content Include="App_Themes\Images\Patterns\MVC-Process.png" />
+    <Content Include="App_Themes\Images\Patterns\MVC.PNG" />
+    <Content Include="App_Themes\Images\Patterns\PatronDAO.png" />
     <Content Include="App_Themes\Images\People\0.png" />
     <Content Include="App_Themes\Images\People\1.png" />
     <Content Include="App_Themes\Images\People\2.png" />
@@ -143,6 +148,7 @@
     <Content Include="App_Themes\Js\View\TaskByClientView.js" />
     <Content Include="App_Themes\Js\View\TaskReviewView.js" />
     <Content Include="Controls\Task\TaskByClient.ascx" />
+    <Content Include="Patrones.aspx" />
     <Content Include="Methodology.aspx" />
     <Content Include="Review.aspx" />
     <Content Include="Technologies.aspx" />
@@ -239,6 +245,13 @@
     </Compile>
     <Compile Include="Controls\Task\TaskByClient.ascx.designer.cs">
       <DependentUpon>TaskByClient.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Patrones.aspx.cs">
+      <DependentUpon>Patrones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patrones.aspx.designer.cs">
+      <DependentUpon>Patrones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Methodology.aspx.cs">
       <DependentUpon>Methodology.aspx</DependentUpon>

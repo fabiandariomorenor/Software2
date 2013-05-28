@@ -13,7 +13,7 @@
         <a class="name"><asp:Literal ID="ltName" Visible="false" runat="server"></asp:Literal></a>
     </div>
 
-    <div class="menu">
+    <div class="menu" style="width: 869px">
 
         <a class="home public" href="/home.aspx"> 
             <img align="middle" src="../App_Themes/Images/Icon/home.png" />Inicio</a>
@@ -25,7 +25,11 @@
             <img align="middle" src="../App_Themes/Images/Icon/tecnologias.png" />Tecnologias</a>
         
         <a class="version public" href="/Versioning.aspx"> 
-            <img align="middle" src="../App_Themes/Images/Icon/repositorio.png" />Versionamiento</a>
+            <img align="middle" src="../App_Themes/Images/Icon/repositorio.png" />Versionamiento</a>&nbsp;
+        
+        <a class="version public" href="/Patrones.aspx"> 
+            <img align="middle" src="../App_Themes/Images/Icon/icon_gears.png" />Patrones 
+        Software</a>
     </div>
 
     <asp:Panel ID="pnlLogin"  runat="server">
