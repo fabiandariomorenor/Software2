@@ -7,6 +7,11 @@
     return new Object();
 };
 
+Date.prototype.addHours = function (h) {
+    this.setHours(this.getHours() + h);
+    return this;
+}
+
 function Parse() {
     this.ToInt = function (str) {
         var int = parseInt(str);

@@ -6,6 +6,7 @@
     var taskId = <%=TaskId %>;
     var currentDate = new Date(<%=Date.Year %>,<%=Date.Month %>,<%=Date.Day %>,<%=Date.Hour +1 %>,0);
     var mode = "<%=Mode %>";
+    var totalAgent= <%=Total %>;
 </script>
 
 <script src="../../App_Themes/Js/Model/TaskModel.js" type="text/javascript"></script>
@@ -33,7 +34,7 @@
 
 <div class="data">
     <div class="row">
-        <span>Agente:</span>
+        <span>Agentes Dispnibles:</span>
         <select id="ddlAgent">
             <asp:Repeater ID="rptAgent" runat="server">
                 <ItemTemplate>

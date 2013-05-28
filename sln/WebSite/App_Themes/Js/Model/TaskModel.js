@@ -63,6 +63,14 @@
         });
     },
 
+    taskAgentHour: function ( callback) {
+        this.method = "TaskAgentHour";
+        Util.AjaxSetup(this, callback);
+        $.ajax({
+            data: '{"initdate":"01/01/2013","enddate":"01/01/2014"}'
+        });
+    },
+
     "delete": function(id, callback){
         this.method = "Delete";
         Util.AjaxSetup(this, callback);
