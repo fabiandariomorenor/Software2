@@ -230,3 +230,20 @@ BEGIN
 	SELECT [AGENT].Document, [USER].Name FROM AGENT JOIN [USER] ON AGENT.Document = [USER].Document WHERE [AGENT].Document NOT IN
 	(SELECT ID_Agent FROM TASK WHERE InitDate = CONVERT (datetime, @Datetime, 120)) 
 END
+
+GO
+CREATE PROCEDURE [dbo].[TaskAgentHour] 
+	@initdate varchar(20),
+	@enddate varchar(20)
+AS
+BEGIN
+SELECT  --CAST(ID_Agent as INT) as 'ID_Agente', 
+		InitDate  as 'TaskDate', 
+        DATEPART(Hour, InitDate)    as 'Task_Hour', 
+        COUNT(*) as 'Task_PerHour'
+FROM [dbo].[TASK]												--WHERE InitDate > @initdate AND InitDate < @enddate AND ID_State=0
+
+GROUP BY InitDate , DATEPART(Hour, InitDate)--,CAST(ID_Agent as INT)
+ORDER BY CAST(InitDate as DATE) ASC
+END
+
