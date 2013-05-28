@@ -26,6 +26,10 @@ namespace WebSite.Ws
             string endDate, string comment)
         {
             Task task = taskBO.Get(id);
+
+            if (task == null)
+                task = new Task();
+
             task.ID = id;
             task.ID_Client = clientId;
             task.ID_Agent = agentId;
