@@ -32,7 +32,7 @@
             var client = clientId;
             var description = $("#txtDescription").val();
             var address = $("#txtAddress").val();
-            var agentId = 123456; // $("#ddlAgent option:selected").val();
+            var agentId = $("#ddlAgent option:selected").val();
             var comment = $("#lblComment").html();
 
             if (this.validate(client, description, address, agentId, comment, this.currentDate)) {
@@ -80,7 +80,18 @@
         return true;
     },
 
-    render: function (events_array) {
+    renderAgent: function (res) {
+        var html = '';
+
+        for (var i = 0; i < res.length; i++) {
+            html += "<option value='" + res[i].Document + "'>" + res[i].Name + "</option>"
+        }
+
+        console.log(html)
+        $("#ddlAgent").html(html);
+    },
+
+    render: function () {
 
         this.calendar = $('#calendar').fullCalendar({
             allDaySlot: false,
@@ -98,7 +109,8 @@
         });
     },
 
-    addDisponibility: function () {
+    addDisponibility: function (events_array) {
+        $('#calendar').html("");
         this.calendar = $('#calendar').fullCalendar({
             allDaySlot: false,
             minTime: 7,
@@ -112,11 +124,30 @@
             eventRender: function (event, element, view) {
 
             },
+            eventClick: jQuery.proxy(this.onEventClick, this),
             dayClick: jQuery.proxy(this.onDateClick, this)
         });
     },
 
+    onEventClick: function (event) {
+        this.currentDate = event.start;
+        var d = event.start;
+        var day = Util.FormatDigit(d.getDate());
+        var month = Util.FormatDigit(d.getMonth() + 1);
+        var year = Util.FormatDigit(d.getFullYear());
+        var hour = Util.FormatDigit(d.getHours());
+
+        var dateLabel = day + '/' + month + '/' + year + " " + hour + ":00";
+        $(".lblCurrentDate").html(dateLabel);
+
+
+        if (this.onChangeDate != null) {
+            this.onChangeDate(dateLabel);
+        }
+    },
+
     onDateClick: function (date, allDay, jsEvent, view) {
+        this.currentDate = date;
         var d = this.currentDate;
         var day = Util.FormatDigit(d.getDate());
         var month = Util.FormatDigit(d.getMonth() + 1);
@@ -125,7 +156,7 @@
 
         var dateLabel = day + '/' + month + '/' + year + " " + hour + ":00";
         $(".lblCurrentDate").html(dateLabel);
-        this.currentDate = date;
+
 
         if (this.onChangeDate != null) {
             this.onChangeDate(dateLabel);

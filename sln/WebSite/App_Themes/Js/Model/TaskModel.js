@@ -55,11 +55,19 @@
         });
     },
 
-    listAgent: function (date, comment, callback) {
+    listAgent: function (date, callback) {
         this.method = "AgentPerHour";
         Util.AjaxSetup(this, callback);
         $.ajax({
             data: '{"date":"' + date + '"}'
+        });
+    },
+
+    taskAgentHour: function ( callback) {
+        this.method = "TaskAgentHour";
+        Util.AjaxSetup(this, callback);
+        $.ajax({
+            data: '{"initdate":"01/01/2013","enddate":"01/01/2014"}'
         });
     },
 

@@ -109,7 +109,7 @@ namespace WebSite.Ws
         public List<Agent> AgentPerHour(string date)
         {
             Agent agent = new Agent();
-            agent.Datetime = date;
+            agent.Datetime = DateTime.ParseExact(date, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture); ;
             return taskBO.AgentPerHour(agent);
         }
 

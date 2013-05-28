@@ -16,13 +16,15 @@
 
     <div id="rptTask"></div>
     <script template="rptTask" type="text/template">
-        <div class="box">
+        <div class="box box_{StateName}">
             
             <div class="info">
                 
                 <span>Client:<a>{ClientName}</a></span>
                 <span>Direccion:<a>{Address}</a></span>
                 <span>Estado:<a>{StateName}</a></span>
+                <span>Fecha:<a>{InitDate}</a></span>
+                <span>Hora:<a>{HourInitDate}</a></span>
                 <span><p>{Description}</p></span>
                 
                 <div style="display:{StopEnabled}">  

@@ -78,6 +78,15 @@
     </div>
     <p>Por favor de click sobre la imagen para descargar</p>
 
+    <h2>Diagrama de Secuencia Task (Básica)</h2>
+
+    <%--Galeria--%>
+    <div class="gallery">
+       <div class="principal_image">
+            <a href="/App_Themes/Images/Analysis/secuenciaTaskI.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/secuenciaTaskI.png" width="665px" /></a>
+        </div>              
+    </div>
+    <p>Por favor de click sobre la imagen para descargar</p>
 
     <div class="mockups">
         <h2>Mockups</h2>

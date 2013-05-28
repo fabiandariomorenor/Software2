@@ -10,34 +10,37 @@
         this.load();
     },
 
-    load : function(){
-        
+    load: function () {
+        this.model.taskAgentHour(jQuery.proxy(this.taskAgentHourCallback, this));
+    },
+
+    taskAgentHourCallback: function (res) {
         var events_array = new Array();
-
-        for (var i = 0; i < length; i++) {
-            
+        Date.prototype.addHours = function (h) {
+            this.setHours(this.getHours() + h);
+            return this;
         }
-        /*
-        events_array=[
-             {
-                 title: 'All Day Event',
-                 start: new Date(2013,4,27,7),
-                 allDay: false
-             },
-            {
-                title: 'Long Event',
-                start: new Date(y, m, d , 16, 0),
-                allDay: false
-            },
-            {
-                id: 999,
-                title: 'Repeating Event',
-                start: new Date(y, m, d - 3, 16, 0),
-                allDay: false
-            }
-        ];
 
-        this.view.render(events_array);*/
+        for (var i = 0; i < res.length; i++) {
+            var start = eval("new " + Util.ReplaceAll(res[i].TaskDate, "/", ""));
+            var end = eval("new " + Util.ReplaceAll(res[i].TaskDate, "/", "")).addHours(1);
+            var color = "#0A8C8E";
+            var count = res[i].Task_PerHour;
+
+            if (count == totalAgent)
+                color = "#f00";
+            events_array.push({
+                title: (count + ' agente(s) ocupado(s) de ' + totalAgent),
+                start: start,
+                end: end,
+                allDay: false,
+                color: color
+            });
+        }
+
+        console.log(events_array);
+
+        this.view.addDisponibility(events_array);
     },
 
     listAgent: function (date) {
@@ -45,7 +48,7 @@
     },
 
     listAgentCallback: function (res) {
-
+        this.view.renderAgent(res);
     },
 
     save: function (clientId, description, currentDate, agentId, comment, address) {

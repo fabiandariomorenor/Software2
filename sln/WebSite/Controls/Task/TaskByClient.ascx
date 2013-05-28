@@ -19,7 +19,7 @@
 
     <div id="rptTask"></div>
     <script template="rptTask" type="text/template">
-        <div class="box">
+        <div class="box box_{StateName}">
             
             <div class="info">
                 

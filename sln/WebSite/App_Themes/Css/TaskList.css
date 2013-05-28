@@ -9,9 +9,26 @@
 .box .info span a
 {
     margin-left:5px;
+    color:#555;
 }
 .box p
 {
     height:85px;
     overflow:hidden; 
+}
+.box_Pendiente
+{
+    background-color:#FCEAAB;
+}
+.box_En
+{
+    background-color:#ABECFC;
+}
+.box_Por
+{
+    background-color:#E1BAFF;
+}
+.box_Aprobado
+{
+    background-color:#BCFFBA;
 }

@@ -58,6 +58,7 @@
     <Content Include="App_Themes\Images\Analysis\Secuencia.png" />
     <Content Include="App_Themes\Images\Analysis\secuenciaAgent.png" />
     <Content Include="App_Themes\Images\Analysis\secuenciaClient.png" />
+    <Content Include="App_Themes\Images\Analysis\secuenciaTaskI.png" />
     <Content Include="App_Themes\Images\Analysis\secuenciaUser.png" />
     <Content Include="App_Themes\Images\Analysis\UML_Clases.png" />
     <Content Include="App_Themes\Images\calendar.png" />

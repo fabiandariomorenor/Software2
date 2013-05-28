@@ -147,7 +147,7 @@ BEGIN
 	OR [TASK].Description LIKE '%'+@Description+'%'
 	OR [User].Name LIKE '%'+@Description+'%'
 	OR [State].Name LIKE '%'+@Description+'%')
-	ORDER BY InitDate
+	ORDER BY State.ID asc, InitDate desc
 	
 END
 
@@ -174,7 +174,7 @@ BEGIN
 	OR [TASK].Description LIKE '%'+@Description+'%'
 	OR [User].Name LIKE '%'+@Description+'%'
 	OR [State].Name LIKE '%'+@Description+'%')
-	ORDER BY InitDate
+	ORDER BY State.ID asc, InitDate desc
 END
 
 
@@ -217,7 +217,13 @@ CREATE PROCEDURE [dbo].[TaskByState]
 	@ID_State int
 AS
 BEGIN
-	SELECT * FROM [TASK]
+	SELECT [TASK].* ,
+	[User].Name as AgentName ,
+	[State].Name as StateName 
+	FROM [TASK]
+	JOIN Agent on Agent.Document = [TASK].ID_Agent
+	JOIN [User] on [User].Document = Agent.Document
+	JOIN [State] on [State].Id = Task.ID_State
 	WHERE ID_Client = @ID_Client AND ID_State = @ID_State
 END
 
@@ -228,7 +234,7 @@ CREATE PROCEDURE [dbo].[AgentPerHour]
 AS
 BEGIN
 	SELECT [AGENT].Document, [USER].Name FROM AGENT JOIN [USER] ON AGENT.Document = [USER].Document WHERE [AGENT].Document NOT IN
-	(SELECT ID_Agent FROM TASK WHERE InitDate = CONVERT (datetime, @Datetime, 120)) 
+	(SELECT ID_Agent FROM TASK WHERE InitDate = CONVERT (datetime, @Datetime, 131)) 
 END
 
 GO

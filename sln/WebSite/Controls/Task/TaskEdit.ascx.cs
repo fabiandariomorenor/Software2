@@ -17,6 +17,7 @@ namespace WebSite.Controls.Task
         protected string AgentId = "0";
         protected string TaskId = "0";
         protected string Mode = "";
+        protected string Total = "0";
 
         protected void Page_Load(object sender, EventArgs e)
         {
