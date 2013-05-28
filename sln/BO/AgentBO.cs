@@ -22,6 +22,11 @@ namespace BO
             return agentDao.List(agent);
         }
 
+        public int Count()
+        {
+            return agentDao.Count();
+        }
+
         public int Delete(Agent agent) 
         {
             agentDao.Delete(agent);

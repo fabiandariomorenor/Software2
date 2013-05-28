@@ -31,6 +31,11 @@ namespace DAO
             return Execute<Agent>("AgentList", agent);
         }
 
+        public int Count()
+        {
+
+            return ExecuteScalar("AgentCount", new Agent());
+        }
         public void Delete(Agent agent)
         {
             Execute<Agent>("AgentDelete", agent);

@@ -71,3 +71,14 @@ BEGIN
 END
 
 GO
+
+CREATE PROCEDURE [dbo].[AgentCount] 
+	@num int
+AS
+BEGIN
+	SELECT COUNT(*) FROM AGENT
+
+
+END
+
+GO

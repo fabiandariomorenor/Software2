@@ -42,5 +42,12 @@ namespace WebSite.Ws
         {
             return agentBO.Get(document);
         }
+
+        [WebMethod]
+        public int  Count()
+        {
+            
+           return  agentBO.Count();
+        }
     }
 }
