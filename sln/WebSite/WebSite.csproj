@@ -89,6 +89,7 @@
     <Content Include="App_Themes\Images\Icon\agent.png" />
     <Content Include="App_Themes\Images\Icon\client.png" />
     <Content Include="App_Themes\Images\Icon\delete.png" />
+    <Content Include="App_Themes\Images\Icon\Devices.png" />
     <Content Include="App_Themes\Images\Icon\diseno.png" />
     <Content Include="App_Themes\Images\Icon\edit.png" />
     <Content Include="App_Themes\Images\Icon\edit1.png" />
