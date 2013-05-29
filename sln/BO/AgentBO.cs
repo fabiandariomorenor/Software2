@@ -31,7 +31,12 @@ namespace BO
         {
             agentDao.Delete(agent);
             UserBO userBO = new UserBO();
-            return userBO.Delete(agent.Document);
+            userBO.Delete(agent.Document);
+
+            if (userBO.Get(agent.Document) != null)
+                return 0;
+            else
+                return 1;
         }
 
         public int Save(Agent agent)

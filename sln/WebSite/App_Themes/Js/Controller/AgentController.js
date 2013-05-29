@@ -33,13 +33,18 @@
         this.registry.setData(res);
     },
 
-    delete: function(id){
-        this.model.delete(id, jQuery.proxy(this.deleteCallback, this));
+    "delete": function(id){
+        this.model["delete"](id, jQuery.proxy(this.deleteCallback, this));
     },
 
-    deleteCallback: function(){
-        var name = this.view.getFilter();
-        this.list(name);
+    deleteCallback: function(res){
+        if(res != 0){
+            var name = this.view.getFilter();
+            this.list(name);
+        }
+        else{
+            alert("El agente tiene tareas asociadas, debe reasignar o eliminar las tareas asociadas");
+        }
     },
 
     list: function (name) {

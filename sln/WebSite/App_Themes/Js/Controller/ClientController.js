@@ -37,9 +37,14 @@
         this.model.delete(id, jQuery.proxy(this.deleteCallback, this));
     },
 
-    deleteCallback: function(){
-        var name = this.view.getFilter();
-        this.list(name);
+    deleteCallback: function(res){
+        if(res != 0){
+            var name = this.view.getFilter();
+            this.list(name);
+        }
+        else{
+            alert("El cliente tiene tareas asociadas, debe primero eliminar las tareas asociadas");
+        }
     },
 
     list: function (name) {

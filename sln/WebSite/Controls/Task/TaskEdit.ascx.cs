@@ -21,6 +21,10 @@ namespace WebSite.Controls.Task
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            AgentBO agentBo = new AgentBO();
+
+            Total = agentBo.Count().ToString();
+
             if (Request.QueryString["ClientId"] != null)
                 ClientId = Request.QueryString["ClientId"];
 
@@ -38,7 +42,7 @@ namespace WebSite.Controls.Task
                 Date = task.InitDate;
 
 
-                AgentBO agentBo = new AgentBO();
+                
                 var agent = agentBo.Get(task.ID_Agent);
 
 

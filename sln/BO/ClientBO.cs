@@ -52,7 +52,12 @@ namespace BO
         public int Delete(Client client)
         {
             clientDao.Delete(client);
-            return userBO.Delete(client.Document);
+            userBO.Delete(client.Document);
+
+            if (userBO.Get(client.Document) != null)
+                return 0;
+            else
+                return 1;
         }
         private int Insert(Client client)
         {
