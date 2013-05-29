@@ -34,16 +34,37 @@
 
 
     <%--Titulo--%>
-    <h2>Diagrama de Caos de Uso</h2>
+    <h2>Diagrama de Caso de Uso Agente</h2>
 
     <%--Galeria--%>
     <div class="gallery">
        <div class="principal_image">
-            <a href="/App_Themes/Images/Analysis/Casos de Uso.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/Casos de Uso.png" width="665px" /></a>
+            <a href="/App_Themes/Images/Analysis/Caso de Uso Agente.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/Caso de Uso Agente.png" width="665px" /></a>
         </div>              
     </div>
     <p>Por favor de click sobre la imagen para descargar</p>
 
+     <%--Titulo--%>
+    <h2>Diagrama de Caso de Uso Cliente</h2>
+
+    <%--Galeria--%>
+    <div class="gallery">
+       <div class="principal_image">
+            <a href="/App_Themes/Images/Analysis/Caso de Uso Cliente.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/Caso de Uso Cliente.png" width="665px" /></a>
+        </div>              
+    </div>
+    <p>Por favor de click sobre la imagen para descargar</p>
+
+     <%--Titulo--%>
+    <h2>Diagrama de Caso de Uso Coordinador</h2>
+
+    <%--Galeria--%>
+    <div class="gallery">
+       <div class="principal_image">
+            <a href="/App_Themes/Images/Analysis/Caso de Uso Coordinador.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/Caso de Uso Coordinador.png" width="665px" /></a>
+        </div>              
+    </div>
+    <p>Por favor de click sobre la imagen para descargar</p>
 
      <%--Titulo--%>
     <h2>Diagrama de Secuencia User</h2>
@@ -57,33 +78,23 @@
     <p>Por favor de click sobre la imagen para descargar</p>
 
       <%--Titulo--%>
-    <h2>Diagrama de Secuencia Agent</h2>
+    <h2>Diagrama de Secuencia Coordinador</h2>
 
     <%--Galeria--%>
     <div class="gallery">
        <div class="principal_image">
-            <a href="/App_Themes/Images/Analysis/secuenciaAgent.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/secuenciaAgent.png" width="665px" /></a>
+            <a href="/App_Themes/Images/Analysis/secuenciaCoordinador.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/secuenciaCoordinador.png" width="665px" /></a>
         </div>              
     </div>
     <p>Por favor de click sobre la imagen para descargar</p>
 
       <%--Titulo--%>
-    <h2>Diagrama de Secuencia Client</h2>
+    <h2>Diagrama de Secuencia Cliente</h2>
 
     <%--Galeria--%>
     <div class="gallery">
        <div class="principal_image">
-            <a href="/App_Themes/Images/Analysis/secuenciaClient.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/secuenciaClient.png" width="665px" /></a>
-        </div>              
-    </div>
-    <p>Por favor de click sobre la imagen para descargar</p>
-
-    <h2>Diagrama de Secuencia Task (Básica)</h2>
-
-    <%--Galeria--%>
-    <div class="gallery">
-       <div class="principal_image">
-            <a href="/App_Themes/Images/Analysis/secuenciaTaskI.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/secuenciaTaskI.png" width="665px" /></a>
+            <a href="/App_Themes/Images/Analysis/secuenciaCliente.png" alt="Click para ampliar"><img src="/App_Themes/Images/Analysis/secuenciaCliente.png" width="665px" /></a>
         </div>              
     </div>
     <p>Por favor de click sobre la imagen para descargar</p>
