@@ -25,11 +25,9 @@
             <img align="middle" src="../App_Themes/Images/Icon/tecnologias.png" />Tecnologias</a>
         
         <a class="version public" href="/Versioning.aspx"> 
-            <img align="middle" src="../App_Themes/Images/Icon/repositorio.png" />Versionamiento</a>&nbsp;
-        
+            <img align="middle" src="../App_Themes/Images/Icon/repositorio.png" />Versionamiento</a>
         <a class="pattern public" href="/Patrones.aspx"> 
-            <img align="middle" src="../App_Themes/Images/Icon/Devices.png" />Patrones 
-        Software</a>
+            <img align="middle" src="../App_Themes/Images/Icon/Devices.png" />Patrones</a>
     </div>
 
     <asp:Panel ID="pnlLogin"  runat="server">
