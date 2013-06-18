@@ -1,0 +1,57 @@
+﻿#calendar
+{
+    width:700px;
+}
+.fc-header-title
+{
+    display:none !important;
+}
+.left, .right
+{
+    float:left;
+}
+.left
+{
+    width:240px;
+    margin-right:20px;
+    margin-top:20px;
+}
+.right
+{
+    width:700px;
+}
+.left a, .left span
+{
+    float:left;
+}
+.left .title
+{
+    width:100%;
+    color:#0A8C8E;
+    font-size:18px;
+    margin-top:20px;
+}
+.left span
+{
+    font-weight:bold;
+    color:#BCC721;
+    font-size:13px;
+}
+.left a
+{
+    font-size:13px;
+}
+.left .br
+{
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.left br
+{
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}

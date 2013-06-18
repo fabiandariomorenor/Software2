@@ -43,6 +43,7 @@
     <Compile Include="Client.cs" />
     <Compile Include="Coordinator.cs" />
     <Compile Include="Enumerator.cs" />
+    <Compile Include="Page.cs" />
     <Compile Include="State.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -149,6 +149,13 @@
 {
     background-color:#009F3C;
 }
+.header a.close
+{
+    text-decoration:underline;
+    float:right;
+    margin-right:10px;
+    padding-top:3px;
+}
 /*Fin Header*/
  
  

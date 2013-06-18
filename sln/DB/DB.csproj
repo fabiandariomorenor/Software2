@@ -42,15 +42,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1DBCreation.sql" />
-    <Content Include="2ProceduresUser.sql" />
-    <Content Include="3ProceduresRol.sql" />
-    <Content Include="4ProceduresAgent.sql" />
-    <Content Include="5Data.sql" />
-    <Content Include="7ProceduresClient.sql" />
-    <Content Include="6TaskProcedures.sql" />
-    <Content Include="8ProceduresReview.sql" />
-    <Content Include="9Datainit.sql" />
+    <Content Include="Sprint 1\1DBCreation.sql" />
+    <Content Include="Sprint 1\2ProceduresUser.sql" />
+    <Content Include="Sprint 1\3ProceduresRol.sql" />
+    <Content Include="Sprint 1\4ProceduresAgent.sql" />
+    <Content Include="Sprint 1\5Data.sql" />
+    <Content Include="Sprint 1\7ProceduresClient.sql" />
+    <Content Include="Sprint 1\6TaskProcedures.sql" />
+    <Content Include="Sprint 1\8ProceduresReview.sql" />
+    <Content Include="Sprint 1\9Datainit.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sprint 2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

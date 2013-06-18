@@ -50,6 +50,7 @@
   <ItemGroup>
     <Content Include="Admin\TaskByClient.aspx" />
     <Content Include="App_Themes\Css\About.css" />
+    <Content Include="App_Themes\Css\Admin.css" />
     <Content Include="App_Themes\Css\Review.css" />
     <Content Include="App_Themes\Css\TaskList.css" />
     <Content Include="App_Themes\Images\Analysis\Caso de Uso Agente.png" />
@@ -143,9 +144,11 @@
     <Content Include="App_Themes\Images\review.jpg" />
     <Content Include="App_Themes\Images\review1.jpg" />
     <Content Include="App_Themes\Images\stop.png" />
+    <Content Include="App_Themes\Js\Controller\AdminController.js" />
     <Content Include="App_Themes\Js\Controller\TaskByAgentController.js" />
     <Content Include="App_Themes\Js\Controller\TaskByClientController.js" />
     <Content Include="App_Themes\Js\Controller\TaskReviewController.js" />
+    <Content Include="App_Themes\Js\View\AdminView.js" />
     <Content Include="App_Themes\Js\View\TaskByAgentView.js" />
     <Content Include="App_Themes\Js\View\TaskByClientView.js" />
     <Content Include="App_Themes\Js\View\TaskReviewView.js" />
@@ -230,6 +233,7 @@
     <Content Include="WebForm1.aspx" />
     <Content Include="Ws\AgentService.asmx" />
     <Content Include="Ws\ClientService.asmx" />
+    <Content Include="Ws\Statistics.asmx" />
     <Content Include="Ws\TaskService.asmx" />
     <Content Include="Ws\UserService.asmx" />
   </ItemGroup>
@@ -479,6 +483,10 @@
     </Compile>
     <Compile Include="Ws\ClientService.asmx.cs">
       <DependentUpon>ClientService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Statistics.asmx.cs">
+      <DependentUpon>Statistics.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Ws\TaskService.asmx.cs">

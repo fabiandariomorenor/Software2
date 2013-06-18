@@ -35,5 +35,11 @@ namespace WebSite.Controls
             }
             catch { }
         }
+
+        protected void lnkClose_Click(object sender, EventArgs e)
+        {
+            Session[sessionName] = null;
+            Response.Redirect("/home.aspx", true);
+        }
     }
 }

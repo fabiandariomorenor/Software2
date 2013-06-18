@@ -37,6 +37,7 @@ namespace WebSite.Ws
             if(userBo.Validate(document, password))
             {
                 Session[sessionName] = document;
+                Session["RolId"] = 1;
                 return true;
             }
             else{
