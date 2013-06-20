@@ -65,5 +65,15 @@ namespace DAO
         {
             return Execute<Tasksearch>("TaskAgentHour", tasksearch);
         }
+
+        public int ExecutionTaskCount(Task task)
+        {
+            return ExecuteScalar("InExecutionTask", task);
+        }
+
+        public int PendingTaskCount(Task task)
+        {
+            return ExecuteScalar("PendingTask", task);
+        }
     }
 }

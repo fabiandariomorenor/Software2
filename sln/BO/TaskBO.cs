@@ -76,5 +76,15 @@ namespace BO
         {
             return taskDao.TaskAgentHour(tasksearch);
         }
+
+        public int ExecutionTaskCount(Task task)
+        {
+            return taskDao.ExecutionTaskCount(task);
+        }
+
+        public int PendingTaskCount(Task task)
+        {
+            return taskDao.PendingTaskCount(task);
+        }
     }
 }

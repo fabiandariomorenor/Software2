@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE [dbo].[PendingTask] 
+AS
+BEGIN
+	SELECT COUNT(DISTINCT [ID])
+	FROM [TASK]
+	WHERE [ID_State] = 1	
+END

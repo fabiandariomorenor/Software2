@@ -19,6 +19,7 @@ namespace WebSite.Ws
     public class Statistics : System.Web.Services.WebService
     {
          AgentBO agentBO = new AgentBO();
+         TaskBO taskBO = new TaskBO();
         /// <summary>
         /// Numero total de agentes
         /// </summary>
@@ -81,7 +82,8 @@ namespace WebSite.Ws
         [WebMethod]
         public int ExecutionTaskCount()
         {
-            return 0;
+            Task task = new Task();
+            return taskBO.ExecutionTaskCount(task);
         }
 
         /// <summary>
@@ -92,7 +94,8 @@ namespace WebSite.Ws
         [WebMethod]
         public int PendingTaskCount()
         {
-            return 0;
+            Task task = new Task();
+            return taskBO.PendingTaskCount(task);
         }
 
         /// <summary>

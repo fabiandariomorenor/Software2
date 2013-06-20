@@ -51,10 +51,10 @@
     <Content Include="Sprint 1\6TaskProcedures.sql" />
     <Content Include="Sprint 1\8ProceduresReview.sql" />
     <Content Include="Sprint 1\9Datainit.sql" />
+    <Content Include="Sprint 2\InExecutionTask.sql" />
+    <Content Include="Sprint 2\PendingTask.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Sprint 2\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
