@@ -6,6 +6,10 @@ using System.Web.Services;
 using Entity;
 using BO;
 
+using System.Web.Script.Serialization;
+using System.Globalization;
+using System.Threading;
+
 namespace WebSite.Ws
 {
     /// <summary>
@@ -20,6 +24,7 @@ namespace WebSite.Ws
     {
          AgentBO agentBO = new AgentBO();
          TaskBO taskBO = new TaskBO();
+         ClientBO clientBO = new ClientBO();
         /// <summary>
         /// Numero total de agentes
         /// </summary>
@@ -58,9 +63,14 @@ namespace WebSite.Ws
         /// <param name="date"></param>
         /// <returns></returns>
         [WebMethod]
-        public List<Client> PendingClient(DateTime date)
+        public List<Client> PendingClient()
         {
-            return new List<Client>();
+            CultureInfo ci = new CultureInfo("en-US");
+            Thread.CurrentThread.CurrentCulture = ci;
+            Thread.CurrentThread.CurrentUICulture = ci;
+            Client client = new Client();
+
+            return clientBO.Listpendingclient(client);
         }
 
         /// <summary>

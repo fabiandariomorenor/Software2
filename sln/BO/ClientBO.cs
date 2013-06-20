@@ -42,6 +42,12 @@ namespace BO
             return clientDao.List(client);
         }
 
+         public List<Client> Listpendingclient(Client client)
+        {
+            return clientDao.Listpendingclient(client);
+        }
+        
+
         public List<Client> List()
         {
             var client = new Client();

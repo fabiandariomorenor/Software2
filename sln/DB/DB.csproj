@@ -51,6 +51,7 @@
     <Content Include="Sprint 1\6TaskProcedures.sql" />
     <Content Include="Sprint 1\8ProceduresReview.sql" />
     <Content Include="Sprint 1\9Datainit.sql" />
+    <Content Include="Sprint 2\PendingClient.sql" />
     <Content Include="Sprint 2\InExecutionTask.sql" />
     <Content Include="Sprint 2\PendingTask.sql" />
   </ItemGroup>

@@ -36,6 +36,11 @@ namespace DAO
             return ExecuteScalar("ClientInsert", client);
         }
 
+        public List<Client> Listpendingclient(Client client)
+        {
+            return Execute<Client>("PendingClientList", client);
+        }
+
         /*public int ConfirmTask(decimal document, string password)
         {
             return ExecuteScalar("ConfirmTask", Task);
