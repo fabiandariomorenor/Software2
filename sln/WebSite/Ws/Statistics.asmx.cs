@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using Entity;
+using BO;
 
 namespace WebSite.Ws
 {
@@ -17,6 +18,7 @@ namespace WebSite.Ws
     [System.Web.Script.Services.ScriptService]
     public class Statistics : System.Web.Services.WebService
     {
+         AgentBO agentBO = new AgentBO();
         /// <summary>
         /// Numero total de agentes
         /// </summary>
@@ -24,7 +26,7 @@ namespace WebSite.Ws
         [WebMethod]
         public int AgentCount()
         {
-            return 1;
+            return agentBO.Count();
         }
 
         /// <summary>
