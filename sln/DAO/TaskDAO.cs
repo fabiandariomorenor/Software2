@@ -20,7 +20,11 @@ namespace DAO
         {
             return ExecuteScalar("TaskInsert", task);
         }
+        public int Count()
+        {
 
+            return ExecuteScalar("TaskCount", new Task());
+        }
         public int Delete(Task task)
         {
             return ExecuteScalar("TaskDelete", task);

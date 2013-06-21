@@ -1,0 +1,20 @@
+﻿USE [SistemaTecnicos]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[TaskCount]
+		@num int
+AS
+BEGIN
+	SELECT COUNT(*) FROM TASK
+
+
+END
+END
+GO
+

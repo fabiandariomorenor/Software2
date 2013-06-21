@@ -81,7 +81,7 @@ namespace WebSite.Ws
         [WebMethod]
         public int TaskCount()
         {
-            return 0;
+            return taskBO.Count();
         }
 
         /// <summary>

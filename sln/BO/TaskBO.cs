@@ -15,6 +15,10 @@ namespace BO
         {
             return taskDao.Get(id);
         }
+        public int Count()
+        {
+            return taskDao.Count();
+        }
 
         public int Delete(Task task)
         {
