@@ -53,10 +53,13 @@
     <Content Include="Sprint 1\8ProceduresReview.sql" />
     <Content Include="Sprint 1\9Datainit.sql" />
     <Content Include="Sprint 2\BusyAgent.sql" />
+    <Content Include="Sprint 2\ClientCount.sql" />
+    <Content Include="Sprint 2\TaskCount.sql" />
     <Content Include="Sprint 2\FreeAgent.sql" />
-    <Content Include="Sprint 2\PendingClient.sql" />
     <Content Include="Sprint 2\InExecutionTask.sql" />
+    <Content Include="Sprint 2\PendingClient.sql" />
     <Content Include="Sprint 2\PendingTask.sql" />
+    <Content Include="Sprint 2\ProceduresStatisticsAgent.sql" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
