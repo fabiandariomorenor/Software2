@@ -116,7 +116,7 @@ namespace WebSite.Ws
         [WebMethod]
         public int ClientCount()
         {
-            return 0;
+            return clientBO.Count();
         }
     }
 }

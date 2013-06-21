@@ -17,6 +17,11 @@ namespace BO
             return clientDao.Get(document);
         }
 
+        public int Count()
+        {
+            return clientDao.Count();
+        }
+
         public int Save(Client client)
         {
             if (Get(client.Document) == null)

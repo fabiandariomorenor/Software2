@@ -21,6 +21,11 @@ namespace DAO
             return ExecuteScalar("ClientUpdate", user);
         }
 
+        public int Count()
+        {
+            return ExecuteScalar("ClientCount", new Client());
+        }
+
         public List<Client> List(Client client)
         {
             return Execute<Client>("ClientList", client);
