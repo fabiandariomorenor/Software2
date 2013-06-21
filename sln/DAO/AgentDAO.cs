@@ -43,11 +43,12 @@ namespace DAO
 
         public List<Agent> BusyAgent(DateTime date)
         {
-           return Execute<Agent>("BusyAgent", date);
+            return Execute<Agent>("BusyAgent", date);
         }
 
         public List<Agent> FreeAgent(DateTime date)
         {
             return Execute<Agent>("FreeAgent", date);
         }
+    }
 }
