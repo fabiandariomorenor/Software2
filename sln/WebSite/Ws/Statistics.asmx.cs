@@ -43,7 +43,7 @@ namespace WebSite.Ws
         [WebMethod]
         public List<Agent> FreeAgent(DateTime date)
         {
-            return new List<Agent>();
+            return agentBO.FreeAgent(date);
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace WebSite.Ws
         [WebMethod]
         public List<Agent> BusyAgent(DateTime date)
         {
-            return new List<Agent>();
+            return agentBO.BusyAgent(date);
         }
 
         /// <summary>

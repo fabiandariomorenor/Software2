@@ -64,5 +64,17 @@ namespace BO
             userBO.Save((User)agent);
             return agentDao.Insert(agent);
         }
+
+        public List<Agent> BusyAgent(DateTime date)
+        {
+            return agentDao.BusyAgent(date);
+        }
+
+        public List<Agent> FreeAgent(DateTime date)
+        {
+            return agentDao.FreeAgent(date);
+        }
+        
+
     }
 }

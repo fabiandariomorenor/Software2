@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\UserDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Sprint 1\1DBCreation.sql" />
@@ -51,6 +52,8 @@
     <Content Include="Sprint 1\6TaskProcedures.sql" />
     <Content Include="Sprint 1\8ProceduresReview.sql" />
     <Content Include="Sprint 1\9Datainit.sql" />
+    <Content Include="Sprint 2\BusyAgent.sql" />
+    <Content Include="Sprint 2\FreeAgent.sql" />
     <Content Include="Sprint 2\PendingClient.sql" />
     <Content Include="Sprint 2\InExecutionTask.sql" />
     <Content Include="Sprint 2\PendingTask.sql" />
