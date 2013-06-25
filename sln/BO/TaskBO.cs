@@ -90,5 +90,15 @@ namespace BO
         {
             return taskDao.PendingTaskCount(task);
         }
+
+        public int TaskByReviewCount()
+        {
+            return taskDao.TaskByReviewCount();
+        }
+
+        public int TaskCompletedCount()
+        {
+            return taskDao.TaskCompletedCount();
+        }
     }
 }

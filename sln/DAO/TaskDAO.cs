@@ -79,5 +79,15 @@ namespace DAO
         {
             return ExecuteScalar("PendingTask", task);
         }
+
+        public int TaskByReviewCount()
+        {
+            return ExecuteScalar("TaskByReviewCount", new Task());
+        }
+
+        public int TaskCompletedCount()
+        {
+            return ExecuteScalar("TaskCompletedCount", new Task());
+        }
     }
 }

@@ -43,12 +43,20 @@ namespace DAO
 
         public List<Agent> BusyAgent(DateTime date)
         {
-            return Execute<Agent>("BusyAgent", date);
+            Agent agent = new Agent()
+            {
+                Datetime = date
+            };
+            return Execute<Agent>("BusyAgent", agent);
         }
 
         public List<Agent> FreeAgent(DateTime date)
         {
-            return Execute<Agent>("FreeAgent", date);
+            Agent agent = new Agent()
+            {
+                Datetime = date
+            };
+            return Execute<Agent>("FreeAgent", agent);
         }
     }
 }

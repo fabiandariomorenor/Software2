@@ -15,6 +15,6 @@ BEGIN
 
 
 END
-END
+
 GO
 

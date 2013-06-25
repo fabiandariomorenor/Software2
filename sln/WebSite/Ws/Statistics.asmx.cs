@@ -84,6 +84,18 @@ namespace WebSite.Ws
             return taskBO.Count();
         }
 
+        [WebMethod]
+        public int TaskByReviewCount()
+        {
+            return taskBO.TaskByReviewCount();
+        }
+
+        [WebMethod]
+        public int TaskCompletedCount()
+        {
+            return taskBO.TaskCompletedCount();
+        }
+
         /// <summary>
         /// Numero de tareas en ejecucion
         /// </summary>

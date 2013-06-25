@@ -12,8 +12,14 @@ namespace WebSite.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var rol = (Entity.RolEnum)Session["RolId"];
-            Security.Validate(Entity.PageEnum.Agent, rol);
+            try
+            {
+                var rol = (Entity.RolEnum)Session["RolId"];
+                Security.Validate(Entity.PageEnum.Agent, rol);
+            }
+            catch
+            {
+            }
         }
     }
 }

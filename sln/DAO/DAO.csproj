@@ -52,10 +52,6 @@
     <Compile Include="UserDAO.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAOBase.dll" />
-    <Content Include="DAOBase.pdb" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{52A583FB-F191-4420-980A-CBA0BEFE6FBF}</Project>
       <Name>Entity</Name>

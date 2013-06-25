@@ -10,33 +10,48 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+<script>
+    var busyAgent = <%=busyAgentSerialized %>;
+    var freeAgent= <%=freeAgentSerialized %>;
+    var pendingClient= <%= pendingClientSerialized%>;
+    var taskAgentHour= <%= taskAgentHourSerialized%>;
+    var totalAgent= <%= agentCount%>;
+    
+</script>
 
     <div class="left">
-        <a class="title" href="agent.aspx">Agentes (1)</a> 
+        <a class="title" href="agent.aspx">Agentes (<%=agentCount %>)</a> 
 
-        <span>Libres : </span><a><img src="../App_Themes/Images/People/6.png" width="16"/>Pedro Alvarez</a>
-        <a><img src="../App_Themes/Images/People/6.png" width="16"/>Fabian Perez</a>
-        <a><img src="../App_Themes/Images/People/6.png" width="16"/>Juan Gonzales</a>
-        <a><img src="../App_Themes/Images/People/6.png" width="16"/>Lucas Marcelo</a><a>Pedro Alvarez</a>
-        
+        <span  class="taskcount">Libres (<%=freeAgent.Count%>) </span>
+
+        <div id="freeAgent"><a>Ninguno</a></div>
+         
         <div class="br"></div>
-        <span>Ocupados : </span><a>Pedro Alvarez</a><a>Fabian Perez</a><a>Juan Gonzales</a><a>Lucas Marcelo</a><a>Pedro Alvarez</a>
-
-        <a class="title" href="client.aspx">Clientes (5)</a>
+        <span  class="taskcount">Ocupados (<%=busyAgent.Count%>)  </span>
         
-        <span>Por calificar : </span><span></span><a>Pedro Alvarez</a><a>Fabian Perez</a><a>Juan Gonzales</a><a>Lucas Marcelo</a><a>Pedro Alvarez</a>
+        <div id="busyAgent"><a>Ninguno</a></div>
 
-        <a class="title" >Tareas (2)</a>
+        <a class="title" href="client.aspx">Clientes (<%=clientCount%>)</a>
+        
+        <span class="taskcount">Por calificar (<%=pendingClient.Count%>) </span><span></span>
+        
+        <div id="clientReview"><a>Ninguno</a></div>
 
-        <span> </span><a> En ejecucion</a>
+        <a class="title" >Tareas (<%=taskCount%>)</a>
+
+        <span class="taskcount"><%=executionTaskCount%> </span><a> En ejecucion</a>
 
         <br />
 
-        <span> </span><a> Pendientes</a>
+        <span class="taskcount"> <%=pendingTaskCount %> </span><a> Pendientes</a>
 
         <br />
 
-        <span> </span><a> Por calificar</a>
+        <span class="taskcount"><%=taskByReviewCount%> </span><a> Por calificar</a>
+        
+        <br />
+        <span class="taskcount"><%=taskCompletedCount%> </span><a> Completas</a>
+        
 
 
     </div>
@@ -47,5 +62,13 @@
 
     </div>
 
-
+    <script template="busyAgent" type="text/template">
+        <a><img src="../App_Themes/Images/People/{Image}.png" width="16"/>{Name}</a>
+    </script>
+    <script template="freeAgent" type="text/template">
+        <a><img src="../App_Themes/Images/People/{Image}.png" width="16"/>{Name}</a>
+    </script>
+    <script template="clientReview" type="text/template">
+        <a><img src="../App_Themes/Images/People/{Image}.png" width="16"/>{Name}</a>
+    </script>
 </asp:Content>

@@ -5,3 +5,13 @@ BEGIN
 	FROM [TASK]
 	WHERE [ID_State] = 2	
 END
+
+go
+
+CREATE PROCEDURE [dbo].TaskByReviewCount 
+AS
+BEGIN
+	SELECT COUNT(DISTINCT [ID])
+	FROM [TASK]
+	WHERE [ID_State] = 3	
+END
