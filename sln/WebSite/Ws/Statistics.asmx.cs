@@ -43,6 +43,9 @@ namespace WebSite.Ws
         [WebMethod]
         public List<Agent> FreeAgent(DateTime date)
         {
+            CultureInfo ci = new CultureInfo("en-US");
+            Thread.CurrentThread.CurrentCulture = ci;
+            Thread.CurrentThread.CurrentUICulture = ci;
             return agentBO.FreeAgent(date);
         }
 
@@ -54,6 +57,9 @@ namespace WebSite.Ws
         [WebMethod]
         public List<Agent> BusyAgent(DateTime date)
         {
+            CultureInfo ci = new CultureInfo("en-US");
+            Thread.CurrentThread.CurrentCulture = ci;
+            Thread.CurrentThread.CurrentUICulture = ci;
             return agentBO.BusyAgent(date);
         }
 
